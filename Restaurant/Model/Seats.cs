@@ -10,8 +10,12 @@ namespace Restaurant.Model
     {
         emty,
         use,
+<<<<<<< HEAD
         book,
         disable
+=======
+        book
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
     }
 
     class Seats
@@ -22,7 +26,10 @@ namespace Restaurant.Model
         private DateTime bookingTime;
         private string stateColor;
         private string nameSeat;
+<<<<<<< HEAD
      
+=======
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         public Seats()
         {
 
@@ -33,6 +40,9 @@ namespace Restaurant.Model
         public DateTime BookingTime { get => bookingTime; set => bookingTime = value; }
         public string StateColor { get => stateColor; set => stateColor = value; }
         public string NameSeat { get => nameSeat; set => nameSeat = value; }
+<<<<<<< HEAD
       
+=======
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
     }
 }

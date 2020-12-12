@@ -20,6 +20,7 @@ namespace Restaurant.Model
         public int IdEmp { get => idEmp; set => idEmp = value; }
         public int IdCus { get => idCus; set => idCus = value; }
         public DateTime TimeOrder { get => timeOrder; set => timeOrder = value; }
+<<<<<<< HEAD
         //thêm
         public Orders()
         {
@@ -30,6 +31,13 @@ namespace Restaurant.Model
         {
             this.Id = Int32.Parse(row["id"].ToString());
             this.IdSeat = Int32.Parse(row["idSeat"].ToString());
+=======
+
+        public Orders (DataRow row)
+        {
+            this.Id =Int32.Parse(row["id"].ToString());
+            this.IdSeat =Int32.Parse(row["idSeat"].ToString());
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
             this.IdEmp = Int32.Parse(row["idEmp"].ToString());
             this.IdCus = Int32.Parse(row["idCus"].ToString());
             this.TimeOrder = DateTime.Parse(row["timeOrder"].ToString());
@@ -38,11 +46,16 @@ namespace Restaurant.Model
         public Orders(int id, int idSeat, int idEmp, int idCus, DateTime time)
         {
             this.Id = id;
+<<<<<<< HEAD
             this.IdCus = idCus;
+=======
+            this.IdCus =idCus;
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
             this.IdEmp = idEmp;
             this.IdSeat = idSeat;
             this.TimeOrder = time;
         }
+<<<<<<< HEAD
         public Orders(int id, int idSeat, int idEmp, DateTime time)
         {
             this.Id = id;
@@ -52,5 +65,9 @@ namespace Restaurant.Model
         }
 
 
+=======
+
+        
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
     }
 }

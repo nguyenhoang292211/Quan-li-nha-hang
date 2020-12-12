@@ -16,7 +16,10 @@ using System.Collections.ObjectModel;
 using Restaurant.Model;
 using System.Threading;
 using Restaurant.Controller;
+<<<<<<< HEAD
 using DevExpress.Utils.CommonDialogs.Internal;
+=======
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
 
 namespace Restaurant.View
 {
@@ -29,6 +32,7 @@ namespace Restaurant.View
         ObservableCollection<Seats> tables;
         ObservableCollection<Bills> bills;
         ObservableCollection<Area> areas;
+<<<<<<< HEAD
         //taoj 2 list để chứa orderdetail của 2 bàn cần gộp
         ObservableCollection<OrderDetails> od1;
         ObservableCollection<OrderDetails> od2;
@@ -71,14 +75,30 @@ namespace Restaurant.View
             cbxState.SelectedIndex = 0;
             idArea = int.Parse(dbArea.GetFirstIDArea());
             nameArea = dbArea.GetFirstNameArea();
+=======
+        public orderTable()
+        {
+            InitializeComponent();
+           
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
             Thread thread = new Thread(delegate ()
             {
                 
                 //Seats
+<<<<<<< HEAD
                 Tables = new ObservableCollection<Seats>(dbSeats.loadSeat(idArea,0));
                 //Bill
                 Bills = new ObservableCollection<Bills>(dbBills.loadBill());
                 //Areas
+=======
+               tableController dbSeats = new tableController();
+                Tables = new ObservableCollection<Seats>(dbSeats.loadSeat());
+                //Bill
+                billController dbBills = new billController();
+                Bills = new ObservableCollection<Bills>(dbBills.loadBill());
+                //Areas
+                areaController dbArea = new areaController();
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                 Areas = new ObservableCollection<Area>(dbArea.loadArea());
 
 
@@ -100,6 +120,7 @@ namespace Restaurant.View
         internal ObservableCollection<Seats> Tables { get => tables; set => tables = value; }
         internal ObservableCollection<Bills> Bills { get => bills; set => bills = value; }
         internal ObservableCollection<Area> Areas { get => areas; set => areas = value; }
+<<<<<<< HEAD
         public ObservableCollection<OrderDetails> Od1 { get => od1; set => od1 = value; }
         public ObservableCollection<OrderDetails> Od2 { get => od2; set => od2 = value; }
 
@@ -460,6 +481,30 @@ namespace Restaurant.View
             Tables = new ObservableCollection<Seats>(dbSeats.loadSeat(idArea, 4));
             listviewShowTable.ItemsSource = Tables;
         }
+=======
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void tagarea_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ListviewShowTable_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            
+        }
+
+        private void ListviewShowTable_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            
+           
+        }
+
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         private void Btn_MouseDown(object sender, MouseButtonEventArgs e)
         {
             Seats seats = listviewShowTable.SelectedItem as Seats;

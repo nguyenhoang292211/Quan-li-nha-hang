@@ -85,7 +85,11 @@
 
             </StackPanel>
            
+<<<<<<< HEAD
             <DockPanel x:Name="banhang_dock" Style="{StaticResource dockmenu}" MouseDown="Banhang_dock_MouseDown">
+=======
+            <DockPanel x:Name="banhang_dock" Style="{StaticResource dockmenu}">
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                 <Label Width="140" x:Name="enterBHpage"
                            Style="{DynamicResource MenuLabel}"  
                            Content="Bán hàng" 

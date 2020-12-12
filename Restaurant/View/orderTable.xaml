@@ -9,6 +9,7 @@
       mc:Ignorable="d" 
       Title="orderTable">
 
+<<<<<<< HEAD
     <Grid Width="1180" Height="579">
         <!--mục khu vực-->
         <ListView x:Name="listviewShowArea" 
@@ -18,6 +19,14 @@
              SelectionChanged="listviewShowArea_SelectionChanged">
             <!--   -->
             <!--   -->
+=======
+    <Grid Background="White" Width="1180" Height="579">
+        <!--mục khu vực-->
+        <ListView x:Name="listviewShowArea" 
+                BorderThickness="0"
+                Margin="10,23,580,455"
+                  Padding="0">
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
                     <UniformGrid Columns="7"/>
@@ -28,6 +37,7 @@
                     <Border Background="#619196" 
                             CornerRadius="10 10 0 0" 
                             Margin="0,0,0,0">
+<<<<<<< HEAD
                         <Button x:Name="area_button"   Background="Transparent" 
                                 BorderBrush="Transparent"
                                 Content="{Binding NameArea}"
@@ -35,6 +45,13 @@
                                 Width="100" Height="50"
                                 IsHitTestVisible="False"
                                 />
+=======
+                        <Button Background="Transparent" 
+                                BorderBrush="Transparent"
+                                Content="{Binding NameArea}"
+                                VerticalAlignment="Top" 
+                                Width="100" Height="50" />
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                     </Border>
                 </DataTemplate>
             </ListView.ItemTemplate>
@@ -42,14 +59,21 @@
 
         <Label Content="Hóa đơn đã thanh toán" 
                HorizontalAlignment="Left"
+<<<<<<< HEAD
                Margin="889,39,0,0" 
                VerticalAlignment="Top"
                FontSize="22"/>
+=======
+               Margin="872,19,0,0" 
+               VerticalAlignment="Top"
+               FontSize="25"/>
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         <Border Background="#d7e7a9" 
                 BorderThickness="3"
                 BorderBrush="#619196"
                 CornerRadius="10" 
                 Margin="632,33,341,505" >
+<<<<<<< HEAD
             <ComboBox x:Name="cbxState"
                       FontSize="13"
                       SelectionChanged="ComboBox_SelectionChanged"
@@ -75,6 +99,12 @@
                       SelectionChanged="ComboBox_SelectionChanged">
                 
                 
+=======
+            <ComboBox MyMaterialDesign:HintAssist.Hint="OS" 
+                      Margin="10.333,-1.667,0,0" Height="36" 
+                      FontSize="20" HorizontalAlignment="Left" 
+                      Width="180" VerticalAlignment="Top">
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                 <ComboBox.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -95,7 +125,11 @@
                 <ComboBoxItem>
                     Bàn đã đặt trước
                 </ComboBoxItem>
+<<<<<<< HEAD
             </ComboBox>-->
+=======
+            </ComboBox>
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         </Border>
         <Border Background="#ff968a" 
                 BorderThickness="2 2 2 2"
@@ -152,6 +186,7 @@
         </Border>
         <Border Background="#619196" 
                 BorderThickness="2 2 2 2" 
+<<<<<<< HEAD
                 CornerRadius="10" Margin="167,495,850,27" 
                 RenderTransformOrigin="0.417,2.433" >
             <Button x:Name="btnChuyenBan"
@@ -180,10 +215,37 @@
                     VerticalAlignment="Top" 
                     Width="163" Height="57"
                     Click="btnGopban_Click"/>
+=======
+                CornerRadius="10" Margin="121,487,896,22" 
+                RenderTransformOrigin="0.417,2.433" >
+            <Button Content="Chuyển bàn" 
+                    Background="Transparent" 
+                    BorderBrush="Transparent" 
+                    HorizontalAlignment="Left" 
+                    Margin="1,1,0,0" 
+                    VerticalAlignment="Top" 
+                    Width="154" 
+                    Height="64"
+                    Click="Button_Click"/>
         </Border>
         <Border Background="#619196" 
                 BorderThickness="2 2 2 2" 
                 CornerRadius="10" 
+                Margin="560,484,457,25">
+            <Button Content="Gộp bàn" 
+                    Background="Transparent" 
+                    BorderBrush="Transparent" 
+                    HorizontalAlignment="Left" 
+                    Margin="1,1,-2.333,0" 
+                    VerticalAlignment="Top" 
+                    Width="160" Height="64"
+                    Click="Button_Click"/>
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
+        </Border>
+        <Border Background="#619196" 
+                BorderThickness="2 2 2 2" 
+                CornerRadius="10" 
+<<<<<<< HEAD
                 Margin="357,495,663,27">
             <Button x:Name="btnDatTruoc"
                     Content="Đặt trước" 
@@ -204,6 +266,26 @@
             <ListView x:Name="listviewShowTable" 
                     Margin="0.333,0.333,3.667,0"
                      SelectionChanged="listviewShowTable_SelectionChanged">
+=======
+                Margin="346,484,671,25">
+            <Button Content="Đặt trước" 
+                    Background="Transparent" 
+                    BorderBrush="Transparent" 
+                    HorizontalAlignment="Left" 
+                    Margin="1,1,-2.333,0"
+                    VerticalAlignment="Top"
+                    Width="160" Height="64"
+                    Click="Button_Click"/>
+        </Border>
+        <Border Background="White" 
+                BorderBrush="#619196"
+                BorderThickness="7" 
+                CornerRadius="10 10 10 10" 
+                Margin="10,79,341,101">
+            <ListView x:Name="listviewShowTable" 
+                Margin="0.333,0.333,3.667,0"
+                      >
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                 <ListView.ItemsPanel>
                     <ItemsPanelTemplate>
                         <UniformGrid Columns="5"/>
@@ -222,12 +304,19 @@
                                 Background="Transparent" 
                                 BorderBrush="Transparent" 
                                 Foreground="Black"
+<<<<<<< HEAD
                                 Margin="0"
                                 IsHitTestVisible="False"/>
                         </Border>
                     </DataTemplate>
                 </ListView.ItemTemplate>
 
+=======
+                                Margin="0"/>
+                        </Border>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
             </ListView>
         </Border>
         <ProgressBar 
@@ -248,6 +337,7 @@
                 </EventTrigger>
             </ProgressBar.Triggers>
         </ProgressBar>
+<<<<<<< HEAD
         <!-- tạo grid để thêm chức năng xóa thêm bàn-->
         <Grid x:Name="gridSetting" 
             HorizontalAlignment="Left" 
@@ -339,5 +429,7 @@
                     Click="btnSetting_Click"
                     />
         </Border>
+=======
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
     </Grid>
 </Page>

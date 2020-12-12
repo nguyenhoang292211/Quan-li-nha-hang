@@ -90,7 +90,11 @@
             <Setter Property="Height" Value="71"></Setter>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
+<<<<<<< HEAD
                     <Setter Property="Background" Value="Tomato"></Setter>
+=======
+                    <Setter Property="Background" Value="LightGray"></Setter>
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                 </Trigger>
             </Style.Triggers>
         </Style>

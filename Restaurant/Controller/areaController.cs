@@ -33,6 +33,7 @@ namespace Restaurant.Controller
             }
             return list;
         }
+<<<<<<< HEAD
         //hàm lấy giá trị id đầu tiên
         public String GetFirstIDArea()
         {
@@ -65,5 +66,7 @@ namespace Restaurant.Controller
             Area b = new Area((int)a.Rows[0][0],a.Rows[0][1].ToString());
             return b;
         }
+=======
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
     }
 }

@@ -10,6 +10,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+<<<<<<< HEAD
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Collections.ObjectModel;
@@ -18,6 +19,9 @@ using System.Threading;
 using Restaurant.Controller;
 using DevExpress.Utils.CommonDialogs.Internal;
 using Microsoft.Win32;
+=======
+using System.Windows.Shapes;
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
 
 namespace Restaurant
 {
@@ -26,13 +30,17 @@ namespace Restaurant
     /// </summary>
     public partial class Login : Window
     {
+<<<<<<< HEAD
         userController userControl = new userController();
         //tạo biến để lưu triwx giá trị phân quyền =0 là nhân viên, 1 là chủ
         bool level;
+=======
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         public Login()
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -75,5 +83,7 @@ namespace Restaurant
 
             }
         }
+=======
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
     }
 }

@@ -27,8 +27,13 @@ namespace Restaurant.Controller
             }
             return list;
         }
+<<<<<<< HEAD
 
 
+=======
+      
+        
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
 
         /// <summary>
         /// Thêm nhân viên mới vào database
@@ -39,11 +44,19 @@ namespace Restaurant.Controller
                         double salary, Level level, string state)
         {
 
+<<<<<<< HEAD
             string[] vars = { "@id", "@idMan", "@userName", "@passWord", "@name", "@sex", "@phone", "@address", "@salary", "@level", "@state" };
             ArrayList array = new ArrayList(new Object[] { id, idMan, userName, pass, name, sex, phone, add, salary, level, state });
 
             List<SqlParameter> t = DAO.turntoListParam(array, vars);
 
+=======
+            string[] vars = { "@id","@idMan", "@userName", "@passWord", "@name", "@sex", "@phone", "@address", "@salary", "@level", "@state" };
+            ArrayList array = new ArrayList(new Object[] { id, idMan, userName, pass, name, sex, phone, add, salary, level, state });
+
+            List<SqlParameter> t = DAO.turntoListParam(array, vars);
+           
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
             if (DAO.MyExecuteNonQuery("addEmployees", CommandType.StoredProcedure, t))
                 return true;
             return false;
@@ -54,7 +67,11 @@ namespace Restaurant.Controller
         /// Lấy danh sách tên người quản lí
         /// </summary>
         /// <returns></returns>
+<<<<<<< HEAD
         public List<string> getListNameManager()
+=======
+        public List<string> getListNameManager ()
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         {
             List<string> listname = new List<string>();
             DataTable a = DAO.ExecuteQueryDataSet("getlistManager", CommandType.StoredProcedure);
@@ -104,7 +121,11 @@ namespace Restaurant.Controller
                 foreach (DataRow i in a.Rows)
                 {
                     Employees manager = new Employees(i);
+<<<<<<< HEAD
                     if (manager.Name == name)
+=======
+                    if (manager.Name ==name)
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                         return manager.Id;
                 }
             }
@@ -154,14 +175,22 @@ namespace Restaurant.Controller
             return false;
         }
 
+<<<<<<< HEAD
         public ObservableCollection<Employees> SearchEmployees(string keyword, string condition = null)
+=======
+        public ObservableCollection<Employees> SearchEmployees(string keyword, string condition=null)
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         {
             ObservableCollection<Employees> list = new ObservableCollection<Employees>();
             list = loadallEmployees();
             ObservableCollection<Employees> returnlist = new ObservableCollection<Employees>();
 
             if (condition == null)
+<<<<<<< HEAD
             {
+=======
+            {              
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                 // string query = "Select * from Employees where name like'" + keyword + "%'";
                 // DataTable emp = DAO.ExecuteQueryDataSet(query, CommandType.Text);
 
@@ -178,33 +207,53 @@ namespace Restaurant.Controller
                     case "Nam":
                         foreach (Employees a in list)
                         {
+<<<<<<< HEAD
                             if ((a.Name.Contains(keyword) == true || keyword == "") && a.Sex == 'M') returnlist.Add(a);
+=======
+                            if ((a.Name.Contains(keyword)==true|| keyword=="" ) && a.Sex=='M') returnlist.Add(a);
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                         }
                         return returnlist;
                     case "Nữ":
                         foreach (Employees a in list)
                         {
+<<<<<<< HEAD
                             if ((a.Name.Contains(keyword) == true || keyword == "") && a.Sex == 'F') returnlist.Add(a);
+=======
+                            if ((a.Name.Contains(keyword) == true || keyword == "")&& a.Sex == 'F') returnlist.Add(a);
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                         }
                         return returnlist;
 
                     case "Địa chỉ":
                         foreach (Employees a in list)
                         {
+<<<<<<< HEAD
                             if (a.Address.Contains(keyword) == true) returnlist.Add(a);
+=======
+                            if (a.Address.Contains(keyword) == true ) returnlist.Add(a);
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                         }
                         return returnlist;
 
                     case "Nhân viên":
                         foreach (Employees a in list)
                         {
+<<<<<<< HEAD
                             if ((a.Name.Contains(keyword) == true || keyword == "") && a.Level == Level.employee) returnlist.Add(a);
+=======
+                            if ((a.Name.Contains(keyword) == true || keyword == "") && a.Level ==Level.employee) returnlist.Add(a);
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                         }
                         return returnlist;
                     case "Quản lí":
                         foreach (Employees a in list)
                         {
+<<<<<<< HEAD
                             if ((a.Name.Contains(keyword) == true || keyword == "") && a.Level == Level.boss) returnlist.Add(a);
+=======
+                            if ((a.Name.Contains(keyword) == true || keyword == "") && a.Level== Level.boss) returnlist.Add(a);
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                         }
                         return returnlist;
                     default:
@@ -212,14 +261,22 @@ namespace Restaurant.Controller
 
                 }
             }
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         }
 
         public Employees getEmpByID(int id)
         {
             DataTable data = DAO.MyExecuteNonQuery_data("getEmpByID", CommandType.StoredProcedure,
                                                             new List<SqlParameter>() { new SqlParameter("@id", id) });
+<<<<<<< HEAD
             if (data != null)
+=======
+            if (data!=null)
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                 return new Employees(data.Rows[0]);
             else
                 return null;

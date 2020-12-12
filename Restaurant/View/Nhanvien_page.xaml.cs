@@ -22,15 +22,25 @@ namespace Restaurant.View
 
         employeeController empCon = new employeeController();
         ObservableCollection<Employees> employees = new ObservableCollection<Employees>();
+<<<<<<< HEAD
         List<string> listManager = new List<string>();
         List<Level> listPosition = new List<Level>();
         List<string> listFilter = new List<string>() { "Tất cả", "Nam", "Nữ", "Địa chỉ", "Nhân viên", "Quản lí" };
+=======
+        List<string> listManager=new List<string>();
+        List<Level> listPosition = new List<Level>();
+        List<string> listFilter = new List<string>() {"Tất cả","Nam","Nữ","Địa chỉ","Nhân viên","Quản lí"};
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         public Nhanvien_page()
         {
             InitializeComponent();
             editNv_form.Visibility = Visibility.Hidden;
 
+<<<<<<< HEAD
             Thread thread = new Thread(delegate ()
+=======
+            Thread thread = new Thread(delegate()
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
             {
                 Dispatcher.Invoke(() =>
                 {
@@ -49,15 +59,26 @@ namespace Restaurant.View
                     employees = empCon.loadallEmployees();
                     listStaff.ItemsSource = employees;
                     txbamountstaff.Text = employees.Count.ToString();
+<<<<<<< HEAD
                     txbamountstaff.IsReadOnly = true;
+=======
+                    txbamountstaff.IsReadOnly = true;   
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
 
                     //Ẩn thanh load
                     Progressbar.IsEnabled = false;
                     Progressbar.Visibility = Visibility.Hidden;
+<<<<<<< HEAD
 
                 });
             });
             thread.Start();
+=======
+                    
+                });
+            });
+            thread.Start();          
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         }
 
         /// <summary>
@@ -75,7 +96,11 @@ namespace Restaurant.View
             for (int i = 0; i < cmbposition.Items.Count; i++)
                 if (emp.Level.ToString().Trim() == cmbposition.Items[i].ToString().Trim())
                 {
+<<<<<<< HEAD
                     cmbposition.SelectedIndex = i;
+=======
+                    cmbposition.SelectedIndex = i;                   
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                 }
 
             for (int i = 0; i < cmbmanager.Items.Count; i++)
@@ -94,7 +119,11 @@ namespace Restaurant.View
             txbusername.Text = emp.UserName;
             txbsalary.Text = emp.Salary.ToString();
             txbpass.Text = emp.PassWord;
+<<<<<<< HEAD
             if (emp.Sex == 'F') chbgender.IsChecked = false;
+=======
+            if (emp.Sex == 'F') chbgender.IsChecked =false;
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
             else chbgender.IsChecked = true;
             editNv_form.Visibility = Visibility.Visible;
             IsREADonly(true);
@@ -107,9 +136,15 @@ namespace Restaurant.View
         /// <param name="t"></param>
         void IsREADonly(bool t)
         {
+<<<<<<< HEAD
             txbId.IsReadOnly = txbname.IsReadOnly = txbaddress.IsReadOnly =
             txbphone.IsReadOnly = txbusername.IsReadOnly = txbpass.IsReadOnly = t;
             chbgender.IsEnabled = !t;
+=======
+            txbId.IsReadOnly = txbname.IsReadOnly = txbaddress.IsReadOnly = 
+            txbphone.IsReadOnly = txbusername.IsReadOnly = txbpass.IsReadOnly = t;
+            chbgender.IsEnabled =!t;
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
 
         }
 
@@ -117,7 +152,11 @@ namespace Restaurant.View
         /// Xóa các textbox trong form edit
         /// </summary>
 
+<<<<<<< HEAD
         void ClearEditForm()
+=======
+        void ClearEditForm ()
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         {
             txbaddress.Clear();
             txbId.Clear();
@@ -126,7 +165,11 @@ namespace Restaurant.View
             txbphone.Clear();
             txbusername.Clear();
             txbsalary.Clear();
+<<<<<<< HEAD
             chbgender.IsChecked = false;
+=======
+            chbgender.IsChecked = false ;
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
 
             btnSave.Content = "Lưu";
 
@@ -143,7 +186,11 @@ namespace Restaurant.View
 
         private void PackIcon_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
+<<<<<<< HEAD
             if (editNv_form.Visibility == Visibility.Visible)
+=======
+            if(editNv_form.Visibility==Visibility.Visible)
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
             {
                 if (MessageBox.Show("Bạn muốn xóa nhân viên này", "Thông báo", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
                 {
@@ -156,7 +203,11 @@ namespace Restaurant.View
                     else
                         MessageBox.Show("Bị lỗi");
                 }
+<<<<<<< HEAD
 
+=======
+               
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
             }
         }
         /// <summary>
@@ -169,7 +220,11 @@ namespace Restaurant.View
             IsREADonly(false);
             btnSave.IsEnabled = true;
 
+<<<<<<< HEAD
             editNv_form.Visibility = Visibility.Visible;
+=======
+            editNv_form.Visibility = Visibility.Visible;         
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
             btnadd.IsEnabled = false;
             btnSave.Content = "Thêm";
         }
@@ -184,12 +239,17 @@ namespace Restaurant.View
             {
                 txbId.Foreground = System.Windows.Media.Brushes.Red;
                 txbId.Text = "You have to fill this field!";
+<<<<<<< HEAD
                 return false;
+=======
+                    return false; 
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
             }
             if (txbname.Text == "")
             {
                 txbname.Foreground = System.Windows.Media.Brushes.Red;
                 txbname.Text = "You have to fill this field!";
+<<<<<<< HEAD
                 return false;
             }
             if (txbaddress.Text == "")
@@ -197,26 +257,47 @@ namespace Restaurant.View
                 txbaddress.Foreground = System.Windows.Media.Brushes.Red;
                 txbaddress.Text = "You have to fill this field!";
                 return false;
+=======
+                    return false;
+            }
+            if (txbaddress.Text == "")
+            {
+               txbaddress.Foreground = System.Windows.Media.Brushes.Red;
+                txbaddress.Text = "You have to fill this field!";
+                    return false;
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
             }
 
             if (txbpass.Text == "")
             {
                 txbpass.Foreground = System.Windows.Media.Brushes.Red;
                 txbpass.Text = "You have to fill this field!";
+<<<<<<< HEAD
                 return false;
+=======
+                    return false;
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
             }
 
             if (txbphone.Text == "")
             {
                 txbphone.Foreground = System.Windows.Media.Brushes.Red;
                 txbphone.Text = "You have to fill this field!";
+<<<<<<< HEAD
                 return false;
+=======
+                    return false;
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
             }
             if (txbusername.Text == "")
             {
                 txbusername.Foreground = System.Windows.Media.Brushes.Red;
                 txbusername.Text = "You have to fill this field!";
+<<<<<<< HEAD
                 return false;
+=======
+                    return false;
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
             }
 
             if (txbsalary.Text == "")
@@ -237,13 +318,21 @@ namespace Restaurant.View
             if (!checkInput())
                 return;
 
+<<<<<<< HEAD
             if (btnSave.Content.ToString() == "Thêm")
+=======
+            if(btnSave.Content.ToString()== "Thêm")
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
             {
                 char sex = new char();
                 int idman = empCon.getIdManagebyName(cmbmanager.SelectedItem.ToString());
                 if (chbgender.IsChecked == true) sex = 'M';
                 else sex = 'F';
+<<<<<<< HEAD
                 Level level = (Level)cmbposition.SelectedItem;
+=======
+                Level level =(Level) cmbposition.SelectedItem;
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
 
                 if (empCon.addEmployees(int.Parse(txbId.Text.Trim()), idman, txbusername.Text, txbpass.Text, txbname.Text,
                      sex, txbphone.Text, txbaddress.Text, Double.Parse(txbsalary.Text.Trim()), level, "Doing"))
@@ -265,7 +354,11 @@ namespace Restaurant.View
 
             //Thay đổi thông tin nhân viên
 
+<<<<<<< HEAD
             if (btnSave.Content.ToString() == "Lưu")
+=======
+            if(btnSave.Content.ToString()=="Lưu")
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
             {
                 char sex = new char();
                 int idman = empCon.getIdManagebyName(cmbmanager.SelectedItem.ToString());
@@ -295,20 +388,36 @@ namespace Restaurant.View
             btnSave.Content = "Lưu";
             IsREADonly(false);
             cmbstate.IsEnabled = true;
+<<<<<<< HEAD
 
 
+=======
+            txbId.IsEnabled = false ;
+
+            
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         }
 
         private void CmbFilter_amountstaff_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+<<<<<<< HEAD
 
 
+=======
+           
+            
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         }
 
         private void Txbfindstaff_TextChanged(object sender, TextChangedEventArgs e)
         {
+<<<<<<< HEAD
             if (cmbfilter.Text == "Tất cả")
                 listStaff.ItemsSource = empCon.SearchEmployees(txbfindstaff.Text);
+=======
+            if(cmbfilter.Text=="Tất cả")
+            listStaff.ItemsSource = empCon.SearchEmployees(txbfindstaff.Text);
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
             else
             {
                 listStaff.ItemsSource = empCon.SearchEmployees(txbfindstaff.Text, cmbfilter.Text);
@@ -316,6 +425,7 @@ namespace Restaurant.View
         }
 
         private void Cmbfilter_SelectionChanged(object sender, SelectionChangedEventArgs e)
+<<<<<<< HEAD
         {
             if (txbfindstaff.Text == null)
                 txbfindstaff.Text = "";
@@ -324,4 +434,13 @@ namespace Restaurant.View
     }
 
 
+=======
+        {  if (txbfindstaff.Text == null)
+                txbfindstaff.Text = "";
+            listStaff.ItemsSource = empCon.SearchEmployees(txbfindstaff.Text, cmbfilter.Text);                
+        }
+    }
+
+   
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
 }

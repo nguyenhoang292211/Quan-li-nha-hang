@@ -8,6 +8,7 @@
    xmlns:MyMaterialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       d:DesignHeight="580" d:DesignWidth="1180"
       Title="Loaimonan_page">
+<<<<<<< HEAD
  
     <Grid>
         <Grid.RowDefinitions>
@@ -77,14 +78,101 @@
                          BorderBrush="#FF33ADF3">
 
                 </Button>
+=======
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="5.5*" />
+            <RowDefinition Height="1.3*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+
+        <!--  Line Header 1  -->
+        <Label
+            Grid.Row="0"
+            Padding="15,20,0,0"
+            Content="Quản lí loại thức ăn  "
+            FontFamily="Montserrat SemiBold"
+            FontSize="23"
+            FontWeight="ExtraBlack"
+            Foreground="#DD000000" />
+        <!--  Line Fine Information  -->
+        <StackPanel
+            Grid.Row="1"
+            Margin="0.5"
+            Orientation="Horizontal">
+            <ComboBox
+                x:Name="cmbfilterMain"
+                Width="130"
+                Margin="10,0"
+                BorderBrush="Black"
+                FontFamily="Montserrat Medium"
+                FontSize="14"
+                IsEditable="True"
+                SelectionChanged="cmbfilterMain_SelectionChanged"
+                Style="{StaticResource MaterialDesignFloatingHintComboBox}" />
+
+            <TextBox
+                x:Name="txbFindTypeFood"
+                Width="220"
+                Padding="3,3,0,0"
+                HorizontalContentAlignment="Left"
+                VerticalContentAlignment="Top"
+                MyMaterialDesign:HintAssist.Hint="Tìm loại món ăn"
+                Background="Transparent"
+                BorderBrush="Transparent"
+                FontFamily="Montserrat Medium"
+                FontSize="18"
+                Foreground="DimGray"
+                SelectionChanged="txbFindTypeFood_SelectionChanged_1" />
+            <MyMaterialDesign:PackIcon
+                Width="22"
+                Height="22"
+                Margin="-30,20,5,5"
+                Kind="Magnify" />
+            <Border
+                Width="140"
+                Height="45"
+                Margin="26,0,0,0"
+                HorizontalAlignment="Right"
+                Background="#FF2C2C2C"
+                BorderBrush="SeaGreen"
+                BorderThickness="1"
+                CornerRadius="18">
+                <Button
+                    x:Name="btnAddProm"
+                    Height="45"
+                    Background="Transparent"
+                    BorderBrush="#FF33ADF3"
+                    BorderThickness="0"
+                    Click="btnAddProm_Click"
+                    Content="Thêm món ăn"
+                    FontFamily="Montserrat SemiBold"
+                    FontSize="15"
+                    FontWeight="Normal"
+                    Foreground="White" />
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                 <Border.Resources>
                     <Style TargetType="Border">
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
+<<<<<<< HEAD
                                 <Setter Property="Background" Value="White"></Setter>
                                 <Setter Property="CornerRadius" Value="18"></Setter>
                                 <Setter Property="BorderBrush" Value="White"></Setter>
                                 <Setter Property="BorderThickness" Value="1"></Setter>
+=======
+                                <Setter Property="Background" Value="White" />
+                                <Setter Property="CornerRadius" Value="18" />
+                                <Setter Property="BorderBrush" Value="White" />
+                                <Setter Property="BorderThickness" Value="1" />
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -92,15 +180,23 @@
 
                 <Border.Effect>
                     <DropShadowEffect
+<<<<<<< HEAD
                                     Color="Gray"
                                     Direction="270"
                                     ShadowDepth="3"
                                     BlurRadius="5"/>
+=======
+                        BlurRadius="5"
+                        Direction="270"
+                        ShadowDepth="3"
+                        Color="Gray" />
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                 </Border.Effect>
             </Border>
 
         </StackPanel>
 
+<<<<<<< HEAD
         <!-- Số liệu chính -->
         <ListView Grid.Row="2" Margin="20 0" 
                   BorderThickness="1"
@@ -122,6 +218,32 @@
                     <Setter Property="FontWeight" Value="DemiBold"></Setter>
                     <Setter Property="ToolTip" 
                                     Value="{Binding RelativeSource={RelativeSource Self}, Path=Text}"/>
+=======
+        <!--  Số liệu chính  -->
+        <ListView
+            x:Name="listCategory"
+            Grid.Row="2"
+            Height="380"
+            Margin="10,0"
+            Background="Transparent"
+            BorderBrush="Black"
+            BorderThickness="1"
+            FontFamily="Montserrat SemiBold"
+            SelectionChanged="listCategory_SelectionChanged">
+            <ListView.Resources>
+                <Style TargetType="TextBlock">
+                    <Setter Property="FontFamily" Value="Cambria" />
+                    <Setter Property="Foreground" Value="CadetBlue" />
+                    <Setter Property="FontSize" Value="16" />
+                    <Setter Property="TextTrimming" Value="CharacterEllipsis" />
+                    <Setter Property="ToolTip" Value="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
+                </Style>
+                <Style TargetType="Label">
+                    <Setter Property="Foreground" Value="#2C459A" />
+                    <Setter Property="FontSize" Value="15" />
+                    <Setter Property="FontWeight" Value="DemiBold" />
+                    <Setter Property="ToolTip" Value="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                 </Style>
                 <Style TargetType="{x:Type ScrollBar}">
                     <Setter Property="Margin" Value="2,50,0,8" />
@@ -130,6 +252,7 @@
                     <Setter Property="Template">
                         <Setter.Value>
                             <ControlTemplate TargetType="{x:Type ScrollBar}">
+<<<<<<< HEAD
                                 <Track IsDirectionReversed="true" Focusable="false">
                                     <Track.Thumb>
                                         <Thumb Width="8" Background="Green"/>
@@ -139,6 +262,23 @@
                                     </Track.IncreaseRepeatButton>
                                     <Track.DecreaseRepeatButton>
                                         <RepeatButton Command="ScrollBar.PageUpCommand" Opacity="0" Focusable="false" />
+=======
+                                <Track Focusable="false" IsDirectionReversed="true">
+                                    <Track.Thumb>
+                                        <Thumb Width="8" Background="Green" />
+                                    </Track.Thumb>
+                                    <Track.IncreaseRepeatButton>
+                                        <RepeatButton
+                                            Command="ScrollBar.PageDownCommand"
+                                            Focusable="false"
+                                            Opacity="0" />
+                                    </Track.IncreaseRepeatButton>
+                                    <Track.DecreaseRepeatButton>
+                                        <RepeatButton
+                                            Command="ScrollBar.PageUpCommand"
+                                            Focusable="false"
+                                            Opacity="0" />
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                                     </Track.DecreaseRepeatButton>
                                 </Track>
                             </ControlTemplate>
@@ -148,6 +288,7 @@
 
             </ListView.Resources>
             <ListView.View>
+<<<<<<< HEAD
                 <GridView AllowsColumnReorder="True" >
                     <!--cột ID NV-->
                     <GridViewColumn Width="100" DisplayMemberBinding="{Binding id}">
@@ -155,21 +296,39 @@
                             <DataTemplate>
                                 <Border HorizontalAlignment="Left">
                                     <Label Content="ID"/>
+=======
+                <GridView AllowsColumnReorder="True">
+                    <!--  cột ID NV  -->
+                    <GridViewColumn Width="150" DisplayMemberBinding="{Binding Id}">
+                        <GridViewColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <Border HorizontalAlignment="Left">
+                                    <Label Content="ID" />
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                                 </Border>
                             </DataTemplate>
                         </GridViewColumn.HeaderTemplate>
                     </GridViewColumn>
+<<<<<<< HEAD
                     <!--Cột tên khuyến mãi-->
                     <GridViewColumn Width="10" DisplayMemberBinding="{Binding name}">
                         <GridViewColumn.HeaderTemplate>
                             <DataTemplate>
                                 <Border >
+=======
+                    <!--  Cột tên khuyến mãi  -->
+                    <GridViewColumn Width="180" DisplayMemberBinding="{Binding Name}">
+                        <GridViewColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <Border>
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
 
                                     <Label Content="Tên loại " />
                                 </Border>
                             </DataTemplate>
                         </GridViewColumn.HeaderTemplate>
                     </GridViewColumn>
+<<<<<<< HEAD
                     <!--cột Don vi -->
                     <GridViewColumn Width="140" DisplayMemberBinding="{Binding state}">
                         <GridViewColumn.HeaderTemplate>
@@ -199,16 +358,34 @@
                                     <Label Content="Giá"
                                                   />
                                 </Border>
+=======
+                    <!--  cột Don vi  -->
+                    <GridViewColumn Width="180" DisplayMemberBinding="{Binding Quantity}">
+                        <GridViewColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <Label Content="Số lượng" />
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                             </DataTemplate>
                         </GridViewColumn.HeaderTemplate>
                     </GridViewColumn>
 
+<<<<<<< HEAD
                     <!-- Tinh trang-->
                     <GridViewColumn  Width="180"  DisplayMemberBinding="{Binding state}" >
                         <GridViewColumn.HeaderTemplate>
                             <DataTemplate>
                                 <Border>
                                     <Label Content="Tình trạng"     />
+=======
+
+
+                    <!--  Tinh trang  -->
+                    <GridViewColumn Width="180" DisplayMemberBinding="{Binding State}">
+                        <GridViewColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <Border>
+                                    <Label Content="Tình trạng" />
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                                 </Border>
                             </DataTemplate>
                         </GridViewColumn.HeaderTemplate>
@@ -217,6 +394,7 @@
             </ListView.View>
         </ListView>
 
+<<<<<<< HEAD
         <StackPanel Grid.Row="3"  Orientation="Horizontal" HorizontalAlignment="Right">
             <Border 
                     Grid.Row="3"
@@ -336,6 +514,130 @@
                     <ItemsPanelTemplate>
                         <UniformGrid Columns="1" >
                         </UniformGrid>
+=======
+        <DockPanel
+            Grid.Row="3"
+            Height="auto"
+            HorizontalAlignment="Right">
+
+            <TextBox
+                x:Name="txbNameType"
+                Width="120"
+                Height="40"
+                Margin="20,5"
+                Padding="5,-5,2,2"
+                MyMaterialDesign:HintAssist.Hint="Tên loại"
+                FontFamily="cambria"
+                FontSize="16"
+                IsEnabled="False"
+                Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+
+            <ComboBox
+                x:Name="cmbState"
+                Width="130"
+                Margin="20,10"
+                BorderBrush="Black"
+                FontFamily="Montserrat Medium"
+                FontSize="14"
+                IsEditable="True"
+                IsEnabled="False"
+                Style="{StaticResource MaterialDesignFloatingHintComboBox}" />
+
+            <Border
+                Grid.Row="3"
+                Width="70"
+                Height="70"
+                Margin="0,0,50,0"
+                HorizontalAlignment="Right"
+                Background="CornflowerBlue"
+                BorderBrush="CadetBlue"
+                BorderThickness="1"
+                CornerRadius="35">
+                <Button
+                    x:Name="btnedit"
+                    Padding="0,-05,0,0"
+                    Background="Transparent"
+                    BorderBrush="#FF33ADF3"
+                    BorderThickness="0"
+                    Click="btnedit_Click"
+                    FontFamily="Montserrat SemiBold"
+                    FontWeight="Normal"
+                    Foreground="White">
+
+                    <MyMaterialDesign:PackIcon
+                        Name="icon"
+                        Width="60"
+                        Height="32"
+                        HorizontalAlignment="Center"
+                        Kind="Edit" />
+
+
+                </Button>
+                <Border.Effect>
+                    <DropShadowEffect
+                        BlurRadius="5"
+                        Direction="270"
+                        ShadowDepth="3"
+                        Color="Gray" />
+                </Border.Effect>
+            </Border>
+
+        </DockPanel>
+
+        <!--  Column 2  -->
+        <DockPanel Grid.Row="1" Grid.Column="1">
+            <!--  Line Header 1  -->
+            <Label
+                Padding="15,20,0,0"
+                Content="Tổng:   "
+                FontFamily="Montserrat SemiBold"
+                FontSize="23"
+                FontWeight="Light"
+                Foreground="#DD000000" />
+            <!--  Line Header 1  -->
+            <Label
+                x:Name="lbQuantity"
+                Padding="15,20,0,0"
+                FontFamily="Montserrat SemiBold"
+                FontSize="23"
+                FontWeight="Light"
+                Foreground="#DD000000" />
+        </DockPanel>
+        <Grid
+            Grid.Row="2"
+            Grid.RowSpan="2"
+            Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <ComboBox
+                    x:Name="cmbGroupByDish"
+                    Margin="10,0"
+                    BorderBrush="Black"
+                    FontFamily="Montserrat Medium"
+                    FontSize="14"
+                    IsEditable="True"
+                    Style="{StaticResource MaterialDesignFloatingHintComboBox}" />
+            </Grid>
+
+            <!--  List View  -->
+
+
+            <ListView
+                x:Name="listviewTypes"
+                Grid.Row="2"
+                Height="489"
+                Margin="5,0"
+                Padding="2"
+                VerticalAlignment="Top"
+                BorderBrush="BlueViolet"
+                BorderThickness="1">
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Columns="1" />
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                     </ItemsPanelTemplate>
                 </ListView.ItemsPanel>
                 <ListView.ItemTemplate>
@@ -344,6 +646,7 @@
                             <Border>
                                 <Border.Effect>
                                     <DropShadowEffect
+<<<<<<< HEAD
                                         Color="Black"
                                         Direction="270"
                                         ShadowDepth="5"
@@ -355,6 +658,21 @@
                                    Width="120" Height="150"
                                    HorizontalAlignment="Center"
                                        VerticalAlignment="Top">
+=======
+                                        BlurRadius="10"
+                                        Direction="270"
+                                        ShadowDepth="5"
+                                        Color="Black" />
+                                </Border.Effect>
+                                <Image
+                                    Width="120"
+                                    Height="150"
+                                    Margin="3"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Top"
+                                    Source="{Binding Path=Img_source}"
+                                    Stretch="UniformToFill">
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                                     <!--<Image.Clip>
                                         <RectangleGeometry
                                         RadiusX="50"
@@ -363,6 +681,7 @@
                                     </Image.Clip>-->
                                 </Image>
                             </Border>
+<<<<<<< HEAD
                             <StackPanel Orientation="Vertical" Margin="1.5">
                             <TextBlock Text="{Binding Path=Name}"
                                    MaxWidth="120"
@@ -383,6 +702,46 @@
                                    Padding="1">
                                    <Bold><Underline> Đ</Underline></Bold>
                             </TextBlock>
+=======
+                            <StackPanel Margin="1.5" Orientation="Vertical">
+                                <TextBlock
+                                    MaxWidth="120"
+                                    Margin="5,5,5,5"
+                                    HorizontalAlignment="Center"
+                                    FontFamily="Montserrat Bold"
+                                    FontSize="18"
+                                    FontWeight="Bold"
+                                    Text="{Binding Path=Name}"
+                                    TextAlignment="Center"
+                                    TextWrapping="Wrap" />
+                                <TextBlock
+                                    MaxWidth="120"
+                                    Margin="5,5,5,5"
+                                    Padding="5"
+                                    HorizontalAlignment="Center"
+                                    Background="PaleVioletRed"
+                                    FontFamily="Montserrat medium"
+                                    FontSize="18"
+                                    Foreground="White"
+                                    Text="{Binding Path=Price}"
+                                    TextWrapping="Wrap">
+                                    <Bold>
+                                        <Underline>Đ</Underline>
+                                    </Bold>
+                                    <TextBlock
+                                        MaxWidth="120"
+                                        Margin="5,5,5,5"
+                                        HorizontalAlignment="Center"
+                                        Background="#2C459A"
+                                        FontFamily="Montserrat Bold"
+                                        FontSize="18"
+                                        FontWeight="Bold"
+                                        Text="{Binding Path=State}"
+                                        TextAlignment="Center"
+                                        TextWrapping="Wrap" />
+
+                                </TextBlock>
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                             </StackPanel>
                         </StackPanel>
 

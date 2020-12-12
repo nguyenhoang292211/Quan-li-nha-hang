@@ -76,5 +76,23 @@ namespace Restaurant.Controller
             return returnlist;
         }
 
+<<<<<<< HEAD
+=======
+
+        //để ké
+
+        public ObservableCollection<Events> loadlistEvents()
+        {
+            ObservableCollection<Events> events = new ObservableCollection<Events>();
+            DataTable data = DAO.ExecuteQueryDataSet("getlistEvent", CommandType.StoredProcedure);
+            foreach (DataRow row in data.Rows)
+            {
+                Events a = new Events(row);
+                events.Add(a);
+            }
+            return events;
+        }
+
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
     }
 }

@@ -79,5 +79,10 @@ namespace Restaurant.Model
             this.State = state;
 
         }
+<<<<<<< HEAD
+=======
+
+        
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
     }
 }

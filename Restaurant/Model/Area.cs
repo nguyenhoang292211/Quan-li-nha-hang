@@ -20,6 +20,7 @@ namespace Restaurant.Model
         {
 
         }
+<<<<<<< HEAD
         public Area(int id,String name)
         {
             this.IdArea = id;
@@ -28,6 +29,8 @@ namespace Restaurant.Model
         }
 
         
+=======
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
        
     }
 }

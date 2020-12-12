@@ -11,6 +11,7 @@
 
     <Grid Background="Beige">
         <Grid.ColumnDefinitions>
+<<<<<<< HEAD
             <ColumnDefinition Width="277*"></ColumnDefinition>
             <ColumnDefinition Width="431*"/>
             <ColumnDefinition Width="472*"/>
@@ -21,6 +22,19 @@
               Visibility="Hidden"
               Grid.Column="2"
               Margin="66,135,56,215"
+=======
+            <ColumnDefinition Width="6*"></ColumnDefinition>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <Grid x:Name="grid_addcustomer"
+              Grid.RowSpan="2"
+             
+              Panel.ZIndex="5" 
+              Visibility="Hidden"
+              Grid.Row="1"
+              Grid.Column="2"
+              Margin="10 0 0 80"
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                     Background="#111111"
                     Opacity="0.85"
                     Height="250" Width="350">
@@ -181,7 +195,11 @@
                    Width="245"
                    Background="#002821"
                    Visibility="Hidden"
+<<<<<<< HEAD
                    Panel.ZIndex="6" Margin="114,265">
+=======
+                   Panel.ZIndex="6">
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
             <Label Foreground="White"
                     FontSize="15"
                        Margin="10 0 10 0"
@@ -199,7 +217,11 @@
         </DockPanel>
 
         <!--Khu vực chọn món -menu-->
+<<<<<<< HEAD
         <Grid Grid.Column="0" Grid.ColumnSpan="2">
+=======
+        <Grid Grid.Column="0">
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
             <Grid.RowDefinitions>
                 <RowDefinition Height="0.85*"/>
                 <RowDefinition Height="9*"/>
@@ -243,7 +265,11 @@
                 </TextBox>
                     <Label x:Name="lb_area"
                            Margin="5 10"
+<<<<<<< HEAD
                            FontSize="14">Khu vực</Label>
+=======
+                           FontSize="14">1</Label>
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                 
                 <TextBox 
                          Foreground="Black"
@@ -252,7 +278,11 @@
                      <Label x:Name="lb_table"
                             Margin="5 10"
                             Foreground="Black"
+<<<<<<< HEAD
                            FontSize="14">Bàn</Label>
+=======
+                           FontSize="14">5</Label>
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                 </TextBlock>
 
 
@@ -339,11 +369,18 @@
                     <ListView x:Name="listviewShowFood" 
                           BorderThickness="1"
                           BorderBrush="BlueViolet"
+<<<<<<< HEAD
                               VerticalAlignment="Bottom"
                               MouseLeftButtonUp="ListviewShowFood_MouseLeftButtonUp"
                               MouseLeftButtonDown="listviewShowFood_MouseLeftButtonDown"
                               SelectionChanged="ListviewShowFood_SelectionChanged"
                               Margin="9,0,-0.333,0"
+=======
+                              Width="545"
+                              VerticalAlignment="Bottom"
+                              MouseLeftButtonUp="ListviewShowFood_MouseLeftButtonUp"
+                              Margin="9,0,1,0"
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                           Height="489">
                         <ListView.ItemsPanel>
                             <ItemsPanelTemplate>
@@ -426,7 +463,11 @@
 
             </Grid>
         </Grid>
+<<<<<<< HEAD
         <StackPanel Grid.Column="2" Margin="3,0,0,0" Name="rightgrid">
+=======
+        <StackPanel Grid.Column="1" Margin="3,0,0,0" Name="rightgrid">
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
             <!--<StackPanel.Effect>
                 <DropShadowEffect Color="Gray"
                                     Direction="270"
@@ -508,7 +549,12 @@
                     Background="Transparent"
                     x:Name="listviewBill" 
                     Width="459" 
+<<<<<<< HEAD
                      ScrollViewer.HorizontalScrollBarVisibility="Hidden">
+=======
+                    PreviewMouseLeftButtonDown="ListviewBill_PreviewMouseLeftButtonDown"
+                     ScrollViewer.VerticalScrollBarVisibility="Hidden">
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                     <ListView.Resources>
 
                         <Style TargetType="Label">
@@ -541,6 +587,7 @@
                                 </Setter.Value>
                             </Setter>
                         </Style>
+<<<<<<< HEAD
                         <Style TargetType="ListViewItem">
                             <Style.Triggers>
                                 <Trigger Property="IsKeyboardFocusWithin" Value="True">
@@ -553,6 +600,9 @@
                             <Setter Property="BorderThickness" Value="1"/>
                             <Setter Property="Background" Value="#E7F8FE"/>
                         </Style>
+=======
+
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
 
                     </ListView.Resources>
                     <ListView.View>
@@ -588,27 +638,40 @@
 
                         </GridView>
                     </ListView.View>
+<<<<<<< HEAD
                     <ListView.ItemContainerStyle>
                         <Style TargetType="ListViewItem">
                             <EventSetter Event="PreviewMouseLeftButtonDown" Handler="ListViewItem_PreviewMouseLeftButtonDown" />
                         </Style>
                     </ListView.ItemContainerStyle>
+=======
+
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                 </ListView>
             </DockPanel>
 
             <DockPanel>
 
+<<<<<<< HEAD
                 <StackPanel Margin="10 20">
                     <Button Content="-" 
                          Margin="12 0"
                          Width="70"
                          Style="{StaticResource MaterialDesignRaisedDarkButton}"
                          FontSize="29"
+=======
+                <StackPanel Margin="30 10">
+                    <Button 
+                         Margin="12 0"
+                         Width="60"
+                         Style="{StaticResource MaterialDesignRaisedDarkButton}"
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                          FontWeight="Black"
                          FontFamily="Cambri"
                          Background="Firebrick"
                          Foreground="White"
                             Click="Descrease_quantity_Click"
+<<<<<<< HEAD
                             Padding=" 0 0 0 15"
                          Name="descrease_quantity" 
                          HorizontalAlignment="Left"
@@ -631,10 +694,71 @@
                                                                 Click="Btn_delete_Click" >
                     </Button>
 
+=======
+                            Padding=" 0 0 0 0"
+                         Name="descrease_quantity" 
+                         HorizontalAlignment="Center"
+                         VerticalAlignment="Top"
+                         >
+                        <MyMaterialDesign:PackIcon
+                                Name="minus_icon"
+                                Kind="Minus"
+                                Height="28"
+                                Width="28"  
+                                   />
+                    </Button>
+                    <Button 
+                                    Margin="12 10"
+                                    Width="60"
+                                    Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                    FontSize="16"
+                                    FontWeight="Medium"
+                                    FontFamily="Arial"
+                                    Background="Firebrick"
+                                    Foreground="White"
+                                    Name="btn_delete" 
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Stretch"
+                                    Click="Btn_delete_Click" >
+                        <MyMaterialDesign:PackIcon
+                                Kind="DeleteCircle"
+                                Height="28"
+                                Width="28"  
+                                Name="delete_icon"
+                                MouseDown="Delete_icon_MouseDown"
+                   />
+                    </Button>
+                    <Button  
+                         Margin="12 0"
+                         Width="60"
+                         Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                         FontSize="29"
+                         FontWeight="Black"
+                         FontFamily="Cambri"
+                         Background="Firebrick"
+                         Foreground="White"
+                         Padding=" 0 0 0 0"
+                         Name="btn_back" 
+                         HorizontalAlignment="Left"
+                         VerticalAlignment="Bottom"
+                         >
+                        <MyMaterialDesign:PackIcon
+                            Kind="ArrowBack"
+                            Height="28"
+                            Width="28" 
+                            Name="comback_icon"
+                            
+                   />
+                    </Button>
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                 </StackPanel>
 
                 <StackPanel>
                     <ComboBox x:Name="cmbdiscount" 
+<<<<<<< HEAD
+=======
+                              DisplayMemberPath="Name"
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                         MyMaterialDesign:HintAssist.Hint="Khuyến mãi"
                          IsEditable="True"
                               Width="250"
@@ -674,8 +798,13 @@
                    >
             <StackPanel.Background>
                 <LinearGradientBrush>
+<<<<<<< HEAD
                     <GradientStop Color="LavenderBlush" Offset="0.8"/>
                     <GradientStop Color="RoyalBlue" Offset="0.2"/>
+=======
+                    <GradientStop Color="Honeydew" Offset="0.8"/>
+                    <GradientStop Color="Orchid" Offset="0.2"/>
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                 </LinearGradientBrush>
             </StackPanel.Background>
             <StackPanel.Resources>
@@ -704,6 +833,10 @@
                        Width="250">
                 <Label>Khách hàng :</Label>
                 <Label Content="Lê Văn A"
+<<<<<<< HEAD
+=======
+                        Name="lb_cus"
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                        HorizontalContentAlignment="Center"></Label>
             </DockPanel>
             <DockPanel Height="30" Width="450" Margin="0 10">
@@ -746,25 +879,44 @@
                                 <DockPanel>
                                     <Label x:Name="lb_stt"  Width="40"
                                             Margin="10 0 0 0" 
+<<<<<<< HEAD
                                            Content="{Binding stt}"></Label>
                                     <Label x:Name="ln_name" 
                                        Content="{Binding name}"
                                        Width="100"></Label>
                                     <Label x:Name="lb_amount"
                                        Content="{Binding amount}"
+=======
+                                           Content="{Binding Stt}"></Label>
+                                    <Label x:Name="ln_name" 
+                                       Content="{Binding NameDish}"
+                                       Width="100"></Label>
+                                    <Label x:Name="lb_amount"
+                                       Content="{Binding Quantity}"
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                                        Width="50"
                                         HorizontalContentAlignment="Center"></Label>
                                     <Label 
                                         x:Name="lb_price_per"
+<<<<<<< HEAD
                                     
                                        HorizontalAlignment="Center"
                                        Content="{Binding price}"></Label>
+=======
+                                        Padding="-5 0 0 0"
+                                       HorizontalAlignment="Center"
+                                       Content="{Binding Price}"></Label>
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
 
                                 </DockPanel>
                                 <Label x:Name="lb_total_per" 
                                    HorizontalAlignment="Right"
                                    Margin="0 0 20 0"
+<<<<<<< HEAD
                                    Content="{Binding totalcost}"></Label>
+=======
+                                   Content="{Binding Totalcost}"></Label>
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                             </StackPanel>
                         </Border>
                     </DataTemplate>
@@ -788,8 +940,14 @@
             </DockPanel>
 
         </StackPanel>
+<<<<<<< HEAD
         <DockPanel Margin="0,0,0,10"
                    Grid.Column="2"
+=======
+        <DockPanel Margin="0 20 0 10"
+                   Grid.Column="2"
+                   Name="Button_pan"
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                    VerticalAlignment="Bottom">
             <DockPanel.Resources>
                 <Style TargetType="Border">
@@ -892,7 +1050,11 @@
                         HorizontalAlignment="Right" 
                         Width="110">
 
+<<<<<<< HEAD
                     Thanh toán
+=======
+                    Tạo bill
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                 </Button>
                 <Border.Effect>
                     <DropShadowEffect
@@ -904,6 +1066,21 @@
             </Border>
 
         </DockPanel>
+<<<<<<< HEAD
+=======
+        <Button Grid.Column="1"
+                Visibility="Hidden"
+                VerticalAlignment="Top" 
+                IsEnabled="True"
+                Margin="10,563,10,0"
+                Foreground="White"
+                FontFamily="Lucida Sans Unicode"
+                FontSize="18"
+                Name="btn_thanhtoan"
+                Background="CadetBlue" FontWeight="Bold"
+                Click="Btn_thanhtoan_Click"
+                >THANH TOÁN</Button>
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
 
     </Grid>
 </Page>

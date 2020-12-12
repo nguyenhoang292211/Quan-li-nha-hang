@@ -35,6 +35,7 @@ namespace Restaurant.Model
             da.Fill(ds);
             return ds;
         }
+<<<<<<< HEAD
         //lấy 1 table có parameter truyền vào
         public DataTable ExecuteQueryDataSet(string strSQL, CommandType ct, List<SqlParameter> param)
         {
@@ -58,6 +59,30 @@ namespace Restaurant.Model
         /// <param name="ct"></param>
         /// <param name="param"></param>
         /// <returns></returns>
+=======
+
+        public DataTable ExecuteQueryDataSet(string strSQL, CommandType ct, List<SqlParameter> para)
+        {
+            if (conn.State == ConnectionState.Open)
+                conn.Close();
+            conn.Open();
+            comm.CommandText = strSQL;
+            comm.CommandType = ct;
+            comm.Parameters.Clear();
+            foreach (SqlParameter iParamater in para)
+                comm.Parameters.Add(iParamater);
+
+            da = new SqlDataAdapter(comm);
+            //   da = comm.ExecuteQ
+            DataTable ds = new DataTable();
+            da.Fill(ds);
+
+
+
+            return ds;
+        }
+
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         public bool MyExecuteNonQuery(string strSQL, CommandType ct, List<SqlParameter> param)
         {
             bool f = false;
@@ -87,6 +112,7 @@ namespace Restaurant.Model
             return f;
         }
 
+<<<<<<< HEAD
         public bool MyExecuteNonQuery(string strSQL, CommandType ct)
         {
             bool f = false;
@@ -114,6 +140,8 @@ namespace Restaurant.Model
             return f;
         }
 
+=======
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         public string FindOneValue(string strSQL, CommandType ct, SqlParameter parameter)
         {
             if (conn.State == ConnectionState.Open)
@@ -143,6 +171,10 @@ namespace Restaurant.Model
                 conn.Close();
             }
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         public DataTable MyExecuteNonQuery_data(string strSQL, CommandType ct, List<SqlParameter> param)
         {
             bool f = false;
@@ -174,6 +206,11 @@ namespace Restaurant.Model
                 conn.Close();
             }
         }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         /// <summary>
         /// Đưa vào một list các biến và chuỗi các @bien tạo thanh list <sqlparameter>
         /// </summary>

@@ -19,8 +19,13 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto" />
+<<<<<<< HEAD
             <RowDefinition Height="5*"/>
             <RowDefinition Height="5*"/>
+=======
+            <RowDefinition Height="6*" />
+            <RowDefinition Height="5*" />
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         </Grid.RowDefinitions>
 
         <!--  Line Header 1  -->
@@ -39,8 +44,15 @@
                 HorizontalAlignment="Right"
                 Orientation="Horizontal">
                 <Button
+<<<<<<< HEAD
                     HorizontalAlignment="Right"
                     Background="CornflowerBlue"
+=======
+                    x:Name="Refresh"
+                    HorizontalAlignment="Right"
+                    Background="CornflowerBlue"
+                    Click="Refresh_Click"
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                     Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}"
                     ToolTip="MaterialDesignFloatingActionMiniAccentButton">
                     <MyMaterialDesign:PackIcon
@@ -61,6 +73,7 @@
             <!--  - Combobox filter Reveneu  -->
             <StackPanel Grid.Column="0">
                 <ComboBox
+<<<<<<< HEAD
                     x:Name="cmbReveneu0"
                     Margin="10,0"
                     BorderBrush="Black"
@@ -73,11 +86,15 @@
                 </ComboBox>
                 <ComboBox
                     x:Name="cmbReveneu1"
+=======
+                    x:Name="cmbBy"
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                     Margin="10,0"
                     BorderBrush="Black"
                     FontFamily="Montserrat Medium"
                     FontSize="14"
                     IsEditable="True"
+<<<<<<< HEAD
                     Style="{StaticResource MaterialDesignFloatingHintComboBox}" />
 
                 <ComboBox
@@ -88,6 +105,38 @@
                     FontSize="14"
                     IsEditable="True"
                     Style="{StaticResource MaterialDesignFloatingHintComboBox}" />
+=======
+                    SelectionChanged="cmbBy_SelectionChanged"
+                    Style="{StaticResource MaterialDesignFloatingHintComboBox}" />
+                <DatePicker
+                    Name="editFromDate"
+                    Grid.Row="2"
+                    Width="170"
+                    Margin="10,15,5,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    MyMaterialDesign:HintAssist.Hint="Từ ngày"
+                    FontFamily="Sitka Subheading"
+                    FontSize="14"
+                    FontWeight="Bold"
+                    SelectedDateChanged="editFromDate_SelectedDateChanged"
+                    Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
+                <DatePicker
+                    Name="editToDate"
+                    Grid.Row="2"
+                    Width="170"
+                    Margin="10,15,5,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    MyMaterialDesign:HintAssist.Hint="Đến ngày"
+                    FontFamily="Sitka Subheading"
+                    FontSize="14"
+                    FontWeight="Bold"
+                    SelectedDateChanged="editToDate_SelectedDateChanged"
+                    Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
+
+
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
             </StackPanel>
             <!--  End Part 1-Filter  -->
 
@@ -98,18 +147,31 @@
                 <myChart:PieChart
                     x:Name="pieChart"
                     Width="auto"
+<<<<<<< HEAD
                     Height="200"
                     Padding="0"
                     Background="Transparent"
+=======
+                    Height="220"
+                    Padding="0"
+                    Background="Transparent"
+                    ChartSubTitle="Tính trên giai đoạn"
+                    ChartTitle="Tỉ lệ phần trăm về doanh thu"
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                     FontFamily="Sitka Subheading"
                     TabIndex="3">
                     <myChart:PieChart.Series>
                         <myChart:ChartSeries
                             Name="pieChart1"
                             DisplayMember="Name"
+<<<<<<< HEAD
                             ItemsSource="{Binding ListReveneu}"
                             SeriesTitle="Tỷ trọng bán"
                             ValueMember="TotalReveneu" />
+=======
+                            SeriesTitle="Tỷ trọng bán"
+                            ValueMember="TotalRevenue" />
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                     </myChart:PieChart.Series>
                 </myChart:PieChart>
 
@@ -133,11 +195,21 @@
                     FontSize="16"
                     FontWeight="ExtraBlack"
                     Foreground="#DD000000" />
+<<<<<<< HEAD
                 <Grid Grid.Row="1" >
                     <Rectangle
                         Fill="#EFF2F8"
                         RadiusX="20"
                         RadiusY="20" />
+=======
+                <Grid Grid.Row="1">
+                    <Rectangle
+                        Margin="5,5,0,5"
+                        Fill="Transparent"
+                        RadiusX="20"
+                        RadiusY="20"
+                        Stroke="Black" />
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
 
                     <StackPanel Orientation="Horizontal">
 
@@ -148,12 +220,20 @@
                             HorizontalAlignment="Left"
                             VerticalAlignment="Center">
                             <Ellipse.Fill>
+<<<<<<< HEAD
                                 <ImageBrush ImageSource="/View/Images/customer.png" />
+=======
+                                <ImageBrush ImageSource="Icons/fish.png" />
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                             </Ellipse.Fill>
                         </Ellipse>
 
 
                         <TextBlock
+<<<<<<< HEAD
+=======
+                            Name="tblNumBill"
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                             Grid.Column="1"
                             Width="75"
                             Padding="15"
@@ -162,7 +242,11 @@
                             FontFamily="Montserrat SemiBold"
                             FontSize="16"
                             FontWeight="Medium"
+<<<<<<< HEAD
                             Text="76672" />
+=======
+                            Text="{Binding Revenue.NumBill}" />
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
 
                         <TextBlock
                             Grid.Column="1"
@@ -178,9 +262,17 @@
                 <!--  Số bill hoàn thành  -->
                 <Grid Grid.Row="2">
                     <Rectangle
+<<<<<<< HEAD
                         Fill="#EFF2F8"
                         RadiusX="20"
                         RadiusY="20" />
+=======
+                        Margin="5,5,0,5"
+                        Fill="#cce6ff"
+                        RadiusX="20"
+                        RadiusY="20"
+                        Stroke="Black" />
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
 
                     <StackPanel Orientation="Horizontal">
 
@@ -191,12 +283,20 @@
                             HorizontalAlignment="Left"
                             VerticalAlignment="Center">
                             <Ellipse.Fill>
+<<<<<<< HEAD
                                 <ImageBrush ImageSource="/View/Images/voucher.png" />
+=======
+                                <ImageBrush ImageSource="Icons/money.png" />
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                             </Ellipse.Fill>
                         </Ellipse>
 
 
                         <TextBlock
+<<<<<<< HEAD
+=======
+                            Name="tblRevenue"
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                             Grid.Column="1"
                             Width="75"
                             Padding="15"
@@ -205,7 +305,11 @@
                             FontFamily="Montserrat SemiBold"
                             FontSize="16"
                             FontWeight="Medium"
+<<<<<<< HEAD
                             Text="76672" />
+=======
+                            Text="{Binding Revenue.TotalRevenue}" />
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
 
                         <TextBlock
                             Grid.Column="1"
@@ -221,11 +325,21 @@
                 <!--  Số Bill đẫ hủy  -->
                 <Grid Grid.Row="3">
                     <Rectangle
+<<<<<<< HEAD
                         Fill="#EFF2F8"
                         RadiusX="20"
                         RadiusY="20" />
 
                     <StackPanel Orientation="Horizontal">
+=======
+                        Margin="5,5,0,5" 
+                        Fill=" #66b3ff"
+                        RadiusX="20"
+                        RadiusY="20"
+                        Stroke="Black" />
+
+                    <StackPanel Margin="4,4,0,0" Orientation="Horizontal">
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
 
                         <Ellipse
                             Width="43"
@@ -234,12 +348,20 @@
                             HorizontalAlignment="Left"
                             VerticalAlignment="Center">
                             <Ellipse.Fill>
+<<<<<<< HEAD
                                 <ImageBrush ImageSource="/View/Images/home.png" />
+=======
+                                <ImageBrush ImageSource="Icons/phone.png" />
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                             </Ellipse.Fill>
                         </Ellipse>
 
 
                         <TextBlock
+<<<<<<< HEAD
+=======
+                            Name="tblBooking"
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                             Grid.Column="1"
                             Width="75"
                             Padding="15"
@@ -248,7 +370,11 @@
                             FontFamily="Montserrat SemiBold"
                             FontSize="16"
                             FontWeight="Medium"
+<<<<<<< HEAD
                             Text="76672" />
+=======
+                            Text="{Binding Revenue.NumBooking}" />
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
 
                         <TextBlock
                             Grid.Column="1"
@@ -256,7 +382,11 @@
                             HorizontalAlignment="Left"
                             VerticalAlignment="Center"
                             FontFamily="Montserrat SemiBold"
+<<<<<<< HEAD
                             FontSize="16"
+=======
+                            FontSize="16" Foreground="White"
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                             FontWeight="Medium"
                             Text="Đặt trước" />
                     </StackPanel>
@@ -264,25 +394,46 @@
                 <!--  Đã hủy  -->
                 <Grid Grid.Row="4">
                     <Rectangle
+<<<<<<< HEAD
                         Fill="#EFF2F8"
                         RadiusX="20"
                         RadiusY="20" />
+=======
+                        Margin="5,5,0,5"
+                        Fill="#0080ff"
+                        RadiusX="20"
+                        RadiusY="20"
+                        Stroke="Black" />
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
 
                     <StackPanel Orientation="Horizontal">
 
                         <Ellipse
+<<<<<<< HEAD
                             Width="43"
                             Height="43"
+=======
+                            Width="50"
+                            Height="47"
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                             Margin="20,0,0,0"
                             HorizontalAlignment="Left"
                             VerticalAlignment="Center">
                             <Ellipse.Fill>
+<<<<<<< HEAD
                                 <ImageBrush ImageSource="/View/Images/manager.png" />
+=======
+                                <ImageBrush ImageSource="Icons/shopping-cart.png" />
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                             </Ellipse.Fill>
                         </Ellipse>
 
 
                         <TextBlock
+<<<<<<< HEAD
+=======
+                            Name="tblCancel"
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                             Grid.Column="1"
                             Width="75"
                             Padding="15"
@@ -291,7 +442,11 @@
                             FontFamily="Montserrat SemiBold"
                             FontSize="16"
                             FontWeight="Medium"
+<<<<<<< HEAD
                             Text="76672" />
+=======
+                            Text="{Binding Revenue.NumCancel}" />
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
 
                         <TextBlock
                             Grid.Column="1"
@@ -301,7 +456,11 @@
                             FontFamily="Montserrat SemiBold"
                             FontSize="16"
                             FontWeight="Medium"
+<<<<<<< HEAD
                             Text="Order đã hủy" />
+=======
+                            Text="Hóa đơn đã hủy" />
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                     </StackPanel>
                 </Grid>
             </Grid>
@@ -317,15 +476,23 @@
 
             <!--  Thống kê số tiền bán được của từng loại  -->
             <myChart:ClusteredColumnChart
+<<<<<<< HEAD
                 Grid.Column="0"
                 Padding="10"
                 Background="Transparent"
                 ChartSubTitle="Số tiền bán được của từng loại"
                 ChartTitle="Số sản phẩm bán được theo từng loại"
+=======
+                Grid.ColumnSpan="2"
+                Padding="10"
+                Background="Transparent"
+                ChartTitle="So sánh tỉ lệ bán được theo số lượng"
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                 FontFamily="Sitka Subheading"
                 TabIndex="3">
                 <myChart:ClusteredColumnChart.Series>
                     <myChart:ChartSeries
+<<<<<<< HEAD
                         Name="columnChart2"
                         DataContext="{Binding Path=ListType}"
                         DisplayMember="Name"
@@ -365,6 +532,15 @@
                     IsEditable="True"
                     Style="{StaticResource MaterialDesignFloatingHintComboBox}" />
             </StackPanel>
+=======
+                        Name="columnChart1"
+                        DisplayMember="Name"
+                        SeriesTitle=" "
+                        ValueMember="Number" />
+                </myChart:ClusteredColumnChart.Series>
+            </myChart:ClusteredColumnChart>
+
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         </Grid>
     </Grid>
 </Page>

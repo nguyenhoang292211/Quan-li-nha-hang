@@ -32,15 +32,26 @@ namespace Restaurant.Model
             this.id = Int32.Parse(row["id"].ToString());
             this.phone = row["phone"].ToString();
             this.name = row["name"].ToString();
+<<<<<<< HEAD
             this.point = Int32.Parse(row["point"].ToString());
         }
 
 
+=======
+            this.point =Int32.Parse(row["point"].ToString());
+        }
+
+       
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         public ObservableCollection<Customers> loadAllCustomer()
         {
             ObservableCollection<Customers> listreturn = new ObservableCollection<Customers>();
             DataTable data = dao.ExecuteQueryDataSet("Select * from Customers", CommandType.Text);
+<<<<<<< HEAD
             foreach (DataRow row in data.Rows)
+=======
+            foreach(DataRow row in data.Rows)
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
             {
                 Customers cus = new Customers(row);
                 listreturn.Add(cus);
@@ -51,11 +62,19 @@ namespace Restaurant.Model
         public bool addNewCustomer(string name, string phone, int point)
         {
             string[] vars = { "@phone", "@name", "@point" };
+<<<<<<< HEAD
             ArrayList array = new ArrayList(new Object[] { phone, name, point });
 
             List<SqlParameter> t = dao.turntoListParam(array, vars);
 
             return dao.MyExecuteNonQuery("addCustomer", CommandType.StoredProcedure, t);
+=======
+            ArrayList array = new ArrayList(new Object[] { phone,name, point });
+
+            List<SqlParameter> t = dao.turntoListParam(array, vars);
+
+            return dao.MyExecuteNonQuery("addCustomer",CommandType.StoredProcedure,t);
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         }
 
         public Customers findCusByid(int id)
@@ -69,10 +88,25 @@ namespace Restaurant.Model
             return null;
         }
 
+<<<<<<< HEAD
         public int getLastedID()
         {
             DataTable data = dao.ExecuteQueryDataSet("Select * from Customers", CommandType.Text);
             return Int32.Parse(data.Rows[data.Rows.Count - 1]["id"].ToString());
         }
+=======
+        public int getLastedID ()
+        {
+            DataTable data = dao.ExecuteQueryDataSet("Select * from Customers", CommandType.Text);
+            return Int32.Parse( data.Rows[data.Rows.Count - 1]["id"].ToString());
+        }
+
+        public int getPoint(int idCus)
+        {
+            int t =Int32.Parse(dao.FindOneValue("getCustomerPoint", CommandType.StoredProcedure, new SqlParameter("@id", idCus)));
+            return t;
+        }
+
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
     }
 }

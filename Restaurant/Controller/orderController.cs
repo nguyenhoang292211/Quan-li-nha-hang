@@ -1,4 +1,5 @@
 ﻿using System;
+<<<<<<< HEAD
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -11,10 +12,18 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Data;
 using Restaurant.Model;
+=======
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
 namespace Restaurant.Controller
 {
     class orderController
     {
+<<<<<<< HEAD
         DAO dao = new DAO();
         public bool addOrder(int idSeat, int idEmp)
         {
@@ -72,5 +81,7 @@ namespace Restaurant.Controller
             t.Add(Phone);
             dao.MyExecuteNonQuery("updateCustomerOrder", CommandType.StoredProcedure, t);
         }
+=======
+>>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
     }
 }
