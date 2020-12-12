@@ -8,83 +8,92 @@
    xmlns:MyMaterialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       d:DesignHeight="580" d:DesignWidth="1180"
       Title="Loaimonan_page">
- 
+
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*" />
 
-            <RowDefinition Height="1*"></RowDefinition>
-            <RowDefinition Height="6*"></RowDefinition>
-            <RowDefinition Height="1.3*"></RowDefinition>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="5.5*" />
+            <RowDefinition Height="1.3*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*"></ColumnDefinition>
-            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="1*" />
         </Grid.ColumnDefinitions>
 
-        <!-- Line Header 1-->
-        <Label Grid.Row="0" 
-               Padding="15 20 0 0"
-               FontFamily="Montserrat SemiBold"
-               FontSize="23" 
-               FontWeight="ExtraBlack" 
-               Foreground="#DD000000" Content="Quản lí loại thức ăn  "/>
-        <!-- Line Fine Information-->
-        <StackPanel Grid.Row="1" Margin="0.5" Orientation="Horizontal">
-            <ComboBox x:Name="cmbfilter"
-                    Margin="10 0"
-                     BorderBrush="Black"
-                      Width="130"
-                     IsEditable="True"
-                     Style="{StaticResource MaterialDesignFloatingHintComboBox}" 
-                      FontFamily="Montserrat Medium" FontSize="14">
+        <!--  Line Header 1  -->
+        <Label
+            Grid.Row="0"
+            Padding="15,20,0,0"
+            Content="Quản lí loại thức ăn  "
+            FontFamily="Montserrat SemiBold"
+            FontSize="23"
+            FontWeight="ExtraBlack"
+            Foreground="#DD000000" />
+        <!--  Line Fine Information  -->
+        <StackPanel
+            Grid.Row="1"
+            Margin="0.5"
+            Orientation="Horizontal">
+            <ComboBox
+                x:Name="cmbfilterMain"
+                Width="130"
+                Margin="10,0"
+                BorderBrush="Black"
+                FontFamily="Montserrat Medium"
+                FontSize="14"
+                IsEditable="True"
+                SelectionChanged="cmbfilterMain_SelectionChanged"
+                Style="{StaticResource MaterialDesignFloatingHintComboBox}" />
 
-            </ComboBox>
-
-            <TextBox     x:Name="txbFindCus"
-                             Background="Transparent"
-                             Width="220"
-                             Foreground="DimGray"
-                             VerticalContentAlignment="Top"
-                             HorizontalContentAlignment="Left"
-                             FontSize="18"
-                             Padding="3 3 0 0"
-                             BorderBrush="Transparent"
-                             
-                             MyMaterialDesign:HintAssist.Hint="Tìm loại món ăn"
-                             FontFamily="Montserrat Medium"   />
+            <TextBox
+                x:Name="txbFindTypeFood"
+                Width="220"
+                Padding="3,3,0,0"
+                HorizontalContentAlignment="Left"
+                VerticalContentAlignment="Top"
+                MyMaterialDesign:HintAssist.Hint="Tìm loại món ăn"
+                Background="Transparent"
+                BorderBrush="Transparent"
+                FontFamily="Montserrat Medium"
+                FontSize="18"
+                Foreground="DimGray"
+                SelectionChanged="txbFindTypeFood_SelectionChanged_1" />
             <MyMaterialDesign:PackIcon
-                Kind="Magnify"
+                Width="22"
                 Height="22"
-                Width="22"  
-                     Margin="-30 20 5 5"/>
-            <Border Height="45" HorizontalAlignment="Right" 
-                    Background="#FF2C2C2C"
-                    Width="140"
-                    BorderBrush="SeaGreen"
-                    CornerRadius="18"
-                    Margin="26 0 0 0"
-                    BorderThickness="1">
-                <Button x:Name="btnAddProm"
-                        Background="Transparent" 
-                        BorderThickness="0"
-                        FontFamily="Montserrat SemiBold"
-                         FontWeight="Normal"
-                        FontSize="15"
-                        Height="45"
-                        Foreground="White" 
-                         Content="Thêm món ăn" 
-                         BorderBrush="#FF33ADF3">
-
-                </Button>
+                Margin="-30,20,5,5"
+                Kind="Magnify" />
+            <Border
+                Width="140"
+                Height="45"
+                Margin="26,0,0,0"
+                HorizontalAlignment="Right"
+                Background="#FF2C2C2C"
+                BorderBrush="SeaGreen"
+                BorderThickness="1"
+                CornerRadius="18">
+                <Button
+                    x:Name="btnAddProm"
+                    Height="45"
+                    Background="Transparent"
+                    BorderBrush="#FF33ADF3"
+                    BorderThickness="0"
+                    Click="btnAddProm_Click"
+                    Content="Thêm món ăn"
+                    FontFamily="Montserrat SemiBold"
+                    FontSize="15"
+                    FontWeight="Normal"
+                    Foreground="White" />
                 <Border.Resources>
                     <Style TargetType="Border">
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="White"></Setter>
-                                <Setter Property="CornerRadius" Value="18"></Setter>
-                                <Setter Property="BorderBrush" Value="White"></Setter>
-                                <Setter Property="BorderThickness" Value="1"></Setter>
+                                <Setter Property="Background" Value="White" />
+                                <Setter Property="CornerRadius" Value="18" />
+                                <Setter Property="BorderBrush" Value="White" />
+                                <Setter Property="BorderThickness" Value="1" />
                             </Trigger>
                         </Style.Triggers>
                     </Style>
@@ -92,36 +101,39 @@
 
                 <Border.Effect>
                     <DropShadowEffect
-                                    Color="Gray"
-                                    Direction="270"
-                                    ShadowDepth="3"
-                                    BlurRadius="5"/>
+                        BlurRadius="5"
+                        Direction="270"
+                        ShadowDepth="3"
+                        Color="Gray" />
                 </Border.Effect>
             </Border>
 
         </StackPanel>
 
-        <!-- Số liệu chính -->
-        <ListView Grid.Row="2" Margin="20 0" 
-                  BorderThickness="1"
-                  BorderBrush="Black"
-                  Background="Transparent"
-                  x:Name="listCategory" 
-                  FontFamily="Montserrat SemiBold"  >
+        <!--  Số liệu chính  -->
+        <ListView
+            x:Name="listCategory"
+            Grid.Row="2"
+            Height="380"
+            Margin="10,0"
+            Background="Transparent"
+            BorderBrush="Black"
+            BorderThickness="1"
+            FontFamily="Montserrat SemiBold"
+            SelectionChanged="listCategory_SelectionChanged">
             <ListView.Resources>
                 <Style TargetType="TextBlock">
-                    <Setter Property="FontFamily" Value="Cambria"/>
+                    <Setter Property="FontFamily" Value="Cambria" />
                     <Setter Property="Foreground" Value="CadetBlue" />
-                    <Setter Property="FontSize" Value="16"/>
+                    <Setter Property="FontSize" Value="16" />
                     <Setter Property="TextTrimming" Value="CharacterEllipsis" />
-                    <Setter Property="ToolTip" Value="{Binding RelativeSource={RelativeSource Self}, Path=Text}"/>
+                    <Setter Property="ToolTip" Value="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
                 </Style>
                 <Style TargetType="Label">
                     <Setter Property="Foreground" Value="#2C459A" />
-                    <Setter Property="FontSize" Value="15"/>
-                    <Setter Property="FontWeight" Value="DemiBold"></Setter>
-                    <Setter Property="ToolTip" 
-                                    Value="{Binding RelativeSource={RelativeSource Self}, Path=Text}"/>
+                    <Setter Property="FontSize" Value="15" />
+                    <Setter Property="FontWeight" Value="DemiBold" />
+                    <Setter Property="ToolTip" Value="{Binding RelativeSource={RelativeSource Self}, Path=Text}" />
                 </Style>
                 <Style TargetType="{x:Type ScrollBar}">
                     <Setter Property="Margin" Value="2,50,0,8" />
@@ -130,15 +142,21 @@
                     <Setter Property="Template">
                         <Setter.Value>
                             <ControlTemplate TargetType="{x:Type ScrollBar}">
-                                <Track IsDirectionReversed="true" Focusable="false">
+                                <Track Focusable="false" IsDirectionReversed="true">
                                     <Track.Thumb>
-                                        <Thumb Width="8" Background="Green"/>
+                                        <Thumb Width="8" Background="Green" />
                                     </Track.Thumb>
                                     <Track.IncreaseRepeatButton>
-                                        <RepeatButton Command="ScrollBar.PageDownCommand" Opacity="0" Focusable="false" />
+                                        <RepeatButton
+                                            Command="ScrollBar.PageDownCommand"
+                                            Focusable="false"
+                                            Opacity="0" />
                                     </Track.IncreaseRepeatButton>
                                     <Track.DecreaseRepeatButton>
-                                        <RepeatButton Command="ScrollBar.PageUpCommand" Opacity="0" Focusable="false" />
+                                        <RepeatButton
+                                            Command="ScrollBar.PageUpCommand"
+                                            Focusable="false"
+                                            Opacity="0" />
                                     </Track.DecreaseRepeatButton>
                                 </Track>
                             </ControlTemplate>
@@ -148,67 +166,45 @@
 
             </ListView.Resources>
             <ListView.View>
-                <GridView AllowsColumnReorder="True" >
-                    <!--cột ID NV-->
-                    <GridViewColumn Width="100" DisplayMemberBinding="{Binding id}">
+                <GridView AllowsColumnReorder="True">
+                    <!--  cột ID NV  -->
+                    <GridViewColumn Width="150" DisplayMemberBinding="{Binding Id}">
                         <GridViewColumn.HeaderTemplate>
                             <DataTemplate>
                                 <Border HorizontalAlignment="Left">
-                                    <Label Content="ID"/>
+                                    <Label Content="ID" />
                                 </Border>
                             </DataTemplate>
                         </GridViewColumn.HeaderTemplate>
                     </GridViewColumn>
-                    <!--Cột tên khuyến mãi-->
-                    <GridViewColumn Width="10" DisplayMemberBinding="{Binding name}">
+                    <!--  Cột tên khuyến mãi  -->
+                    <GridViewColumn Width="180" DisplayMemberBinding="{Binding Name}">
                         <GridViewColumn.HeaderTemplate>
                             <DataTemplate>
-                                <Border >
+                                <Border>
 
                                     <Label Content="Tên loại " />
                                 </Border>
                             </DataTemplate>
                         </GridViewColumn.HeaderTemplate>
                     </GridViewColumn>
-                    <!--cột Don vi -->
-                    <GridViewColumn Width="140" DisplayMemberBinding="{Binding state}">
+                    <!--  cột Don vi  -->
+                    <GridViewColumn Width="180" DisplayMemberBinding="{Binding Quantity}">
                         <GridViewColumn.HeaderTemplate>
                             <DataTemplate>
-
-                                <Label Content="Tình trạng" />
-
-
-                            </DataTemplate>
-                        </GridViewColumn.HeaderTemplate>
-                    </GridViewColumn>
-                    <!--Loai-->
-                    <GridViewColumn  Width="150"  DisplayMemberBinding="{Binding edit}" >
-                        <GridViewColumn.HeaderTemplate>
-                            <DataTemplate>
-                                <Border>
-                                    <Label Content="Chỉnh sữa"
-                                                  />
-                                </Border>
-                            </DataTemplate>
-                        </GridViewColumn.HeaderTemplate>
-                    </GridViewColumn>
-                    <GridViewColumn  Width="150"  DisplayMemberBinding="{Binding price}" >
-                        <GridViewColumn.HeaderTemplate>
-                            <DataTemplate>
-                                <Border>
-                                    <Label Content="Giá"
-                                                  />
-                                </Border>
+                                <Label Content="Số lượng" />
                             </DataTemplate>
                         </GridViewColumn.HeaderTemplate>
                     </GridViewColumn>
 
-                    <!-- Tinh trang-->
-                    <GridViewColumn  Width="180"  DisplayMemberBinding="{Binding state}" >
+
+
+                    <!--  Tinh trang  -->
+                    <GridViewColumn Width="180" DisplayMemberBinding="{Binding State}">
                         <GridViewColumn.HeaderTemplate>
                             <DataTemplate>
                                 <Border>
-                                    <Label Content="Tình trạng"     />
+                                    <Label Content="Tình trạng" />
                                 </Border>
                             </DataTemplate>
                         </GridViewColumn.HeaderTemplate>
@@ -217,125 +213,128 @@
             </ListView.View>
         </ListView>
 
-        <StackPanel Grid.Row="3"  Orientation="Horizontal" HorizontalAlignment="Right">
-            <Border 
-                    Grid.Row="3"
-                       HorizontalAlignment="Right"
-                    Background="CornflowerBlue"
-                    BorderBrush="CadetBlue"
-                    CornerRadius="35"
-                    Width="70"
-                    Height="70"
-                    Margin="0 0 50 0"
-                    BorderThickness="1">
-                <Button x:Name="btnedit" 
-                        Background="Transparent"
-                        BorderThickness="0"
-                        FontFamily="Montserrat SemiBold"
-                         FontWeight="Normal"
-                         Padding="0 -05 0 0"
-                        Foreground="White" BorderBrush="#FF33ADF3"
-                         >
+        <DockPanel
+            Grid.Row="3"
+            Height="auto"
+            HorizontalAlignment="Right">
+
+            <TextBox
+                x:Name="txbNameType"
+                Width="120"
+                Height="40"
+                Margin="20,5"
+                Padding="5,-5,2,2"
+                MyMaterialDesign:HintAssist.Hint="Tên loại"
+                FontFamily="cambria"
+                FontSize="16"
+                IsEnabled="False"
+                Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+
+            <ComboBox
+                x:Name="cmbState"
+                Width="130"
+                Margin="20,10"
+                BorderBrush="Black"
+                FontFamily="Montserrat Medium"
+                FontSize="14"
+                IsEditable="True"
+                IsEnabled="False"
+                Style="{StaticResource MaterialDesignFloatingHintComboBox}" />
+
+            <Border
+                Grid.Row="3"
+                Width="70"
+                Height="70"
+                Margin="0,0,50,0"
+                HorizontalAlignment="Right"
+                Background="CornflowerBlue"
+                BorderBrush="CadetBlue"
+                BorderThickness="1"
+                CornerRadius="35">
+                <Button
+                    x:Name="btnedit"
+                    Padding="0,-05,0,0"
+                    Background="Transparent"
+                    BorderBrush="#FF33ADF3"
+                    BorderThickness="0"
+                    Click="btnedit_Click"
+                    FontFamily="Montserrat SemiBold"
+                    FontWeight="Normal"
+                    Foreground="White">
+
+                    <MyMaterialDesign:PackIcon
+                        Name="icon"
+                        Width="60"
+                        Height="32"
+                        HorizontalAlignment="Center"
+                        Kind="Edit" />
 
 
-                    <MyMaterialDesign:PackIcon Kind="Edit"
-                                               Height="32" Width="60"
-                                   HorizontalAlignment="Center">
-
-                    </MyMaterialDesign:PackIcon>
                 </Button>
                 <Border.Effect>
                     <DropShadowEffect
-                                    Color="Gray"
-                                    Direction="270"
-                                    ShadowDepth="3"
-                                    BlurRadius="5"/>
+                        BlurRadius="5"
+                        Direction="270"
+                        ShadowDepth="3"
+                        Color="Gray" />
                 </Border.Effect>
             </Border>
-            <Border 
-                    Grid.Row="3"
-                       HorizontalAlignment="Right"
-                    Background="CornflowerBlue"
-                    BorderBrush="CadetBlue"
-                    CornerRadius="35"
-                    Width="70"
-                    Height="70"
-                    Margin="0 0 50 0"
-                    BorderThickness="1">
-                <Button x:Name="btnDelete" 
-                        Background="Transparent"
-                        BorderThickness="0"
-                        FontFamily="Montserrat SemiBold"
-                         FontWeight="Normal"
-                         Padding="0 -05 0 0"
-                        Foreground="White" BorderBrush="#FF33ADF3"
-                         >
 
-
-                    <MyMaterialDesign:PackIcon Kind="Delete"
-                                               Height="32" Width="60"
-                                   HorizontalAlignment="Center">
-
-                    </MyMaterialDesign:PackIcon>
-                </Button>
-                <Border.Effect>
-                    <DropShadowEffect
-                                    Color="Gray"
-                                    Direction="270"
-                                    ShadowDepth="3"
-                                    BlurRadius="5"/>
-                </Border.Effect>
-            </Border>
-        </StackPanel>
-        
-        <!-- Column 2-->
-        <DockPanel Grid.Row="1" Grid.Column="1">
-            <!-- Line Header 1-->
-            <Label  
-               Padding="15 20 0 0"
-               FontFamily="Montserrat SemiBold"
-               FontSize="23" 
-               FontWeight="Light" 
-               Foreground="#DD000000" Content="Tổng:   "/>
-            <!-- Line Header 1-->
-            <Label 
-               Padding="15 20 0 0"
-               FontFamily="Montserrat SemiBold"
-               FontSize="23" 
-               FontWeight="Light" 
-               Foreground="#DD000000" Content="25  "/>
         </DockPanel>
-        <Grid  Grid.Column="1" Grid.Row="2" Grid.RowSpan="2">
-            <Grid.RowDefinitions >
-                <RowDefinition Height="auto"></RowDefinition>
-                <RowDefinition ></RowDefinition>
+
+        <!--  Column 2  -->
+        <DockPanel Grid.Row="1" Grid.Column="1">
+            <!--  Line Header 1  -->
+            <Label
+                Padding="15,20,0,0"
+                Content="Tổng:   "
+                FontFamily="Montserrat SemiBold"
+                FontSize="23"
+                FontWeight="Light"
+                Foreground="#DD000000" />
+            <!--  Line Header 1  -->
+            <Label
+                x:Name="lbQuantity"
+                Padding="15,20,0,0"
+                FontFamily="Montserrat SemiBold"
+                FontSize="23"
+                FontWeight="Light"
+                Foreground="#DD000000" />
+        </DockPanel>
+        <Grid
+            Grid.Row="2"
+            Grid.RowSpan="2"
+            Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition />
             </Grid.RowDefinitions>
             <Grid Grid.Row="0">
-                <ComboBox x:Name="cmbGroupByDish"
-                    Margin="10 0"
-                     BorderBrush="Black"
-                     
-                     IsEditable="True"
-                     Style="{StaticResource MaterialDesignFloatingHintComboBox}" 
-                      FontFamily="Montserrat Medium" FontSize="14">
-
-                </ComboBox>
+                <ComboBox
+                    x:Name="cmbGroupByDish"
+                    Margin="10,0"
+                    BorderBrush="Black"
+                    FontFamily="Montserrat Medium"
+                    FontSize="14"
+                    IsEditable="True"
+                    Style="{StaticResource MaterialDesignFloatingHintComboBox}" />
             </Grid>
-            
-            <!-- List View-->
+
+            <!--  List View  -->
 
 
-            <ListView x:Name="listviewTypes" Grid.Row="2" Padding="2"
-                          BorderThickness="1"
-                          BorderBrush="BlueViolet"
-                             
-                              VerticalAlignment="Bottom"
-                              Margin="5,0"
-                          Height="489">
+            <ListView
+                x:Name="listviewTypes"
+                Grid.Row="2"
+                Height="489"
+                Margin="5,0"
+                Padding="2"
+                VerticalAlignment="Top"
+                BorderBrush="BlueViolet"
+                BorderThickness="1">
                 <ListView.ItemsPanel>
                     <ItemsPanelTemplate>
-                        <UniformGrid Columns="1" >
-                        </UniformGrid>
+                        <UniformGrid Columns="1" />
                     </ItemsPanelTemplate>
                 </ListView.ItemsPanel>
                 <ListView.ItemTemplate>
@@ -344,17 +343,19 @@
                             <Border>
                                 <Border.Effect>
                                     <DropShadowEffect
-                                        Color="Black"
+                                        BlurRadius="10"
                                         Direction="270"
                                         ShadowDepth="5"
-                                        BlurRadius="10"/>
+                                        Color="Black" />
                                 </Border.Effect>
-                                <Image Source="{Binding Path=Image}"
-                                   Stretch="UniformToFill"
-                                       Margin="3"
-                                   Width="120" Height="150"
-                                   HorizontalAlignment="Center"
-                                       VerticalAlignment="Top">
+                                <Image
+                                    Width="120"
+                                    Height="150"
+                                    Margin="3"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Top"
+                                    Source="{Binding Path=Img_source}"
+                                    Stretch="UniformToFill">
                                     <!--<Image.Clip>
                                         <RectangleGeometry
                                         RadiusX="50"
@@ -363,26 +364,44 @@
                                     </Image.Clip>-->
                                 </Image>
                             </Border>
-                            <StackPanel Orientation="Vertical" Margin="1.5">
-                            <TextBlock Text="{Binding Path=Name}"
-                                   MaxWidth="120"
-                                   TextAlignment="Center"
-                                   TextWrapping="Wrap"
-                                      
-                                   FontSize="18" Margin="5,5,5,5"
-                                   HorizontalAlignment="Center"
-                                   FontFamily="Montserrat Bold"
-                                   FontWeight="Bold"/>
-                            <TextBlock Text="{Binding Path=Price}"
-                                   FontFamily="Montserrat medium"
-                                   HorizontalAlignment="Center"
-                                   Margin="5 5 5 5" 
-                                   Background="PaleVioletRed"
-                                   Foreground="White"
-                                   FontSize="18"
-                                   Padding="1">
-                                   <Bold><Underline> Đ</Underline></Bold>
-                            </TextBlock>
+                            <StackPanel Margin="1.5" Orientation="Vertical">
+                                <TextBlock
+                                    MaxWidth="120"
+                                    Margin="5,5,5,5"
+                                    HorizontalAlignment="Center"
+                                    FontFamily="Montserrat Bold"
+                                    FontSize="18"
+                                    FontWeight="Bold"
+                                    Text="{Binding Path=Name}"
+                                    TextAlignment="Center"
+                                    TextWrapping="Wrap" />
+                                <TextBlock
+                                    MaxWidth="120"
+                                    Margin="5,5,5,5"
+                                    Padding="5"
+                                    HorizontalAlignment="Center"
+                                    Background="PaleVioletRed"
+                                    FontFamily="Montserrat medium"
+                                    FontSize="18"
+                                    Foreground="White"
+                                    Text="{Binding Path=Price}"
+                                    TextWrapping="Wrap">
+                                    <Bold>
+                                        <Underline>Đ</Underline>
+                                    </Bold>
+                                    <TextBlock
+                                        MaxWidth="120"
+                                        Margin="5,5,5,5"
+                                        HorizontalAlignment="Center"
+                                        Background="#2C459A"
+                                        FontFamily="Montserrat Bold"
+                                        FontSize="18"
+                                        FontWeight="Bold"
+                                        Text="{Binding Path=State}"
+                                        TextAlignment="Center"
+                                        TextWrapping="Wrap" />
+
+                                </TextBlock>
                             </StackPanel>
                         </StackPanel>
 

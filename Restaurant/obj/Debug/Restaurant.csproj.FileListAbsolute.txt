@@ -415,3 +415,5 @@ D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\Rest
 D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.csproj.CopyComplete
 D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.exe
 D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.pdb
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\View\Invoice_page.g.cs
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\View\Invoice_page.baml

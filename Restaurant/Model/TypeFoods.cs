@@ -7,24 +7,32 @@ using System.Threading.Tasks;
 
 namespace Restaurant.Model
 {
-    class TypeFoods
+    public enum stateService
     {
-        int id;
-        string name;
+        Available, Unavailable
+    }
 
-        public int Id { get => id; set => id = value; }
-        public string Name { get => name; set => name = value; }
+    public class TypeFoods
+    {
+        private int id;
+        private string name;
+        private int quantity;
+        private stateService state;
+        public TypeFoods()
+        {
+
+        }
 
         public TypeFoods(DataRow row)
         {
-            this.Id =Int32.Parse(row["id"].ToString());
-            this.Name = row["name"].ToString();
+            this.id = Convert.ToInt32(row["id"]);
+            this.name = row["name"].ToString();
+            this.quantity = 0;// Convert.ToInt32(row[2]);
+            this.state = (stateService)Convert.ToInt32(row["state"]);
         }
-
-        public TypeFoods(int id, string name)
-        {
-            this.Id = id;
-            this.Name = name;
-        }
+        public int Id { get => id; set => id = value; }
+        public string Name { get => name; set => name = value; }
+        public stateService State { get => state; set => state = value; }
+        public int Quantity { get => quantity; set => quantity = value; }
     }
 }

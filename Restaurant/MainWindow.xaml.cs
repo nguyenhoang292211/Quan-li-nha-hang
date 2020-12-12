@@ -48,7 +48,7 @@ namespace Restaurant
 
         private void EnterBHpage_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            showFrame.Navigate(new Order_menu(new Orders(17,3,3,1,DateTime.Now)));
+            showFrame.Navigate(new Order_menu(new Orders(17,3,3,2,DateTime.Now)));
         }
 
         private void EnterMApage_MouseDown(object sender, MouseButtonEventArgs e)

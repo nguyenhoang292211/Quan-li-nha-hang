@@ -19,8 +19,8 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto" />
-            <RowDefinition Height="5*"/>
-            <RowDefinition Height="5*"/>
+            <RowDefinition Height="6*" />
+            <RowDefinition Height="5*" />
         </Grid.RowDefinitions>
 
         <!--  Line Header 1  -->
@@ -39,8 +39,10 @@
                 HorizontalAlignment="Right"
                 Orientation="Horizontal">
                 <Button
+                    x:Name="Refresh"
                     HorizontalAlignment="Right"
                     Background="CornflowerBlue"
+                    Click="Refresh_Click"
                     Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}"
                     ToolTip="MaterialDesignFloatingActionMiniAccentButton">
                     <MyMaterialDesign:PackIcon
@@ -61,33 +63,42 @@
             <!--  - Combobox filter Reveneu  -->
             <StackPanel Grid.Column="0">
                 <ComboBox
-                    x:Name="cmbReveneu0"
+                    x:Name="cmbBy"
                     Margin="10,0"
                     BorderBrush="Black"
                     FontFamily="Montserrat Medium"
                     FontSize="14"
                     IsEditable="True"
-                    Style="{StaticResource MaterialDesignFloatingHintComboBox}">
-                    <ComboBoxItem>Doanh thu</ComboBoxItem>
-                    <ComboBoxItem>Số lượng</ComboBoxItem>
-                </ComboBox>
-                <ComboBox
-                    x:Name="cmbReveneu1"
-                    Margin="10,0"
-                    BorderBrush="Black"
-                    FontFamily="Montserrat Medium"
-                    FontSize="14"
-                    IsEditable="True"
+                    SelectionChanged="cmbBy_SelectionChanged"
                     Style="{StaticResource MaterialDesignFloatingHintComboBox}" />
+                <DatePicker
+                    Name="editFromDate"
+                    Grid.Row="2"
+                    Width="170"
+                    Margin="10,15,5,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    MyMaterialDesign:HintAssist.Hint="Từ ngày"
+                    FontFamily="Sitka Subheading"
+                    FontSize="14"
+                    FontWeight="Bold"
+                    SelectedDateChanged="editFromDate_SelectedDateChanged"
+                    Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
+                <DatePicker
+                    Name="editToDate"
+                    Grid.Row="2"
+                    Width="170"
+                    Margin="10,15,5,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    MyMaterialDesign:HintAssist.Hint="Đến ngày"
+                    FontFamily="Sitka Subheading"
+                    FontSize="14"
+                    FontWeight="Bold"
+                    SelectedDateChanged="editToDate_SelectedDateChanged"
+                    Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
 
-                <ComboBox
-                    x:Name="cmbReveneu2"
-                    Margin="10,0"
-                    BorderBrush="Black"
-                    FontFamily="Montserrat Medium"
-                    FontSize="14"
-                    IsEditable="True"
-                    Style="{StaticResource MaterialDesignFloatingHintComboBox}" />
+
             </StackPanel>
             <!--  End Part 1-Filter  -->
 
@@ -98,18 +109,19 @@
                 <myChart:PieChart
                     x:Name="pieChart"
                     Width="auto"
-                    Height="200"
+                    Height="220"
                     Padding="0"
                     Background="Transparent"
+                    ChartSubTitle="Tính trên giai đoạn"
+                    ChartTitle="Tỉ lệ phần trăm về doanh thu"
                     FontFamily="Sitka Subheading"
                     TabIndex="3">
                     <myChart:PieChart.Series>
                         <myChart:ChartSeries
                             Name="pieChart1"
                             DisplayMember="Name"
-                            ItemsSource="{Binding ListReveneu}"
                             SeriesTitle="Tỷ trọng bán"
-                            ValueMember="TotalReveneu" />
+                            ValueMember="TotalRevenue" />
                     </myChart:PieChart.Series>
                 </myChart:PieChart>
 
@@ -133,11 +145,13 @@
                     FontSize="16"
                     FontWeight="ExtraBlack"
                     Foreground="#DD000000" />
-                <Grid Grid.Row="1" >
+                <Grid Grid.Row="1">
                     <Rectangle
-                        Fill="#EFF2F8"
+                        Margin="5,5,0,5"
+                        Fill="Transparent"
                         RadiusX="20"
-                        RadiusY="20" />
+                        RadiusY="20"
+                        Stroke="Black" />
 
                     <StackPanel Orientation="Horizontal">
 
@@ -148,12 +162,13 @@
                             HorizontalAlignment="Left"
                             VerticalAlignment="Center">
                             <Ellipse.Fill>
-                                <ImageBrush ImageSource="/View/Images/customer.png" />
+                                <ImageBrush ImageSource="Icons/fish.png" />
                             </Ellipse.Fill>
                         </Ellipse>
 
 
                         <TextBlock
+                            Name="tblNumBill"
                             Grid.Column="1"
                             Width="75"
                             Padding="15"
@@ -162,7 +177,7 @@
                             FontFamily="Montserrat SemiBold"
                             FontSize="16"
                             FontWeight="Medium"
-                            Text="76672" />
+                            Text="{Binding Revenue.NumBill}" />
 
                         <TextBlock
                             Grid.Column="1"
@@ -178,9 +193,11 @@
                 <!--  Số bill hoàn thành  -->
                 <Grid Grid.Row="2">
                     <Rectangle
-                        Fill="#EFF2F8"
+                        Margin="5,5,0,5"
+                        Fill="#cce6ff"
                         RadiusX="20"
-                        RadiusY="20" />
+                        RadiusY="20"
+                        Stroke="Black" />
 
                     <StackPanel Orientation="Horizontal">
 
@@ -191,12 +208,13 @@
                             HorizontalAlignment="Left"
                             VerticalAlignment="Center">
                             <Ellipse.Fill>
-                                <ImageBrush ImageSource="/View/Images/voucher.png" />
+                                <ImageBrush ImageSource="Icons/money.png" />
                             </Ellipse.Fill>
                         </Ellipse>
 
 
                         <TextBlock
+                            Name="tblRevenue"
                             Grid.Column="1"
                             Width="75"
                             Padding="15"
@@ -205,7 +223,7 @@
                             FontFamily="Montserrat SemiBold"
                             FontSize="16"
                             FontWeight="Medium"
-                            Text="76672" />
+                            Text="{Binding Revenue.TotalRevenue}" />
 
                         <TextBlock
                             Grid.Column="1"
@@ -221,11 +239,13 @@
                 <!--  Số Bill đẫ hủy  -->
                 <Grid Grid.Row="3">
                     <Rectangle
-                        Fill="#EFF2F8"
+                        Margin="5,5,0,5" 
+                        Fill=" #66b3ff"
                         RadiusX="20"
-                        RadiusY="20" />
+                        RadiusY="20"
+                        Stroke="Black" />
 
-                    <StackPanel Orientation="Horizontal">
+                    <StackPanel Margin="4,4,0,0" Orientation="Horizontal">
 
                         <Ellipse
                             Width="43"
@@ -234,12 +254,13 @@
                             HorizontalAlignment="Left"
                             VerticalAlignment="Center">
                             <Ellipse.Fill>
-                                <ImageBrush ImageSource="/View/Images/home.png" />
+                                <ImageBrush ImageSource="Icons/phone.png" />
                             </Ellipse.Fill>
                         </Ellipse>
 
 
                         <TextBlock
+                            Name="tblBooking"
                             Grid.Column="1"
                             Width="75"
                             Padding="15"
@@ -248,7 +269,7 @@
                             FontFamily="Montserrat SemiBold"
                             FontSize="16"
                             FontWeight="Medium"
-                            Text="76672" />
+                            Text="{Binding Revenue.NumBooking}" />
 
                         <TextBlock
                             Grid.Column="1"
@@ -256,7 +277,7 @@
                             HorizontalAlignment="Left"
                             VerticalAlignment="Center"
                             FontFamily="Montserrat SemiBold"
-                            FontSize="16"
+                            FontSize="16" Foreground="White"
                             FontWeight="Medium"
                             Text="Đặt trước" />
                     </StackPanel>
@@ -264,25 +285,28 @@
                 <!--  Đã hủy  -->
                 <Grid Grid.Row="4">
                     <Rectangle
-                        Fill="#EFF2F8"
+                        Margin="5,5,0,5"
+                        Fill="#0080ff"
                         RadiusX="20"
-                        RadiusY="20" />
+                        RadiusY="20"
+                        Stroke="Black" />
 
                     <StackPanel Orientation="Horizontal">
 
                         <Ellipse
-                            Width="43"
-                            Height="43"
+                            Width="50"
+                            Height="47"
                             Margin="20,0,0,0"
                             HorizontalAlignment="Left"
                             VerticalAlignment="Center">
                             <Ellipse.Fill>
-                                <ImageBrush ImageSource="/View/Images/manager.png" />
+                                <ImageBrush ImageSource="Icons/shopping-cart.png" />
                             </Ellipse.Fill>
                         </Ellipse>
 
 
                         <TextBlock
+                            Name="tblCancel"
                             Grid.Column="1"
                             Width="75"
                             Padding="15"
@@ -291,7 +315,7 @@
                             FontFamily="Montserrat SemiBold"
                             FontSize="16"
                             FontWeight="Medium"
-                            Text="76672" />
+                            Text="{Binding Revenue.NumCancel}" />
 
                         <TextBlock
                             Grid.Column="1"
@@ -301,7 +325,7 @@
                             FontFamily="Montserrat SemiBold"
                             FontSize="16"
                             FontWeight="Medium"
-                            Text="Order đã hủy" />
+                            Text="Hóa đơn đã hủy" />
                     </StackPanel>
                 </Grid>
             </Grid>
@@ -317,54 +341,21 @@
 
             <!--  Thống kê số tiền bán được của từng loại  -->
             <myChart:ClusteredColumnChart
-                Grid.Column="0"
+                Grid.ColumnSpan="2"
                 Padding="10"
                 Background="Transparent"
-                ChartSubTitle="Số tiền bán được của từng loại"
-                ChartTitle="Số sản phẩm bán được theo từng loại"
+                ChartTitle="So sánh tỉ lệ bán được theo số lượng"
                 FontFamily="Sitka Subheading"
                 TabIndex="3">
                 <myChart:ClusteredColumnChart.Series>
                     <myChart:ChartSeries
-                        Name="columnChart2"
-                        DataContext="{Binding Path=ListType}"
+                        Name="columnChart1"
                         DisplayMember="Name"
-                        ItemsSource="{Binding Path=ListType}"
                         SeriesTitle=" "
-                        ValueMember="Value" />
+                        ValueMember="Number" />
                 </myChart:ClusteredColumnChart.Series>
             </myChart:ClusteredColumnChart>
 
-            <StackPanel Grid.Column="1">
-                <ComboBox
-                    x:Name="cmbQuantity0"
-                    Width="200"
-                    Margin="10,0"
-                    BorderBrush="Black"
-                    FontFamily="Montserrat Medium"
-                    FontSize="14"
-                    IsEditable="True"
-                    Style="{StaticResource MaterialDesignFloatingHintComboBox}" />
-                <ComboBox
-                    x:Name="cmbQuantity1"
-                    Width="200"
-                    Margin="10,0"
-                    BorderBrush="Black"
-                    FontFamily="Montserrat Medium"
-                    FontSize="14"
-                    IsEditable="True"
-                    Style="{StaticResource MaterialDesignFloatingHintComboBox}" />
-
-                <ComboBox
-                    x:Name="cmbQuantity2"
-                    Width="200"
-                    Margin="10,0"
-                    BorderBrush="Black"
-                    FontFamily="Montserrat Medium"
-                    FontSize="14"
-                    IsEditable="True"
-                    Style="{StaticResource MaterialDesignFloatingHintComboBox}" />
-            </StackPanel>
         </Grid>
     </Grid>
 </Page>

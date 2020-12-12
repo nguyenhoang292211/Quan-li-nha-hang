@@ -81,7 +81,10 @@
     <Compile Include="Controller\dishesController.cs" />
     <Compile Include="Controller\employeeController.cs" />
     <Compile Include="Controller\orderdetailController.cs" />
+    <Compile Include="Controller\promotionController.cs" />
+    <Compile Include="Controller\statisticController.cs" />
     <Compile Include="Controller\tableController.cs" />
+    <Compile Include="Controller\typeFoodController.cs" />
     <Compile Include="Model\Area.cs" />
     <Compile Include="Model\Bills.cs" />
     <Compile Include="Model\Categorys.cs" />
@@ -90,9 +93,11 @@
     <Compile Include="Model\Dishes.cs" />
     <Compile Include="Model\Employees.cs" />
     <Compile Include="Model\Events.cs" />
+    <Compile Include="Model\Invoice.cs" />
     <Compile Include="Model\OrderDetails.cs" />
     <Compile Include="Model\Orders.cs" />
     <Compile Include="Model\Seats.cs" />
+    <Compile Include="Model\statistics.cs" />
     <Compile Include="Model\table.cs" />
     <Compile Include="Model\TypeFoods.cs" />
     <Compile Include="MyUserControl\actionicon.xaml.cs">
@@ -106,6 +111,9 @@
     </Compile>
     <Compile Include="View\Hoadon_page.xaml.cs">
       <DependentUpon>Hoadon_page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Invoice_page.xaml.cs">
+      <DependentUpon>Invoice_page.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Khachhang_page.xaml.cs">
       <DependentUpon>Khachhang_page.xaml</DependentUpon>
@@ -164,6 +172,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="View\Hoadon_page.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Invoice_page.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -265,7 +277,9 @@
   <ItemGroup>
     <Resource Include="Icons\Staff.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="View\Icons\analytics.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="View\Images\Food\egg.jpg" />
   </ItemGroup>
@@ -285,6 +299,54 @@
     <Resource Include="View\Images\manager.png" />
     <Resource Include="View\Images\pumpkin.png" />
     <Resource Include="View\Images\voucher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\Icons\bill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\Icons\eat %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\Icons\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\Icons\participant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\Icons\satisfaction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\Icons\shopping-bag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\Icons\Staff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\Icons\tag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\Icons\target.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\Icons\team-management.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\Icons\tray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\Icons\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\Icons\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\Icons\fish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\Icons\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\Icons\shopping-cart.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.3.2.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.3.2.0\build\MaterialDesignThemes.targets')" />

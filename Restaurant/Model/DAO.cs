@@ -35,6 +35,28 @@ namespace Restaurant.Model
             da.Fill(ds);
             return ds;
         }
+
+        public DataTable ExecuteQueryDataSet(string strSQL, CommandType ct, List<SqlParameter> para)
+        {
+            if (conn.State == ConnectionState.Open)
+                conn.Close();
+            conn.Open();
+            comm.CommandText = strSQL;
+            comm.CommandType = ct;
+            comm.Parameters.Clear();
+            foreach (SqlParameter iParamater in para)
+                comm.Parameters.Add(iParamater);
+
+            da = new SqlDataAdapter(comm);
+            //   da = comm.ExecuteQ
+            DataTable ds = new DataTable();
+            da.Fill(ds);
+
+
+
+            return ds;
+        }
+
         public bool MyExecuteNonQuery(string strSQL, CommandType ct, List<SqlParameter> param)
         {
             bool f = false;

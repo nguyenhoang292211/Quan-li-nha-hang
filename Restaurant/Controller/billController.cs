@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Data;
@@ -46,6 +47,91 @@ namespace Restaurant.Controller
             return list;
         }
 
-        
+
+        public ObservableCollection<Bills> templateFunction(string nameFunction, string[] listNotationPara, ArrayList listParaValue)
+        {
+            DataTable data;
+            if (listNotationPara != null)
+            {
+                List<SqlParameter> para = new List<SqlParameter>();
+                for (int i = 0; i < listNotationPara.Length; i++)
+                {
+                    para.Add(new SqlParameter(listNotationPara[i], listParaValue[i]));
+                }
+
+                data = DAO.ExecuteQueryDataSet("select * from " + nameFunction, CommandType.Text, para);
+            }
+            else
+            {
+                data = DAO.ExecuteQueryDataSet("select * from " + nameFunction, CommandType.Text);
+            }
+
+
+
+            ObservableCollection<Bills> list = new ObservableCollection<Bills>();
+            for (int i = 0; i < data.Rows.Count; i++)
+            {
+                Bills a = new Bills(data.Rows[i]);
+                list.Add(a);
+            }
+            return list;
+        }
+
+        // 1. Load All Bills
+        public ObservableCollection<Bills> load()
+        {
+            return templateFunction("loadBill", null, null);
+        }
+
+
+        public ObservableCollection<Bills> findById(int idBill)
+        {
+            return templateFunction("fn_billById(@id)", new string[] { "@id" }, new ArrayList() { idBill });
+        }
+
+        // State 0 - Find Bill by state - cancel, complete
+        public ObservableCollection<Bills> findByState(int state)
+        {
+            return templateFunction("fn_billByState(@state)", new string[] { "@state" }, new ArrayList() { (state == 0) ? false : true });
+        }
+
+
+        public ObservableCollection<Bills> findByNameCus(string cus)
+        {
+            return templateFunction("fn_billByNameCus(@name)", new string[] { "@name" }, new ArrayList() { cus });
+        }
+
+        public ObservableCollection<Bills> findByNameEmp(string emp)
+        {
+            return templateFunction("fn_billByNameEmp(@name)", new string[] { "@name" }, new ArrayList() { emp });
+        }
+
+        public ObservableCollection<Bills> findByDateTime(DateTime startTime, DateTime endTime)
+        {
+            return templateFunction("fn_billByDateTime(@start, @end)", new string[] { "@start", "@end" }, new ArrayList() { startTime, endTime });
+        }
+        public Invoice load_Invoice(int id)
+        {
+            DataTable da1;
+            DataTable da2;
+            List<SqlParameter> listPara = new List<SqlParameter>() { new SqlParameter("@id", id) };
+            Invoice i_result;
+            da1 = DAO.ExecuteQueryDataSet("load_Invoice", CommandType.StoredProcedure, listPara);
+            da2 = DAO.ExecuteQueryDataSet("pro_loadDishInBill", CommandType.StoredProcedure, listPara);
+
+            i_result = new Invoice(da1.Rows[0]);
+            List<dish_invoice> i2 = new List<dish_invoice>();
+            for (int i = 0; i < da2.Rows.Count; i++)
+            {
+                dish_invoice itemDish = new dish_invoice(da2.Rows[i]);
+                i2.Add(itemDish);
+            }
+            i_result.Dishes = i2;
+            return i_result;
+
+
+        }
+
+
     }
 }
