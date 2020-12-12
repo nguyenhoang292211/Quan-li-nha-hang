@@ -1,0 +1,417 @@
+E:\Academy\DBMS\Final-Project\Tmp-Final\Restaurant\Restaurant\obj\Debug\Restaurant.csprojAssemblyReference.cache
+E:\Academy\DBMS\Final-Project\Tmp-Final\Restaurant\Restaurant\obj\Debug\MainWindow.g.cs
+E:\Academy\DBMS\Final-Project\Tmp-Final\Restaurant\Restaurant\obj\Debug\Restaurant_MarkupCompile.cache
+E:\Academy\DBMS\Final-Project\Tmp-Final\Restaurant\Restaurant\obj\Debug\Restaurant_MarkupCompile.lref
+E:\Academy\DBMS\Final-Project\Tmp-Final\Restaurant\Restaurant\bin\Debug\Restaurant.exe.config
+E:\Academy\DBMS\Final-Project\Tmp-Final\Restaurant\Restaurant\bin\Debug\Restaurant.exe
+E:\Academy\DBMS\Final-Project\Tmp-Final\Restaurant\Restaurant\bin\Debug\Restaurant.pdb
+E:\Academy\DBMS\Final-Project\Tmp-Final\Restaurant\Restaurant\obj\Debug\App.g.cs
+E:\Academy\DBMS\Final-Project\Tmp-Final\Restaurant\Restaurant\obj\Debug\MainWindow.baml
+E:\Academy\DBMS\Final-Project\Tmp-Final\Restaurant\Restaurant\obj\Debug\Restaurant.g.resources
+E:\Academy\DBMS\Final-Project\Tmp-Final\Restaurant\Restaurant\obj\Debug\Restaurant.Properties.Resources.resources
+E:\Academy\DBMS\Final-Project\Tmp-Final\Restaurant\Restaurant\obj\Debug\Restaurant.csproj.GenerateResource.cache
+E:\Academy\DBMS\Final-Project\Tmp-Final\Restaurant\Restaurant\obj\Debug\Restaurant.csproj.CoreCompileInputs.cache
+E:\Academy\DBMS\Final-Project\Tmp-Final\Restaurant\Restaurant\obj\Debug\Restaurant.exe
+E:\Academy\DBMS\Final-Project\Tmp-Final\Restaurant\Restaurant\obj\Debug\Restaurant.pdb
+E:\Academy\DBMS\Final-Project\Tmp-Final\Restaurant\Restaurant\obj\Debug\App.baml
+E:\Academy\DBMS\Final-Project\Tmp-Final\Restaurant\Restaurant\bin\Debug\MaterialDesignColors.dll
+E:\Academy\DBMS\Final-Project\Tmp-Final\Restaurant\Restaurant\bin\Debug\MaterialDesignThemes.Wpf.dll
+E:\Academy\DBMS\Final-Project\Tmp-Final\Restaurant\Restaurant\bin\Debug\MaterialDesignColors.pdb
+E:\Academy\DBMS\Final-Project\Tmp-Final\Restaurant\Restaurant\bin\Debug\MaterialDesignThemes.Wpf.pdb
+E:\Academy\DBMS\Final-Project\Tmp-Final\Restaurant\Restaurant\bin\Debug\MaterialDesignThemes.Wpf.xml
+E:\Academy\DBMS\Final-Project\Tmp-Final\Restaurant\Restaurant\obj\Debug\MyUserControl\Info.g.cs
+E:\Academy\DBMS\Final-Project\Tmp-Final\Restaurant\Restaurant\obj\Debug\MyUserControl\Info.baml
+E:\Academy\DBMS\Final-Project\Tmp-Final\Restaurant\Restaurant\obj\Debug\Restaurant.csproj.CopyComplete
+E:\Academy\DBMS\Final-Project\Tmp-Final\Restaurant\Restaurant\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Academy\DBMS\Final-Project\Tmp-Final\Restaurant\Restaurant\obj\Debug\MyUserControl\Tag.g.cs
+E:\Academy\DBMS\Final-Project\Tmp-Final\Restaurant\Restaurant\obj\Debug\MyUserControl\Tag.baml
+D:\HKI nam3\HQTCSDL\Do an\Restaurant[ZaloPC_Folder]\Restaurant\bin\Debug\Restaurant.exe.config
+D:\HKI nam3\HQTCSDL\Do an\Restaurant[ZaloPC_Folder]\Restaurant\bin\Debug\Restaurant.exe
+D:\HKI nam3\HQTCSDL\Do an\Restaurant[ZaloPC_Folder]\Restaurant\bin\Debug\Restaurant.pdb
+D:\HKI nam3\HQTCSDL\Do an\Restaurant[ZaloPC_Folder]\Restaurant\bin\Debug\MaterialDesignColors.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant[ZaloPC_Folder]\Restaurant\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant[ZaloPC_Folder]\Restaurant\bin\Debug\MaterialDesignColors.pdb
+D:\HKI nam3\HQTCSDL\Do an\Restaurant[ZaloPC_Folder]\Restaurant\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\HKI nam3\HQTCSDL\Do an\Restaurant[ZaloPC_Folder]\Restaurant\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\HKI nam3\HQTCSDL\Do an\Restaurant[ZaloPC_Folder]\Restaurant\obj\Debug\Restaurant.csprojAssemblyReference.cache
+D:\HKI nam3\HQTCSDL\Do an\Restaurant[ZaloPC_Folder]\Restaurant\obj\Debug\MainWindow.g.cs
+D:\HKI nam3\HQTCSDL\Do an\Restaurant[ZaloPC_Folder]\Restaurant\obj\Debug\MyUserControl\Info.g.cs
+D:\HKI nam3\HQTCSDL\Do an\Restaurant[ZaloPC_Folder]\Restaurant\obj\Debug\MyUserControl\Tag.g.cs
+D:\HKI nam3\HQTCSDL\Do an\Restaurant[ZaloPC_Folder]\Restaurant\obj\Debug\App.g.cs
+D:\HKI nam3\HQTCSDL\Do an\Restaurant[ZaloPC_Folder]\Restaurant\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\HKI nam3\HQTCSDL\Do an\Restaurant[ZaloPC_Folder]\Restaurant\obj\Debug\Restaurant_MarkupCompile.cache
+D:\HKI nam3\HQTCSDL\Do an\Restaurant[ZaloPC_Folder]\Restaurant\obj\Debug\Restaurant_MarkupCompile.lref
+D:\HKI nam3\HQTCSDL\Do an\Restaurant[ZaloPC_Folder]\Restaurant\obj\Debug\App.baml
+D:\HKI nam3\HQTCSDL\Do an\Restaurant[ZaloPC_Folder]\Restaurant\obj\Debug\MainWindow.baml
+D:\HKI nam3\HQTCSDL\Do an\Restaurant[ZaloPC_Folder]\Restaurant\obj\Debug\MyUserControl\Info.baml
+D:\HKI nam3\HQTCSDL\Do an\Restaurant[ZaloPC_Folder]\Restaurant\obj\Debug\MyUserControl\Tag.baml
+D:\HKI nam3\HQTCSDL\Do an\Restaurant[ZaloPC_Folder]\Restaurant\obj\Debug\Restaurant.g.resources
+D:\HKI nam3\HQTCSDL\Do an\Restaurant[ZaloPC_Folder]\Restaurant\obj\Debug\Restaurant.Properties.Resources.resources
+D:\HKI nam3\HQTCSDL\Do an\Restaurant[ZaloPC_Folder]\Restaurant\obj\Debug\Restaurant.csproj.GenerateResource.cache
+D:\HKI nam3\HQTCSDL\Do an\Restaurant[ZaloPC_Folder]\Restaurant\obj\Debug\Restaurant.csproj.CoreCompileInputs.cache
+D:\HKI nam3\HQTCSDL\Do an\Restaurant[ZaloPC_Folder]\Restaurant\obj\Debug\Restaurant.csproj.CopyComplete
+D:\HKI nam3\HQTCSDL\Do an\Restaurant[ZaloPC_Folder]\Restaurant\obj\Debug\Restaurant.exe
+D:\HKI nam3\HQTCSDL\Do an\Restaurant[ZaloPC_Folder]\Restaurant\obj\Debug\Restaurant.pdb
+C:\Users\User\Documents\GitHub\Restaurant_DBMS\Restaurant\bin\Debug\Restaurant.exe.config
+C:\Users\User\Documents\GitHub\Restaurant_DBMS\Restaurant\bin\Debug\Restaurant.exe
+C:\Users\User\Documents\GitHub\Restaurant_DBMS\Restaurant\bin\Debug\Restaurant.pdb
+C:\Users\User\Documents\GitHub\Restaurant_DBMS\Restaurant\bin\Debug\MaterialDesignColors.dll
+C:\Users\User\Documents\GitHub\Restaurant_DBMS\Restaurant\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\User\Documents\GitHub\Restaurant_DBMS\Restaurant\bin\Debug\MaterialDesignColors.pdb
+C:\Users\User\Documents\GitHub\Restaurant_DBMS\Restaurant\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\User\Documents\GitHub\Restaurant_DBMS\Restaurant\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\User\Documents\GitHub\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\Restaurant_DBMS\Restaurant\obj\Debug\MainWindow.g.cs
+C:\Users\User\Documents\GitHub\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\Info.g.cs
+C:\Users\User\Documents\GitHub\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\Tag.g.cs
+C:\Users\User\Documents\GitHub\Restaurant_DBMS\Restaurant\obj\Debug\App.g.cs
+C:\Users\User\Documents\GitHub\Restaurant_DBMS\Restaurant\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\User\Documents\GitHub\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant_MarkupCompile.cache
+C:\Users\User\Documents\GitHub\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant_MarkupCompile.lref
+C:\Users\User\Documents\GitHub\Restaurant_DBMS\Restaurant\obj\Debug\App.baml
+C:\Users\User\Documents\GitHub\Restaurant_DBMS\Restaurant\obj\Debug\MainWindow.baml
+C:\Users\User\Documents\GitHub\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\Info.baml
+C:\Users\User\Documents\GitHub\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\Tag.baml
+C:\Users\User\Documents\GitHub\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.g.resources
+C:\Users\User\Documents\GitHub\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.Properties.Resources.resources
+C:\Users\User\Documents\GitHub\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.csproj.GenerateResource.cache
+C:\Users\User\Documents\GitHub\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.csproj.CopyComplete
+C:\Users\User\Documents\GitHub\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.exe
+C:\Users\User\Documents\GitHub\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.pdb
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\Restaurant.exe.config
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\Restaurant.exe
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\Restaurant.pdb
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\MaterialDesignColors.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\MaterialDesignColors.pdb
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.csprojAssemblyReference.cache
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\MainWindow.g.cs
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\Info.g.cs
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\Tag.g.cs
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\App.g.cs
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant_MarkupCompile.cache
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant_MarkupCompile.lref
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\App.baml
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\MainWindow.baml
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\Info.baml
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\Tag.baml
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.g.resources
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.Properties.Resources.resources
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.csproj.GenerateResource.cache
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.csproj.CoreCompileInputs.cache
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.csproj.CopyComplete
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.exe
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.pdb
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Data.Desktop.v20.1.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Data.v20.1.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Mvvm.v20.1.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Printing.v20.1.Core.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Xpf.Controls.v20.1.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Xpf.Core.v20.1.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Pdf.v20.1.Core.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Pdf.v20.1.Drawing.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Data.Desktop.v20.1.xml
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Data.v20.1.xml
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Mvvm.v20.1.xml
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Printing.v20.1.Core.xml
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Xpf.Controls.v20.1.xml
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Xpf.Core.v20.1.xml
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Pdf.v20.1.Core.xml
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Pdf.v20.1.Drawing.xml
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\de\DevExpress.Data.v20.1.resources.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\es\DevExpress.Data.v20.1.resources.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\ja\DevExpress.Data.v20.1.resources.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\ru\DevExpress.Data.v20.1.resources.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\de\DevExpress.Printing.v20.1.Core.resources.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\es\DevExpress.Printing.v20.1.Core.resources.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\ja\DevExpress.Printing.v20.1.Core.resources.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\ru\DevExpress.Printing.v20.1.Core.resources.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\de\DevExpress.Xpf.Controls.v20.1.resources.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\es\DevExpress.Xpf.Controls.v20.1.resources.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\ja\DevExpress.Xpf.Controls.v20.1.resources.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\ru\DevExpress.Xpf.Controls.v20.1.resources.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\de\DevExpress.Xpf.Core.v20.1.resources.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\es\DevExpress.Xpf.Core.v20.1.resources.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\ja\DevExpress.Xpf.Core.v20.1.resources.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\ru\DevExpress.Xpf.Core.v20.1.resources.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\de\DevExpress.Pdf.v20.1.Core.resources.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\es\DevExpress.Pdf.v20.1.Core.resources.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\ja\DevExpress.Pdf.v20.1.Core.resources.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\ru\DevExpress.Pdf.v20.1.Core.resources.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\View\Nhanvien_page.g.cs
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\View\Order_menu_page.g.cs
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\View\Nhanvien_page.baml
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\View\Order_menu_page.baml
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.exe.licenses
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\actionicon.g.cs
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\actionicon.baml
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.csprojAssemblyReference.cache
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\MainWindow.g.cs
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\actionicon.g.cs
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\Info.g.cs
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\Tag.g.cs
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\View\Baocao_page.g.cs
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\View\Hoadon_page.g.cs
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\View\Khachhang_page.g.cs
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\View\Khuyenmai_page.g.cs
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\View\Loaimonan_page.g.cs
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\View\Monan_page.g.cs
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\View\Nhanvien_page.g.cs
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\View\Order_menu_page.g.cs
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\App.g.cs
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant_MarkupCompile.cache
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant_MarkupCompile.lref
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.exe
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.pdb
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\Restaurant.exe.config
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\Restaurant.exe
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\Restaurant.pdb
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\De.TorstenMandelkow.MetroChart.dll
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\MaterialDesignColors.dll
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\MaterialDesignThemes.Wpf.dll
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Pdf.v20.1.Core.dll
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Pdf.v20.1.Drawing.dll
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Data.Desktop.v20.1.xml
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Data.v20.1.xml
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Mvvm.v20.1.xml
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Printing.v20.1.Core.xml
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Xpf.Controls.v20.1.xml
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Xpf.Core.v20.1.xml
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\MaterialDesignColors.pdb
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\MaterialDesignThemes.Wpf.pdb
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\MaterialDesignThemes.Wpf.xml
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Pdf.v20.1.Core.xml
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Pdf.v20.1.Drawing.xml
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\de\DevExpress.Data.v20.1.resources.dll
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\es\DevExpress.Data.v20.1.resources.dll
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\ja\DevExpress.Data.v20.1.resources.dll
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\ru\DevExpress.Data.v20.1.resources.dll
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\de\DevExpress.Printing.v20.1.Core.resources.dll
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\es\DevExpress.Printing.v20.1.Core.resources.dll
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\ja\DevExpress.Printing.v20.1.Core.resources.dll
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\ru\DevExpress.Printing.v20.1.Core.resources.dll
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\de\DevExpress.Xpf.Controls.v20.1.resources.dll
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\es\DevExpress.Xpf.Controls.v20.1.resources.dll
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\ja\DevExpress.Xpf.Controls.v20.1.resources.dll
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\ru\DevExpress.Xpf.Controls.v20.1.resources.dll
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\de\DevExpress.Xpf.Core.v20.1.resources.dll
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\es\DevExpress.Xpf.Core.v20.1.resources.dll
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\ja\DevExpress.Xpf.Core.v20.1.resources.dll
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\ru\DevExpress.Xpf.Core.v20.1.resources.dll
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\de\DevExpress.Pdf.v20.1.Core.resources.dll
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\es\DevExpress.Pdf.v20.1.Core.resources.dll
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\ja\DevExpress.Pdf.v20.1.Core.resources.dll
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\bin\Debug\ru\DevExpress.Pdf.v20.1.Core.resources.dll
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\App.baml
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\MainWindow.baml
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\actionicon.baml
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\Info.baml
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\Tag.baml
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\View\Baocao_page.baml
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\View\Hoadon_page.baml
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\View\Khachhang_page.baml
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\View\Khuyenmai_page.baml
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\View\Loaimonan_page.baml
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\View\Monan_page.baml
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\View\Nhanvien_page.baml
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\View\Order_menu_page.baml
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.g.resources
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.Properties.Resources.resources
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.csproj.GenerateResource.cache
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.exe.licenses
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.csproj.CoreCompileInputs.cache
+E:\Academy\Working Directory\FinalDBMS\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.csproj.CopyComplete
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\bin\Debug\De.TorstenMandelkow.MetroChart.dll
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\View\Baocao_page.g.cs
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\View\Hoadon_page.g.cs
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\View\Khachhang_page.g.cs
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\View\Khuyenmai_page.g.cs
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\View\Loaimonan_page.g.cs
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\View\Monan_page.g.cs
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\View\Baocao_page.baml
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\View\Hoadon_page.baml
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\View\Khachhang_page.baml
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\View\Khuyenmai_page.baml
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\View\Loaimonan_page.baml
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\View\Monan_page.baml
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\View\Login.g.cs
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\View\orderTable.g.cs
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\View\Login.baml
+D:\HKI nam3\HQTCSDL\Do an\Restaurant_DBMS\Restaurant\obj\Debug\View\orderTable.baml
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\Restaurant.exe.config
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\Restaurant.exe
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\Restaurant.pdb
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\De.TorstenMandelkow.MetroChart.dll
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\MaterialDesignColors.dll
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Pdf.v20.1.Core.dll
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Pdf.v20.1.Drawing.dll
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Data.Desktop.v20.1.xml
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Data.v20.1.xml
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Mvvm.v20.1.xml
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Printing.v20.1.Core.xml
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Xpf.Controls.v20.1.xml
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Xpf.Core.v20.1.xml
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\MaterialDesignColors.pdb
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Pdf.v20.1.Core.xml
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Pdf.v20.1.Drawing.xml
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\de\DevExpress.Data.v20.1.resources.dll
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\es\DevExpress.Data.v20.1.resources.dll
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\ja\DevExpress.Data.v20.1.resources.dll
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\ru\DevExpress.Data.v20.1.resources.dll
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\de\DevExpress.Printing.v20.1.Core.resources.dll
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\es\DevExpress.Printing.v20.1.Core.resources.dll
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\ja\DevExpress.Printing.v20.1.Core.resources.dll
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\ru\DevExpress.Printing.v20.1.Core.resources.dll
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\de\DevExpress.Xpf.Controls.v20.1.resources.dll
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\es\DevExpress.Xpf.Controls.v20.1.resources.dll
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\ja\DevExpress.Xpf.Controls.v20.1.resources.dll
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\ru\DevExpress.Xpf.Controls.v20.1.resources.dll
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\de\DevExpress.Xpf.Core.v20.1.resources.dll
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\es\DevExpress.Xpf.Core.v20.1.resources.dll
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\ja\DevExpress.Xpf.Core.v20.1.resources.dll
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\ru\DevExpress.Xpf.Core.v20.1.resources.dll
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\de\DevExpress.Pdf.v20.1.Core.resources.dll
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\es\DevExpress.Pdf.v20.1.Core.resources.dll
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\ja\DevExpress.Pdf.v20.1.Core.resources.dll
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\bin\Debug\ru\DevExpress.Pdf.v20.1.Core.resources.dll
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.csprojAssemblyReference.cache
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\MainWindow.g.cs
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\actionicon.g.cs
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\Info.g.cs
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\Tag.g.cs
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\View\Baocao_page.g.cs
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\View\Hoadon_page.g.cs
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\View\Khachhang_page.g.cs
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\View\Khuyenmai_page.g.cs
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\View\Loaimonan_page.g.cs
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\View\Login.g.cs
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\View\Monan_page.g.cs
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\View\Nhanvien_page.g.cs
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\View\orderTable.g.cs
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\View\Order_menu_page.g.cs
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\App.g.cs
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant_MarkupCompile.cache
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant_MarkupCompile.lref
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\App.baml
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\MainWindow.baml
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\actionicon.baml
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\Info.baml
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\Tag.baml
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\View\Baocao_page.baml
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\View\Hoadon_page.baml
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\View\Khachhang_page.baml
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\View\Khuyenmai_page.baml
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\View\Loaimonan_page.baml
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\View\Login.baml
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\View\Monan_page.baml
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\View\Nhanvien_page.baml
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\View\orderTable.baml
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\View\Order_menu_page.baml
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.g.resources
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.Properties.Resources.resources
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.csproj.GenerateResource.cache
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.exe.licenses
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.csproj.CoreCompileInputs.cache
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.csproj.CopyComplete
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.exe
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.pdb
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\bill.g.cs
+D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\bill.baml
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\Restaurant.exe.config
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\Restaurant.exe
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\Restaurant.pdb
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\De.TorstenMandelkow.MetroChart.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Data.Desktop.v20.1.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Data.v20.1.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Mvvm.v20.1.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Printing.v20.1.Core.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Xpf.Controls.v20.1.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Xpf.Core.v20.1.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\MaterialDesignColors.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Pdf.v20.1.Core.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Pdf.v20.1.Drawing.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Data.Desktop.v20.1.xml
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Data.v20.1.xml
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Mvvm.v20.1.xml
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Printing.v20.1.Core.xml
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Xpf.Controls.v20.1.xml
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Xpf.Core.v20.1.xml
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\MaterialDesignColors.pdb
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Pdf.v20.1.Core.xml
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\DevExpress.Pdf.v20.1.Drawing.xml
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\de\DevExpress.Data.v20.1.resources.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\es\DevExpress.Data.v20.1.resources.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\ja\DevExpress.Data.v20.1.resources.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\ru\DevExpress.Data.v20.1.resources.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\de\DevExpress.Printing.v20.1.Core.resources.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\es\DevExpress.Printing.v20.1.Core.resources.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\ja\DevExpress.Printing.v20.1.Core.resources.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\ru\DevExpress.Printing.v20.1.Core.resources.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\de\DevExpress.Xpf.Controls.v20.1.resources.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\es\DevExpress.Xpf.Controls.v20.1.resources.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\ja\DevExpress.Xpf.Controls.v20.1.resources.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\ru\DevExpress.Xpf.Controls.v20.1.resources.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\de\DevExpress.Xpf.Core.v20.1.resources.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\es\DevExpress.Xpf.Core.v20.1.resources.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\ja\DevExpress.Xpf.Core.v20.1.resources.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\ru\DevExpress.Xpf.Core.v20.1.resources.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\de\DevExpress.Pdf.v20.1.Core.resources.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\es\DevExpress.Pdf.v20.1.Core.resources.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\ja\DevExpress.Pdf.v20.1.Core.resources.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\bin\Debug\ru\DevExpress.Pdf.v20.1.Core.resources.dll
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.csprojAssemblyReference.cache
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\MainWindow.g.cs
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\actionicon.g.cs
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\bill.g.cs
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\Info.g.cs
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\Tag.g.cs
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\View\Baocao_page.g.cs
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\View\Hoadon_page.g.cs
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\View\Khachhang_page.g.cs
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\View\Khuyenmai_page.g.cs
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\View\Loaimonan_page.g.cs
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\View\Login.g.cs
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\View\Monan_page.g.cs
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\View\Nhanvien_page.g.cs
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\View\orderTable.g.cs
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\View\Order_menu_page.g.cs
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\App.g.cs
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant_MarkupCompile.cache
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant_MarkupCompile.lref
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\App.baml
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\MainWindow.baml
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\actionicon.baml
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\bill.baml
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\Info.baml
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\MyUserControl\Tag.baml
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\View\Baocao_page.baml
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\View\Hoadon_page.baml
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\View\Khachhang_page.baml
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\View\Khuyenmai_page.baml
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\View\Loaimonan_page.baml
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\View\Login.baml
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\View\Monan_page.baml
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\View\Nhanvien_page.baml
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\View\orderTable.baml
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\View\Order_menu_page.baml
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.g.resources
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.Properties.Resources.resources
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.csproj.GenerateResource.cache
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.exe.licenses
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.csproj.CoreCompileInputs.cache
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.csproj.CopyComplete
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.exe
+D:\HKI nam3\HQTCSDL\RESTAURANT_project\Restaurant_DBMS\Restaurant\obj\Debug\Restaurant.pdb
