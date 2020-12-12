@@ -1,0 +1,343 @@
+﻿<Page x:Class="Restaurant.View.orderTable"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Restaurant.View"
+      xmlns:myUC="clr-namespace:Restaurant.MyUserControl"
+      xmlns:MyMaterialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      Title="orderTable">
+
+    <Grid Width="1180" Height="579">
+        <!--mục khu vực-->
+        <ListView x:Name="listviewShowArea" 
+                BorderThickness="0"
+                Margin="10,21,548,457"
+                  Padding="0"
+             SelectionChanged="listviewShowArea_SelectionChanged">
+            <!--   -->
+            <!--   -->
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid Columns="7"/>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Border Background="#619196" 
+                            CornerRadius="10 10 0 0" 
+                            Margin="0,0,0,0">
+                        <Button x:Name="area_button"   Background="Transparent" 
+                                BorderBrush="Transparent"
+                                Content="{Binding NameArea}"
+                                VerticalAlignment="Top" 
+                                Width="100" Height="50"
+                                IsHitTestVisible="False"
+                                />
+                    </Border>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Label Content="Hóa đơn đã thanh toán" 
+               HorizontalAlignment="Left"
+               Margin="889,39,0,0" 
+               VerticalAlignment="Top"
+               FontSize="22"/>
+        <Border Background="#d7e7a9" 
+                BorderThickness="3"
+                BorderBrush="#619196"
+                CornerRadius="10" 
+                Margin="632,33,341,505" >
+            <ComboBox x:Name="cbxState"
+                      FontSize="13"
+                      SelectionChanged="ComboBox_SelectionChanged"
+                      Margin="7.333,3.333,7,-3" Height="35">
+                <ComboBoxItem>
+                    Tất cả
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    Bàn còn trống
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    Bàn đang có khách
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    Bàn đã đặt trước
+                </ComboBoxItem>
+            </ComboBox>
+            <!--<ComboBox x:Name="cbxState"
+                      MyMaterialDesign:HintAssist.Hint="OS" 
+                      Margin="10.333,-1.667,0,0" Height="36" 
+                      FontSize="20" HorizontalAlignment="Left" 
+                      Width="180" VerticalAlignment="Top"
+                      SelectionChanged="ComboBox_SelectionChanged">
+                
+                
+                <ComboBox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="-1.364" AngleY="0.006"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="-0.393" Y="0.011"/>
+                    </TransformGroup>
+                </ComboBox.RenderTransform>
+                <ComboBoxItem>
+                    Tất cả
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    Bàn còn trống
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    Bàn đang có khách
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    Bàn đã đặt trước
+                </ComboBoxItem>
+            </ComboBox>-->
+        </Border>
+        <Border Background="#ff968a" 
+                BorderThickness="2 2 2 2"
+                CornerRadius="10" 
+                Margin="850,76,10,25">
+            <ListView x:Name="listviewShowBill" 
+                Margin="0,0,0,0.333">
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Columns="1"/>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Border Background="#ffc5bf" 
+                                BorderThickness="2 2 2 2" 
+                                CornerRadius="10" Margin="0">
+                            <Grid Height="100" 
+                                Width="275" Margin="1,0,0.333,-2" >
+                                <TextBlock Text="Hóa đơn số: "
+                                           Margin="10,10,126,31"
+                                           FontSize="20"/>
+                                <TextBlock Text="{Binding IdOrder}"
+                                           Margin="123,10,10,31"
+                                           FontSize="20"/>
+                                <TextBlock Text="Thời gian thanh toán:"
+                                           Margin="10,48,90,34"/>
+                                <TextBlock Text="{Binding TimePayment}"
+                                           Margin="10,66,90,0"/>
+                                <TextBlock Text="Tổng tiền:"
+                                           Margin="167,48,25,11"/>
+                                <TextBlock Text="{Binding Totalcoststring}"
+                                           Margin="167,66,-31,3"/>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <!--thêm thanh load cho bên bill-->
+            <!--<ProgressBar 
+            Foreground="GreenYellow"
+                     Style="{StaticResource MaterialDesignCircularProgressBar}"
+                     x:Name="ProgressBar" Margin="404,267,756,292">
+            <ProgressBar.Triggers>
+                <EventTrigger RoutedEvent="Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="Value" From="0" To="100" Duration="0:0:1" RepeatBehavior="Forever"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </ProgressBar.Triggers>
+        </ProgressBar>-->
+        </Border>
+        <Border Background="#619196" 
+                BorderThickness="2 2 2 2" 
+                CornerRadius="10" Margin="167,495,850,27" 
+                RenderTransformOrigin="0.417,2.433" >
+            <Button x:Name="btnChuyenBan"
+                    Content="Chuyển bàn" 
+                    Background="Transparent" 
+                    BorderBrush="Transparent" 
+                    HorizontalAlignment="Left" 
+                    Margin="-2,-2,-2.333,-2.333" 
+                    VerticalAlignment="Top" 
+                    Width="163" 
+                    Height="57"
+                    Click="btnChuyenBan_Click"
+                    />
+        </Border>
+        <Border x:Name="bd_btnGopban"
+                Background="#619196" 
+                BorderThickness="2 2 2 2" 
+                CornerRadius="10" 
+                Margin="541,495,476,27">
+            <Button x:Name="btnGopban"
+                    Content="Gộp bàn" 
+                    Background="Transparent" 
+                    BorderBrush="Transparent" 
+                    HorizontalAlignment="Left" 
+                    Margin="-2,-2,-2.333,-2.333" 
+                    VerticalAlignment="Top" 
+                    Width="163" Height="57"
+                    Click="btnGopban_Click"/>
+        </Border>
+        <Border Background="#619196" 
+                BorderThickness="2 2 2 2" 
+                CornerRadius="10" 
+                Margin="357,495,663,27">
+            <Button x:Name="btnDatTruoc"
+                    Content="Đặt trước" 
+                    Background="Transparent" 
+                    BorderBrush="Transparent" 
+                    HorizontalAlignment="Left" 
+                    Margin="1,0,0,0"
+                    VerticalAlignment="Top"
+                    Width="155" Height="52"
+                    Click="btnDatTruoc_Click"/>
+        </Border>
+        <Border x:Name="borderlistviewShowTable"
+            Background="AntiqueWhite"
+                BorderBrush="#619196"
+                BorderThickness="7" 
+                CornerRadius="10 10 10 10" 
+                Margin="10,79,341,100">
+            <ListView x:Name="listviewShowTable" 
+                    Margin="0.333,0.333,3.667,0"
+                     SelectionChanged="listviewShowTable_SelectionChanged">
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Columns="5"/>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Border Background="{Binding StateColor}" 
+                                BorderThickness="2 2 2 2" 
+                                CornerRadius="10" Margin="0">
+                            <Button 
+                                Content="{Binding NameSeat}" 
+                                Height="75" 
+                                Width="137" 
+                                x:Name="btn"
+                                Background="Transparent" 
+                                BorderBrush="Transparent" 
+                                Foreground="Black"
+                                Margin="0"
+                                IsHitTestVisible="False"/>
+                        </Border>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+        </Border>
+        <ProgressBar 
+            Foreground="GreenYellow"
+                     Style="{StaticResource MaterialDesignCircularProgressBar}"
+                     x:Name="ProgressBar" Margin="404,267,756,292">
+            <ProgressBar.Triggers>
+                <EventTrigger RoutedEvent="Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="Value"
+                                             From="0" 
+                                             To="100" 
+                                             Duration="0:0:1" 
+                                             RepeatBehavior="Forever"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </ProgressBar.Triggers>
+        </ProgressBar>
+        <!-- tạo grid để thêm chức năng xóa thêm bàn-->
+        <Grid x:Name="gridSetting" 
+            HorizontalAlignment="Left" 
+              Height="171" 
+              Margin="100,386,0,0" 
+              VerticalAlignment="Top" 
+              Width="652" 
+              Background="Transparent"
+            >
+            <Border Background="#619196" 
+                BorderThickness="2 2 2 2" 
+                CornerRadius="10" Margin="67,109,421,5" 
+                RenderTransformOrigin="0.417,2.433" >
+                <Button x:Name="btnAddSeat"
+                    Content="Thêm bàn" 
+                    Background="Transparent" 
+                    BorderBrush="Transparent" 
+                    HorizontalAlignment="Left" 
+                    Margin="-2,-2,-2,-4.333" 
+                    VerticalAlignment="Top" 
+                    Width="160" 
+                    Height="59"
+                    Click="btnAddSeat_Click"
+                    />
+            </Border>
+            <Border Background="#ff968a" 
+                BorderThickness="2 2 2 2" 
+                CornerRadius="10" Margin="257,109,235,5" 
+                RenderTransformOrigin="0.417,2.433" >
+                <Button x:Name="btnDeleteSeat"
+                    Content="Xóa bàn" 
+                    Background="Transparent" 
+                    BorderBrush="Transparent" 
+                    HorizontalAlignment="Left" 
+                    Margin="-2,-2,-2,-4.333" 
+                    VerticalAlignment="Top" 
+                    Width="160" 
+                    Height="59"
+                    Click="btnXoaBan_Click"
+                    />
+            </Border>
+            <Border BorderThickness="3"
+                    BorderBrush="#619196"
+                    Background="#d7e7a9" 
+                    CornerRadius="10"
+                    Margin="173,38,161,89" >
+
+                <TextBox x:Name="txtNameArea"
+                         HorizontalAlignment="Left" 
+                         Height="42" Margin="7.333,2.333,0,-3" 
+                         TextWrapping="Wrap" 
+                         Text=""
+                         VerticalAlignment="Top" 
+                         Width="301" 
+                         FontSize="20"/>
+            </Border>
+            <Border Background="#619196" 
+                    BorderThickness="2 2 2 2" 
+                    CornerRadius="10"
+                    Margin="461,109,47,6">
+                <Button x:Name="btnEnableSeat"
+                        Content="Kích hoạt bàn" 
+                        Background="Transparent" 
+                        BorderBrush="Transparent" 
+                        HorizontalAlignment="Left" 
+                        VerticalAlignment="Top" 
+                        Width="142" 
+                        Height="51" 
+                        Margin="0,1,-2,0"
+                        Click="btnEnableSeat_Click"
+                        />
+            </Border>
+            <TextBlock HorizontalAlignment="Left" Margin="60,46,0,0" TextWrapping="Wrap" Text="Tên khu vực:" VerticalAlignment="Top" FontSize="20"/>
+        </Grid>
+        <!--thêm button cài đặt-->
+        <Border Background="#ff968a" 
+                BorderThickness="2 2 2 2" 
+                CornerRadius="10" Margin="1099,4,10,0" 
+                RenderTransformOrigin="0.417,2.433" Height="35" VerticalAlignment="Top" >
+            <Button x:Name="btnSetting" 
+                    Content="Cài đặt" 
+                    Background="Transparent" 
+                    BorderBrush="Transparent" 
+                    HorizontalAlignment="Left" 
+                    Margin="-2,-2,-2.333,-2.333" 
+                    Width="71" 
+                    Height="Auto"
+                    FontSize="12"
+                    Click="btnSetting_Click"
+                    />
+        </Border>
+    </Grid>
+</Page>
