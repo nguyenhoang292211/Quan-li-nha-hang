@@ -16,7 +16,6 @@ namespace Restaurant.Controller
     class tableController
     {
         DAO DAO = new DAO();
-<<<<<<< HEAD
         //hàm lấy toàn bộ bàn
         public ObservableCollection<Seats> loadSeat(int idArea,int type)
         {
@@ -41,12 +40,7 @@ namespace Restaurant.Controller
             {
                 data = DAO.ExecuteQueryDataSet("Select * from Seats where idArea=" + idArea, CommandType.Text);
             }    
-=======
-        //hàm lấy dữ liệu từ database đổ lên
-        public ObservableCollection<Seats> loadSeat()
-        {
-            DataTable data = DAO.ExecuteQueryDataSet("Select * from Seats", CommandType.Text);
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
+
             //tạo 1 list để luwu trữ dữ liệu lấy từ database
             ObservableCollection<Seats> list = new ObservableCollection<Seats>();
             for (int i = 0; i < data.Rows.Count; i++)
@@ -65,16 +59,12 @@ namespace Restaurant.Controller
                     a.State = stateSeat.use;
                     a.StateColor = "#ffaea5";
                 }
-<<<<<<< HEAD
                 else if (int.Parse(data.Rows[i][1].ToString()) == 3)
-=======
-                else
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
+
                 {
                     a.State = stateSeat.book;
                     a.StateColor = "#abdee6";
                 }
-<<<<<<< HEAD
                 else
                 {
                     a.State = stateSeat.disable;
@@ -83,17 +73,12 @@ namespace Restaurant.Controller
              
                 a.IdArea = int.Parse(data.Rows[i][2].ToString());
                 //a.BookingTime = DateTime.Parse(data.Rows[i][3].ToString());
-=======
-                a.IdArea = int.Parse(data.Rows[i][2].ToString());
-                a.BookingTime = DateTime.Parse(data.Rows[i][3].ToString());
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
+
                 list.Add(a);
             }
             return list;
         }
 
-
-<<<<<<< HEAD
         //hàm disable 1 bàn
         public bool DisableSeat(int id)
         {
@@ -128,13 +113,8 @@ namespace Restaurant.Controller
             }
             return true;
         }
-=======
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
-
-
 
         //hàm thêm một bàn
-<<<<<<< HEAD
         public bool addNewSeat(int idArea)
         {
             SqlParameter IdArea = new SqlParameter("@idArea", idArea);
@@ -185,22 +165,7 @@ namespace Restaurant.Controller
             {
                 //gọi đến hàm thực thi procedure ChangeSeat
                 DAO.MyExecuteNonQuery("ChangeSeat", CommandType.StoredProcedure, Seat);
-=======
-        public bool addNewSeat(string id, string idArea)
-        {
 
-            SqlParameter Id = new SqlParameter("@id", id);
-            SqlParameter IdArea = new SqlParameter("@idArea", idArea);
-            SqlParameter State = new SqlParameter("@state", 1);
-            List<SqlParameter> Seat = new List<SqlParameter>();
-            Seat.Add(Id);
-            Seat.Add(IdArea);
-            Seat.Add(State);
-            try
-            {
-                //gọi đến hàm thực thi procedure addNewSeat
-                DAO.MyExecuteNonQuery("addNewSeat", CommandType.StoredProcedure, Seat);
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
             }
             catch (Exception e)
             {
@@ -209,7 +174,6 @@ namespace Restaurant.Controller
             }
             return true;
         }
-<<<<<<< HEAD
         //hàm gộp bàn
         public bool MergeSeat(int id1, int id2)
         {
@@ -222,22 +186,6 @@ namespace Restaurant.Controller
             {
                 //gọi đến hàm thực thi procedure ChangeSeat
                 DAO.MyExecuteNonQuery("MergeSeat", CommandType.StoredProcedure, Seat);
-=======
-
-
-
-        //xóa một bàn
-        public bool deleteSeat(string id)
-        {
-            SqlParameter ID = new SqlParameter("@ID", id);
-            List<SqlParameter> Seat = new List<SqlParameter>();
-            Seat.Add(ID);
-            try
-            {
-                //gọi đến procedure xóa bàn
-                DAO.MyExecuteNonQuery("deleteSeat", CommandType.StoredProcedure, Seat);
-
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
             }
             catch (Exception e)
             {

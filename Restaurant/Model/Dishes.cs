@@ -15,6 +15,7 @@ namespace Restaurant.Model
         string img_source;
         string state;
         int idType;
+        String nameType;
 
         public double Price
         {
@@ -48,20 +49,13 @@ namespace Restaurant.Model
 
         public string State { get => state; set => state = value; }
         public int IdType { get => idType; set => idType = value; }
+        public string NameType { get => nameType; set => nameType = value; }
+
+        public Dishes() { }
 
         public Dishes(DataRow row)
         {
-<<<<<<< HEAD
-            this.Id = Int32.Parse(row["id"].ToString());
-            this.Price = Double.Parse(row["price"].ToString());
-            this.Name = row["name"].ToString();
-            this.Img_source = row["image"].ToString();
-            this.State = row["state"].ToString();
-            this.IdType = Int32.Parse(row["idType"].ToString());
-        }
 
-        public Dishes(int id, double price, string name, int idType, string state, string img)
-=======
             this.Id =Int32.Parse(row["id"].ToString());
             this.Price =Double.Parse(row["price"].ToString());
             this.Name = row["name"].ToString();
@@ -71,7 +65,6 @@ namespace Restaurant.Model
         }
 
         public Dishes (int id, double price, string name,int idType, string state, string img)
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         {
             this.Img_source = img;
             this.Name = name;

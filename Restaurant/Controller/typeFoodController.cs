@@ -63,13 +63,23 @@ namespace Restaurant.Controller
         }
         public ObservableCollection<Dishes> listDishByIdType(int idType)
         {
-            DataTable a = new DataTable();
+            DataTable data = new DataTable();
             ObservableCollection<Dishes> listDish = new ObservableCollection<Dishes>();
-            a = db.ExecuteQueryDataSet("pro_findTypeFoodByName", CommandType.StoredProcedure, new List<SqlParameter> { new SqlParameter("@id", idType) });
-            for(int i=0; i< a.Rows.Count; i++)
+            data = db.ExecuteQueryDataSet("pro_findTypeFoodByName", CommandType.StoredProcedure, new List<SqlParameter> { new SqlParameter("@id", idType) });
+            for(int i=0; i< data.Rows.Count; i++)
             {
-                Dishes d = new Dishes(a.Rows[i]);
-                listDish.Add(d);
+                Dishes a = new Dishes();
+                a.Id = (int)data.Rows[i][0];
+                a.Name = data.Rows[i][1].ToString();
+                a.Price = (int)data.Rows[i][2];
+                a.IdType = (Int32.Parse(data.Rows[i][3].ToString()));
+                a.NameType = data.Rows[i][5].ToString();
+                a.State = data.Rows[i][4].ToString();
+                a.Img_source = data.Rows[i]["image"].ToString();
+                if (a.State == "available") a.State = "Còn phục vụ";
+                if (a.State == "unavailable") a.State = "Ngưng phục vụ";
+
+                listDish.Add(a);
             }
             return listDish;
         }   

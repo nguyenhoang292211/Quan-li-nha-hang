@@ -12,17 +12,29 @@ namespace Restaurant.Model
 {
     public class DAO
     {
-        
-        string ConnStr = @"Data Source=DESKTOP-S3G5KIT\SQLEXPRESS;Initial Catalog=ManagementRestaurant;Integrated Security=True";
+        public static string username;
+        public static string password;
+
+        //string ConnStr = @"Data Source=DESKTOP-L9FILE2\SQLEXPRESS;Initial Catalog=ManagementRestaurant;Integrated Security=False;userid=" + username + ";password=" + password + ";";
         SqlConnection conn = null;
         SqlCommand comm = null;
         SqlDataAdapter da = null;
-        public DAO()
+        public DAO(string userName, string passWord)
         {
+            username = userName;
+            password = passWord;
+            string ConnStr = @"Data Source=DESKTOP-S3G5KIT\SQLEXPRESS;Initial Catalog=ManagementRestaurant;Integrated Security=False;User Id=" + username + ";password=" + password + ";";
             conn = new SqlConnection(ConnStr);
             comm = conn.CreateCommand();
         }
-        public DataTable ExecuteQueryDataSet(string strSQL, CommandType ct)
+        public DAO()
+        {
+            string ConnStr = @"Data Source=DESKTOP-S3G5KIT\SQLEXPRESS;Initial Catalog=ManagementRestaurant;Integrated Security=True";
+            conn = new SqlConnection(ConnStr);
+            comm = conn.CreateCommand();
+            
+        } 
+            public DataTable ExecuteQueryDataSet(string strSQL, CommandType ct)
         {
             if (conn.State == ConnectionState.Open)
                 conn.Close();
@@ -35,31 +47,6 @@ namespace Restaurant.Model
             da.Fill(ds);
             return ds;
         }
-<<<<<<< HEAD
-        //lấy 1 table có parameter truyền vào
-        public DataTable ExecuteQueryDataSet(string strSQL, CommandType ct, List<SqlParameter> param)
-        {
-            if (conn.State == ConnectionState.Open)
-                conn.Close();
-            comm.Parameters.Clear();
-            conn.Open();
-            comm.CommandText = strSQL;
-            comm.CommandType = ct;
-            foreach (SqlParameter p in param)
-                comm.Parameters.Add(p);
-            da = new SqlDataAdapter(comm);
-            DataTable ds = new DataTable();
-            da.Fill(ds);
-            return ds;
-        }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="strSQL"></param>
-        /// <param name="ct"></param>
-        /// <param name="param"></param>
-        /// <returns></returns>
-=======
 
         public DataTable ExecuteQueryDataSet(string strSQL, CommandType ct, List<SqlParameter> para)
         {
@@ -82,7 +69,6 @@ namespace Restaurant.Model
             return ds;
         }
 
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         public bool MyExecuteNonQuery(string strSQL, CommandType ct, List<SqlParameter> param)
         {
             bool f = false;
@@ -112,7 +98,6 @@ namespace Restaurant.Model
             return f;
         }
 
-<<<<<<< HEAD
         public bool MyExecuteNonQuery(string strSQL, CommandType ct)
         {
             bool f = false;
@@ -140,8 +125,6 @@ namespace Restaurant.Model
             return f;
         }
 
-=======
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         public string FindOneValue(string strSQL, CommandType ct, SqlParameter parameter)
         {
             if (conn.State == ConnectionState.Open)
@@ -171,10 +154,7 @@ namespace Restaurant.Model
                 conn.Close();
             }
         }
-<<<<<<< HEAD
-=======
 
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         public DataTable MyExecuteNonQuery_data(string strSQL, CommandType ct, List<SqlParameter> param)
         {
             bool f = false;
@@ -206,11 +186,7 @@ namespace Restaurant.Model
                 conn.Close();
             }
         }
-<<<<<<< HEAD
-=======
 
-
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         /// <summary>
         /// Đưa vào một list các biến và chuỗi các @bien tạo thanh list <sqlparameter>
         /// </summary>

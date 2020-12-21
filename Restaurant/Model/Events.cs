@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-<<<<<<< HEAD
-=======
 using System.Data;
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,9 +20,8 @@ namespace Restaurant.Model
         public DateTime StartDate { get => startDate; set => startDate = value; }
         public DateTime EndDate { get => endDate; set => endDate = value; }
         public double Discount { get => discount; set => discount = value; }
-<<<<<<< HEAD
-=======
 
+        public Events() { }
 
         public Events(DataRow row)
         {
@@ -35,6 +31,5 @@ namespace Restaurant.Model
             this.Name= row["name"].ToString();
             this.Discount =double.Parse(row["discount"].ToString());
         }
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
     }
 }

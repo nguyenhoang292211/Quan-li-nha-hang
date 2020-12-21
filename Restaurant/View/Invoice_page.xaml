@@ -47,13 +47,13 @@
 
             <StackPanel
                 Grid.Row="0"
-                Margin="20"
+                Margin="0"
                 Orientation="Horizontal">
                 <Image
                     Width="100"
                     Height="100"
                     VerticalAlignment="Center"
-                    Source="/Icons/Logo.jpg" />
+                    Source="Images/Logo.jpg" />
                 <TextBlock
                     VerticalAlignment="Center"
                     FontSize="35" Margin="10,0"

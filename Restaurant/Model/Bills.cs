@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-<<<<<<< HEAD
-=======
 using System.Data;
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,20 +13,14 @@ namespace Restaurant.Model
         finish
     }
 
-<<<<<<< HEAD
-    class Bills
-=======
     public class Bills
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
     {
         public Bills()
         {
 
         }
 
-<<<<<<< HEAD
-        private int id;
-=======
+
         public Bills(DataRow row)
         {
             // Bills b = new Bills();
@@ -51,8 +42,6 @@ namespace Restaurant.Model
         private int quantity;
 
         private int id;
-        private int idOrder;
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         private DateTime timePayment;
         private double deal;
         private double totalCost;
@@ -61,21 +50,15 @@ namespace Restaurant.Model
         private double loyalFriend;
 
         public int Id { get => id; set => id = value; }
-<<<<<<< HEAD
-=======
-        public int IdOrder { get => idOrder; set => idOrder = value; }
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         public DateTime TimePayment { get => timePayment; set => timePayment = value; }
         public double Deal { get => deal; set => deal = value; }
         public double TotalCost { get => totalCost; set => totalCost = value; }
         public stateBill State { get => state; set => state = value; }
         public double LoyalFriend { get => loyalFriend; set => loyalFriend = value; }
         public string Totalcoststring { get => totalcoststring; set => totalcoststring = value; }
-<<<<<<< HEAD
-=======
+
         public string NameEmp { get => nameEmp; set => nameEmp = value; }
         public string NameCus { get => nameCus; set => nameCus = value; }
         public int Quantity { get => quantity; set => quantity = value; }
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
     }
 }

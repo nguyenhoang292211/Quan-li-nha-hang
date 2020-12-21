@@ -8,14 +8,7 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
-<<<<<<< HEAD
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-=======
 using Restaurant.Model;
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
 using Restaurant.View;
 
 namespace Restaurant
@@ -28,6 +21,7 @@ namespace Restaurant
         public MainWindow()
         {
             InitializeComponent();
+            showFrame.Navigate(new TrangChu());
         }
 
         
@@ -55,11 +49,8 @@ namespace Restaurant
 
         private void EnterBHpage_MouseDown(object sender, MouseButtonEventArgs e)
         {
-<<<<<<< HEAD
+
             showFrame.Navigate(new orderTable());
-=======
-            showFrame.Navigate(new Order_menu(new Orders(17,3,3,2,DateTime.Now)));
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         }
 
         private void EnterMApage_MouseDown(object sender, MouseButtonEventArgs e)
@@ -82,14 +73,39 @@ namespace Restaurant
             showFrame.Navigate(new Baocao_page());
         }
 
-<<<<<<< HEAD
         private void Banhang_dock_MouseDown(object sender, MouseButtonEventArgs e)
         {
             showFrame.Navigate(new orderTable());
-           
         }
-=======
-      
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
+
+        private void KM_btn_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            showFrame.Navigate(new Khuyenmai_page());
+        }
+
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            showFrame.Navigate(new TrangChu());
+        }
+
+ 
+   
+        private void Button_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Dialog a = new Dialog() { Message = "Bạn thực sự muốn thoát chương trình ?" };
+            a.Owner = Window.GetWindow(this);
+            a.ShowDialog();
+            if (a.DialogResult == true)
+                Application.Current.Shutdown();
+        }
+
+        private void Label_MouseDown_1(object sender, MouseButtonEventArgs e)
+        {
+            Dialog a = new Dialog() { Message = "Bạn thực sự muốn thoát chương trình ?" };
+            a.Owner = Window.GetWindow(this);
+            a.ShowDialog();
+            if (a.DialogResult == true)
+                Application.Current.Shutdown();
+        }
     }
 }

@@ -1,27 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-<<<<<<< HEAD
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Collections.ObjectModel;
+﻿using System.Windows;
 using Restaurant.Model;
-using System.Threading;
 using Restaurant.Controller;
-using DevExpress.Utils.CommonDialogs.Internal;
-using Microsoft.Win32;
-=======
-using System.Windows.Shapes;
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
+using Restaurant.View;
 
 namespace Restaurant
 {
@@ -30,17 +10,11 @@ namespace Restaurant
     /// </summary>
     public partial class Login : Window
     {
-<<<<<<< HEAD
-        userController userControl = new userController();
-        //tạo biến để lưu triwx giá trị phân quyền =0 là nhân viên, 1 là chủ
-        bool level;
-=======
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         public Login()
         {
             InitializeComponent();
+            txbName.Text = null;
         }
-<<<<<<< HEAD
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -50,40 +24,33 @@ namespace Restaurant
             }    
             else
             {
-                if(userControl.checkAccount(txbName.Text.ToString(), txbPass.Password.ToString()))
+                    DAO.username = txbName.Text.ToString();
+                    DAO.password = txbPass.Password.ToString();
+                    DAO a = new DAO(txbName.Text.ToString(), txbPass.Password.ToString());
+                try
                 {
-                    level=userControl.getLevelAccount(txbName.Text.ToString(), txbPass.Password.ToString());
-                    MessageBox.Show(level.ToString());
-                }    
+                    userController userControl = new userController();
+                    //userControl.checkAccount(txbName.Text.ToString(), txbPass.Password.ToString());
+                    MainWindow temp = new MainWindow();
+                    this.Close();
+                    temp.ShowDialog();
+                }
+                catch
+                {
+                    MessageBox.Show("Sai mật khẩu hoặc tên đăng nhập!!!");
+                }
+                    
             }    
         }
 
-        private void login_load(object sender, RoutedEventArgs e)
+        private void PackIcon_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
-            //Đây là code để load tất cả các server đang có không càn phải chọn
-            try
-            {
-                RegistryKey rk = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Microsoft SQL Server");
-                String[] instances = (String[])rk.GetValue("InstalledInstances");
-                if(instances.Length>0)
-                {
-                    foreach(string element in instances)
-                    {
-                        if (element == "MSSQLSERVER")
-                        {
-                            cmbServer.Items.Add(System.Environment.MachineName);
-                        }
-                        else
-                            cmbServer.Items.Add(System.Environment.MachineName + @"\" + element);
-                    }
-                }
-            }
-            catch(Exception ex)
-            {
-
-            }
+            Dialog a= new Dialog() { Message="Bạn thực sự muốn thoát chương trình ?"};
+            a.Owner = Window.GetWindow(this);
+            a.ShowDialog();
+            if (a.DialogResult == true)
+                Application.Current.Shutdown();
+            
         }
-=======
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
     }
 }

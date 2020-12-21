@@ -19,7 +19,7 @@ namespace Restaurant.Controller
         //hàm lấy dữ liệu từ database đổ lên
         public ObservableCollection<Area> loadArea()
         {
-            DataTable data = DAO.ExecuteQueryDataSet("Select * from Area", CommandType.Text);
+            DataTable data = DAO.ExecuteQueryDataSet("GETDATA", CommandType.StoredProcedure,new List<SqlParameter>(){ new SqlParameter("@table","Area")});
             //tạo 1 list để luwu trữ dữ liệu lấy từ database
             ObservableCollection<Area> list = new ObservableCollection<Area>();
             for (int i = 0; i < data.Rows.Count; i++)
@@ -33,18 +33,17 @@ namespace Restaurant.Controller
             }
             return list;
         }
-<<<<<<< HEAD
         //hàm lấy giá trị id đầu tiên
         public String GetFirstIDArea()
         {
-            DataTable a = DAO.ExecuteQueryDataSet("Select * from Area", CommandType.Text);
+            DataTable a = DAO.ExecuteQueryDataSet("GETDATA", CommandType.StoredProcedure, new List<SqlParameter>() { new SqlParameter("@table", "Area") });
             if (a.Rows.Count == 0) return null;
             return a.Rows[0][0].ToString();
         }
         //hàm lấy giá trị nameArea đầu tiên
         public String GetFirstNameArea()
         {
-            DataTable a = DAO.ExecuteQueryDataSet("Select * from Area", CommandType.Text);
+            DataTable a = DAO.ExecuteQueryDataSet("GETDATA", CommandType.StoredProcedure, new List<SqlParameter>() { new SqlParameter("@table", "Area") });
             if (a.Rows.Count == 0) return null;
             return a.Rows[0][1].ToString();
         }
@@ -66,7 +65,6 @@ namespace Restaurant.Controller
             Area b = new Area((int)a.Rows[0][0],a.Rows[0][1].ToString());
             return b;
         }
-=======
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
+
     }
 }

@@ -31,7 +31,7 @@ namespace Restaurant.Model
         private string address;
         private double salary;
         private Level level;
-        private string state;
+        private int state;
 
         public int Id { get => id; set => id = value; }
         public int IdMan { get => idMan; set => idMan = value; }
@@ -43,7 +43,7 @@ namespace Restaurant.Model
         public string Address { get => address; set => address = value; }
         public double Salary { get => salary; set => salary = value; }
         public Level Level { get => level; set => level = value; }
-        public string State { get => state; set => state = value; }
+        public int State { get => state; set => state = value; }
 
         public Employees(DataRow row )
         {
@@ -58,13 +58,16 @@ namespace Restaurant.Model
                 this.Address = row["address"].ToString();
                 this.Salary = double.Parse(row["salary"].ToString());
                 this.Level = (Level)Convert.ToInt32(row["level"]);
-                this.State = row["state"].ToString();
+            if (row["state"].ToString() == "True")
+                this.State = 1;
+            else
+                this.State = 0;
             
         }
 
         public Employees (int id, int idman, string username,
                         string pass, string name, char sex, string phone, string add,
-                        double salary, Level level, string state)
+                        double salary, Level level, int state)
         {
             this.Id = id;
             this.IdMan = idman;
@@ -79,10 +82,6 @@ namespace Restaurant.Model
             this.State = state;
 
         }
-<<<<<<< HEAD
-=======
 
-        
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
     }
 }

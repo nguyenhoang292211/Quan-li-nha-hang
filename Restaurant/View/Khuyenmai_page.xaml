@@ -1,121 +1,39 @@
-﻿<Page x:Class="Restaurant.View.Khuyenmai_page"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:Restaurant.View"
-      mc:Ignorable="d" 
-         xmlns:MyMaterialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-      d:DesignHeight="580" Width="1180"
-      Title="Khuyenmai_page">
+﻿<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Restaurant.View"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="Restaurant.View.Khuyenmai_page"
+        mc:Ignorable="d"
+        Title="Khuyenmai_page" Height="580" Width="1180">
 
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="1*"></RowDefinition>
-            
-            <RowDefinition Height="1*"></RowDefinition>
-            <RowDefinition Height="6*"></RowDefinition>
-            <RowDefinition Height="1.3*"></RowDefinition>
-        </Grid.RowDefinitions>
-        
-        <!-- Line Header 1-->
-        <Label Grid.Row="0" 
-               Padding="15 20 0 0"
-               FontFamily="Montserrat SemiBold"
-               FontSize="23" 
-               FontWeight="ExtraBlack" 
-               Foreground="#DD000000" Content="Quản lí khuyến mãi"/>
-        <!-- Line Fine Information-->
-        <StackPanel Grid.Row="1" Margin="0.5" Orientation="Horizontal">
-            <ComboBox x:Name="cmbfilter"
-                    Margin="15 0"
-                     BorderBrush="Black"
-                      Width="200"
-                     IsEditable="True"
-                     Style="{StaticResource MaterialDesignFloatingHintComboBox}" 
-                      FontFamily="Montserrat Medium" FontSize="14">
-
-            </ComboBox>
-                <TextBox     x:Name="txbFindPromotion"
-                             Background="Transparent"
-                             Width="680"
-                             Foreground="DimGray"
-                             VerticalContentAlignment="Top"
-                             HorizontalContentAlignment="Left"
-                             FontSize="18"
-                             Padding="3 3 0 0"
-                             BorderBrush="Transparent"
-                             
-                             MyMaterialDesign:HintAssist.Hint="Tra cứu khuyến mãi"
-                             FontFamily="Montserrat Medium" Margin="74,1,-56,-1"  />
-            <MyMaterialDesign:PackIcon
-                Kind="Magnify"
-                Height="22"
-                Width="22"  
-                     Margin="-30 20 5 5"/>
-            <Border Height="45" HorizontalAlignment="Right" 
-                    Background="#FF2C2C2C"
-                    Width="180"
-                    BorderBrush="SeaGreen"
-                    CornerRadius="18"
-                    Margin="26 0 0 0"
-                    BorderThickness="1">
-                <Button x:Name="btnAddProm"
-                        Background="Transparent" 
-                        BorderThickness="0"
-                        FontFamily="Montserrat SemiBold"
-                         FontWeight="Normal"
-                        FontSize="16"
-                        Height="45"
-                        Foreground="White" 
-                         Content="Thêm khuyến mãi" 
-                         BorderBrush="#FF33ADF3">
-
-                </Button>
-                <Border.Resources>
-                    <Style TargetType="Border">
-                        <Style.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="White"></Setter>
-                                <Setter Property="CornerRadius" Value="18"></Setter>
-                                <Setter Property="BorderBrush" Value="White"></Setter>
-                                <Setter Property="BorderThickness" Value="1"></Setter>
-                            </Trigger>
-                        </Style.Triggers>
-                    </Style>
-                </Border.Resources>
-
-                <Border.Effect>
-                    <DropShadowEffect
-                                    Color="Gray"
-                                    Direction="270"
-                                    ShadowDepth="3"
-                                    BlurRadius="5"/>
-                </Border.Effect>
-            </Border>
-        </StackPanel>
-        
-        <!-- Số liệu chính -->
-        <ListView Grid.Row="2" Margin="20 0"
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <ListView 
+            Margin="0,55,8,72"
                   BorderThickness="1"
                   BorderBrush="Black"
                   Background="Transparent"
-                  x:Name="listProm" 
-                  FontFamily="Montserrat SemiBold"  >
+                  x:Name="listProm"                  
+            FontFamily="Candara"          
+            SelectionChanged="listProm_SelectionChanged"
+            FontSize="16" >
             <ListView.Resources>
-                <Style TargetType="TextBlock">
-                    <Setter Property="FontFamily" Value="Cambria"/>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="FontFamily" Value="Montserrat Medium"/>
                     <Setter Property="Foreground" Value="CadetBlue" />
-                    <Setter Property="FontSize" Value="16"/>
+                    <Setter Property="FontSize" Value="18"/>
                     <Setter Property="TextTrimming" Value="CharacterEllipsis" />
-                    <Setter Property="ToolTip" Value="{Binding RelativeSource={RelativeSource Self}, Path=Text}"/>
+                    <Setter Property="ToolTip" Value="{Binding Text, RelativeSource={RelativeSource Self}}"/>
                 </Style>
-                <Style TargetType="Label">
+                <Style TargetType="{x:Type Label}">
                     <Setter Property="Foreground" Value="#2C459A" />
-                    <Setter Property="FontSize" Value="15"/>
-                    <Setter Property="FontWeight" Value="DemiBold"></Setter>
-                    <Setter Property="ToolTip" 
-                                    Value="{Binding RelativeSource={RelativeSource Self}, Path=Text}"/>
+                    <Setter Property="FontFamily" Value="Candara"/>
+                    <Setter Property="FontSize" Value="18"/>
+                    <Setter Property="FontWeight" Value="DemiBold"/>
+                    <Setter Property="ToolTip" Value="{Binding Text, RelativeSource={RelativeSource Self}}"/>
                 </Style>
                 <Style TargetType="{x:Type ScrollBar}">
                     <Setter Property="Margin" Value="2,50,0,8" />
@@ -126,7 +44,7 @@
                             <ControlTemplate TargetType="{x:Type ScrollBar}">
                                 <Track IsDirectionReversed="true" Focusable="false">
                                     <Track.Thumb>
-                                        <Thumb Width="8" Background="Green"/>
+                                        <Thumb Width="8" Background="Black"/>
                                     </Track.Thumb>
                                     <Track.IncreaseRepeatButton>
                                         <RepeatButton Command="ScrollBar.PageDownCommand" Opacity="0" Focusable="false" />
@@ -141,12 +59,14 @@
                 </Style>
 
             </ListView.Resources>
+
             <ListView.View>
                 <GridView AllowsColumnReorder="True">
-                    <!--cột ID NV-->
-                    <GridViewColumn Width="100" DisplayMemberBinding="{Binding id}">
+                    <!--cột ID-->
+                    <GridViewColumn Width="100" DisplayMemberBinding="{Binding Id}">
                         <GridViewColumn.HeaderTemplate>
                             <DataTemplate>
+
                                 <Border HorizontalAlignment="Left">
                                     <Label Content="ID"/>
                                 </Border>
@@ -154,7 +74,7 @@
                         </GridViewColumn.HeaderTemplate>
                     </GridViewColumn>
                     <!--Cột tên khuyến mãi-->
-                    <GridViewColumn Width="250" DisplayMemberBinding="{Binding name}">
+                    <GridViewColumn Width="300" DisplayMemberBinding="{Binding Name}">
                         <GridViewColumn.HeaderTemplate>
                             <DataTemplate>
                                 <Border >
@@ -164,133 +84,166 @@
                             </DataTemplate>
                         </GridViewColumn.HeaderTemplate>
                     </GridViewColumn>
-                    <!--cột miêu tả-->
-                    <GridViewColumn Width="180" DisplayMemberBinding="{Binding descript}">
-                        <GridViewColumn.HeaderTemplate>
-                            <DataTemplate>
-
-                                <Label Content="Miêu tả" />
 
 
-                            </DataTemplate>
-                        </GridViewColumn.HeaderTemplate>
-                    </GridViewColumn>
-                    <!--Gioi tinh-->
-                    <GridViewColumn  Width="180"  DisplayMemberBinding="{Binding startDate}" >
+                    <!--Bắt đầu-->
+                    <GridViewColumn  Width="270"  DisplayMemberBinding="{Binding StartDate}" >
                         <GridViewColumn.HeaderTemplate>
                             <DataTemplate>
                                 <Border>
-                                    <Label Content="Bắt đầu"
-                                                  />
+                                    <Label Content="Bắt đầu" />
                                 </Border>
                             </DataTemplate>
                         </GridViewColumn.HeaderTemplate>
                     </GridViewColumn>
-                    <GridViewColumn  Width="150"  DisplayMemberBinding="{Binding endDate}" >
+                    <GridViewColumn  Width="270"  DisplayMemberBinding="{Binding EndDate}" >
                         <GridViewColumn.HeaderTemplate>
                             <DataTemplate>
                                 <Border>
-                                    <Label Content="Kết thúc"
-                                                  />
+                                    <Label Content="Kết thúc"    />
                                 </Border>
                             </DataTemplate>
                         </GridViewColumn.HeaderTemplate>
                     </GridViewColumn>
-                    
-                    <!-- Tinh trang-->
-                    <!--Gioi tinh-->
-                    <GridViewColumn  Width="150"  DisplayMemberBinding="{Binding startDate}" >
+
+                    <!-- Discount-->
+
+                    <GridViewColumn  Width="180"  DisplayMemberBinding="{Binding Discount}" >
                         <GridViewColumn.HeaderTemplate>
                             <DataTemplate>
                                 <Border>
-                                    <Label Content="Bắt đầu"
-                                                  />
+                                    <Label Content="Discount" RenderTransformOrigin="0.755,1.6" />
                                 </Border>
                             </DataTemplate>
                         </GridViewColumn.HeaderTemplate>
                     </GridViewColumn>
-                    <GridViewColumn  Width="180"  DisplayMemberBinding="{Binding state}" >
-                        <GridViewColumn.HeaderTemplate>
-                            <DataTemplate>
-                                <Border>
-                                    <Label Content="Tình trạng"     />
-                                </Border>
-                            </DataTemplate>
-                        </GridViewColumn.HeaderTemplate>
-                    </GridViewColumn>
+
                 </GridView>
             </ListView.View>
         </ListView>
+        <StackPanel Margin="-6,-3,4,518" Orientation="Horizontal">
+            <ComboBox             FontFamily="Montserrat Medium" materialDesign:HintAssist.Hint="All"
 
-        <StackPanel Grid.Row="3"  Orientation="Horizontal" HorizontalAlignment="Right">
+                      Name="phanloai"
+                      Margin="10.333,10,0,0" Height="45" 
+                      FontSize="16" HorizontalAlignment="Left" 
+                      Width="205" VerticalAlignment="Top" FontWeight="Medium">
+                <ComboBox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="0" AngleY="0"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="0" Y="0"/>
+                    </TransformGroup>
+                </ComboBox.RenderTransform>
+                <ComboBoxItem Content="All" Selected="ComboBoxItem_Selected_1"/>
+                <ComboBoxItem Content="Còn Hạn" Selected="ComboBoxItem_Selected_2"/>
+                <ComboBoxItem Content="Hết hạn" Selected="ComboBoxItem_Selected_3"/>
+            </ComboBox>
             <Border 
-                    Grid.Row="3"
-                       HorizontalAlignment="Right"
-                    Background="CornflowerBlue"
-                    BorderBrush="CadetBlue"
-                    CornerRadius="35"
-                    Width="70"
-                    Height="70"
-                    Margin="0 0 50 0"
-                    BorderThickness="1">
-                <Button x:Name="btnedit" 
-                        Background="Transparent"
-                        BorderThickness="0"
-                        FontFamily="Montserrat SemiBold"
-                         FontWeight="Normal"
-                         Padding="0 -05 0 0"
-                        Foreground="White" BorderBrush="#FF33ADF3"
-                         >
+                    Margin="30,12,5,13" Width="603"
+                    BorderBrush="Black"
+                    BorderThickness="1"
+                    CornerRadius="15"
+                    Height="40"
+                    >
+                <TextBox     x:Name="txbFindEvents" KeyDown="txbFindEvents_KeyDown"
+                Background="Transparent"
+                Foreground="DimGray"
+                VerticalContentAlignment="Top"
+                HorizontalContentAlignment="Left"
+                FontSize="20"
+                Padding="3 3 0 0"
+                BorderBrush="Transparent"
+            FontFamily="Candara" materialDesign:HintAssist.Hint="Tra cứu khuyến mãi"
+                             
+                 Margin="9,1,9,-1" FontWeight="Medium"  />
+            </Border>
+            <Button x:Name="btnFindEvents" Width="72" Height="Auto" Margin="0,0,0,-2"  Foreground="Black" Click="btnFindEvents_Click">
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+                <Button.BorderBrush>
+                    <ImageBrush/>
+                </Button.BorderBrush>
+                <materialDesign:PackIcon
+                    Kind="Magnify"
+                    Height="39"
+                    Width="49"  
+                    RenderTransformOrigin="-0.576,0.515"/>
+            </Button>
+            <Border Height="45" HorizontalAlignment="Right" 
+                Background="#FF2C2C2C"
+                Width="210"
+                BorderBrush="SeaGreen"
+                CornerRadius="18"
+                Margin="26,10,0,10"
+                BorderThickness="1">
+                <Border.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="White"/>
+                                <Setter Property="CornerRadius" Value="18"/>
+                                <Setter Property="BorderBrush" Value="White"/>
+                                <Setter Property="BorderThickness" Value="1"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Border.Resources>
 
-
-                    <MyMaterialDesign:PackIcon Kind="Edit"
-                                               Height="32" Width="60"
-                                   HorizontalAlignment="Center">
-
-                    </MyMaterialDesign:PackIcon>
-                </Button>
                 <Border.Effect>
                     <DropShadowEffect
-                                    Color="Gray"
-                                    Direction="270"
-                                    ShadowDepth="3"
-                                    BlurRadius="5"/>
+                        Color="Gray"
+                        Direction="270"
+                        ShadowDepth="3"
+                        BlurRadius="5"/>
                 </Border.Effect>
+                <Button x:Name="btnAddProm" Click="btnAddProm_Click"
+                    Background="Transparent" 
+                    BorderThickness="0"
+                    FontFamily="Candara" 
+             
+                    FontWeight="SemiBold"
+                    FontSize="20"
+                    Height="45"
+                    Foreground="White" 
+                    Content="Thêm khuyến mãi" 
+                    BorderBrush="#FF33ADF3" Margin="0,0,-1,-2" />
             </Border>
-            <Border 
-                    Grid.Row="3"
-                       HorizontalAlignment="Right"
-                    Background="CornflowerBlue"
-                    BorderBrush="CadetBlue"
-                    CornerRadius="35"
-                    Width="70"
-                    Height="70"
-                    Margin="0 0 50 0"
-                    BorderThickness="1">
-                <Button x:Name="btnDelete" 
-                        Background="Transparent"
-                        BorderThickness="0"
-                        FontFamily="Montserrat SemiBold"
-                         FontWeight="Normal"
-                         Padding="0 -05 0 0"
-                        Foreground="White" BorderBrush="#FF33ADF3"
-                         >
 
-
-                    <MyMaterialDesign:PackIcon Kind="Delete"
-                                               Height="32" Width="60"
-                                   HorizontalAlignment="Center">
-
-                    </MyMaterialDesign:PackIcon>
-                </Button>
-                <Border.Effect>
-                    <DropShadowEffect
-                                    Color="Gray"
-                                    Direction="270"
-                                    ShadowDepth="3"
-                                    BlurRadius="5"/>
-                </Border.Effect>
-            </Border>
         </StackPanel>
+        <TextBox 
+            FontFamily="Candara" materialDesign:HintAssist.Hint="ID"
+            x:Name="txbID" FontSize="20" HorizontalAlignment="Left" Height="39" Margin="20,533,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="177" IsEnabled="False" FontWeight="SemiBold"/>
+        <TextBox FontFamily="Candara" materialDesign:HintAssist.Hint="Tên khuyến mãi"
+            x:Name="txbName" FontSize="20" HorizontalAlignment="Left" Height="39" Margin="213,533,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="177" FontWeight="SemiBold"/>
+        <TextBox FontFamily="Candara" materialDesign:HintAssist.Hint="Discount" MaxLength="3"
+            x:Name="txbDiscount" FontSize="20" HorizontalAlignment="Left" Height="39" Margin="789,533,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="177" PreviewTextInput="txbDiscount_PreviewTextInput" FontWeight="SemiBold"/>
+        <DatePicker
+            Width="178" Height="40" 
+            x:Name="startDate" HorizontalAlignment="Left"
+            FontFamily="Candara" materialDesign:HintAssist.Hint="Ngày bắt đầu"
+            FontSize="20"
+            IsEnabled="{Binding IsEnable, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+            Text="{Binding BirthDay, Mode=TwoWay}" Margin="404,0,0,8" VerticalAlignment="Bottom" RenderTransformOrigin="-2.667,0.043" FontWeight="SemiBold" />
+        <DatePicker
+            Width="177" Height="40"
+            x:Name="endtDate" HorizontalAlignment="Left"
+            FontFamily="Candara" materialDesign:HintAssist.Hint="Ngày kết thúc"
+            FontSize="20"
+            IsEnabled="{Binding IsEnable, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+            Text="{Binding BirthDay, Mode=TwoWay}" Margin="597,0,0,8" VerticalAlignment="Bottom" RenderTransformOrigin="-2.667,0.043" FontWeight="SemiBold" />
+        <Button
+            x:Name="btnEdit" Click="btnEdit_Click"
+            Background="CadetBlue"
+            Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
+            ToolTip="MaterialDesignFloatingActionAccentButton" Margin="1071,508,53,16">
+            <materialDesign:PackIcon
+                Foreground="White"
+                Kind="Edit" 
+                Height="30"
+                Width="30" />
+        </Button>
     </Grid>
 </Page>

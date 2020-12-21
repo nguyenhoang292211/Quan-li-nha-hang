@@ -12,13 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-<<<<<<< HEAD
 
-=======
 using System.Collections.ObjectModel;
 using Restaurant.Model;
 using Restaurant.Controller;
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
 namespace Restaurant.View
 {
     /// <summary>
@@ -26,11 +23,7 @@ namespace Restaurant.View
     /// </summary>
     public partial class Hoadon_page : Page
     {
-<<<<<<< HEAD
-        public Hoadon_page()
-        {
-            InitializeComponent();
-=======
+
 
         ObservableCollection<Bills> listBills;
         ObservableCollection<string> listSortBy = new ObservableCollection<string> { "Trạng thái", "Mã Đơn hàng", "Nhân viên", "Khách hàng", "Thời gian " };
@@ -270,7 +263,6 @@ namespace Restaurant.View
                 SelectionBill = b.Id;
             }
 
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
         }
     }
 }

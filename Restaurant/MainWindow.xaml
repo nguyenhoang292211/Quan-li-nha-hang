@@ -23,7 +23,7 @@
 
 
     </Window.Resources>
-    <Grid Background="#f5f5f5">
+    <Grid Background="#0A0C0E">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.062*"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
@@ -35,9 +35,84 @@
         <StackPanel Grid.Row="0"
                     Grid.ColumnSpan="2" 
                     Grid.Column="0" 
-                    Grid.RowSpan="2" >
-            <myUC:Info  Height="50" Loaded="Info_Loaded_1"
-                         ></myUC:Info>
+                    Grid.RowSpan="2" 
+                    >
+            <MyMaterialDesign:PopupBox
+                DockPanel.Dock="Right"
+                
+                PlacementMode="BottomAndAlignRightEdges" 
+                   HorizontalAlignment="Right"
+                    Foreground="White">
+                <ListBox Width="140">
+                    <ListBoxItem >
+                        <DockPanel>
+                            <Button PreviewMouseDown="Button_PreviewMouseDown"
+                                    Width="60">
+                                <MyMaterialDesign:PackIcon 
+                                    Kind="ExitToApp"
+                                    Height="30"
+                                    Width="30"/>
+                            </Button>
+                            <Label FontSize="15" 
+                                   FontWeight="Bold"
+                                   Padding="5 10"
+                                   MouseDown="Label_MouseDown_1"
+                                   >Exit</Label>
+                        </DockPanel>
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <DockPanel>
+                            <Button 
+                                    Width="60">
+                                <MyMaterialDesign:PackIcon 
+                                    Kind="Logout"
+                                    Height="30"
+                                    Width="30"/>
+                            </Button>
+                            <Label FontSize="15" 
+                                   FontWeight="Bold"
+                                   Padding="5 10"
+                                   
+                                   >LogOut</Label>
+                        </DockPanel>
+                    </ListBoxItem>
+                    
+                </ListBox>
+            </MyMaterialDesign:PopupBox>
+            <Border Grid.Column="1" 
+                    Background="Transparent" 
+                    Margin="93,-25,1041,5"  
+                    BorderBrush="CadetBlue" 
+                    Height="33" 
+                    BorderThickness="1"
+                    CornerRadius="15" >
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Grid.Column="1" MouseDown="Border_MouseDown" Margin="43,0,0,0">
+                        <TextBlock Text="HOME" 
+                                       TextAlignment="Center"
+                                       Foreground="CadetBlue"
+                                       FontSize="18"
+                                       FontWeight="Medium"
+                                       HorizontalAlignment="Center" 
+                                       VerticalAlignment="Center" Margin="-25,2,14,2" Width="92"></TextBlock>
+                    </Border>
+
+                </Grid>
+
+
+            </Border>
+            <MyMaterialDesign:ColorZone>
+                <DockPanel>
+                    <MyMaterialDesign:PopupBox>
+
+                    </MyMaterialDesign:PopupBox>
+                </DockPanel>
+            </MyMaterialDesign:ColorZone>
         </StackPanel>
 
         <!--<StackPanel Panel.ZIndex="2" Style="{StaticResource spSlideLeft}"></StackPanel>-->
@@ -65,8 +140,9 @@
                         HorizontalAlignment="Left">
                     <Label Foreground="AliceBlue"
                            FontSize="16" 
+                           Name="username"
                            HorizontalContentAlignment="Center">
-                        Admin
+                        
                     </Label>
                 </Border>
                 <Border Background="DimGray" 
@@ -84,12 +160,8 @@
                 </Border>
 
             </StackPanel>
-           
-<<<<<<< HEAD
+
             <DockPanel x:Name="banhang_dock" Style="{StaticResource dockmenu}" MouseDown="Banhang_dock_MouseDown">
-=======
-            <DockPanel x:Name="banhang_dock" Style="{StaticResource dockmenu}">
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                 <Label Width="140" x:Name="enterBHpage"
                            Style="{DynamicResource MenuLabel}"  
                            Content="Bán hàng" 
@@ -147,7 +219,7 @@
                        HorizontalAlignment="Center" 
                        Margin="14,10,10,10"  ></Image>
             </DockPanel>
-            <DockPanel Style="{StaticResource dockmenu}">
+            <DockPanel Style="{StaticResource dockmenu}" x:Name="KM_btn" MouseDown="KM_btn_MouseDown" >
                 <Label Style="{DynamicResource MenuLabel}" 
                        Width="140" 
                        Content="Khuyến mãi"
@@ -183,8 +255,8 @@
                        Margin="14,10,10,10"  ></Image>
             </DockPanel>
         </StackPanel>
-        <StackPanel Grid.Column="1" Grid.Row="1" 
-                    Background="AntiqueWhite"
+        <StackPanel 
+                    Background="AntiqueWhite" Margin="70,48,0,0" Grid.RowSpan="2" Grid.ColumnSpan="2"
                     
                    >
             <Frame x:Name="showFrame" 

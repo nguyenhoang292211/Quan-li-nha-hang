@@ -1,8 +1,5 @@
 ﻿using System;
-<<<<<<< HEAD
-=======
 using System.Collections;
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Data;
@@ -31,7 +28,6 @@ namespace Restaurant.Controller
 
                 Bills a = new Bills();
                 a.Id = int.Parse(data.Rows[i][0].ToString());
-<<<<<<< HEAD
               //  a.IdOrder = int.Parse(data.Rows[i][2].ToString());
                 a.TimePayment = DateTime.Parse(data.Rows[i][1].ToString());
                 a.Deal = double.Parse(data.Rows[i][2].ToString());
@@ -46,28 +42,10 @@ namespace Restaurant.Controller
                     a.State = stateBill.spending;
                 }
                 a.LoyalFriend = int.Parse(data.Rows[i][7].ToString());
-=======
-                a.IdOrder = int.Parse(data.Rows[i][1].ToString());
-                a.TimePayment = DateTime.Parse(data.Rows[i][2].ToString());
-                a.Deal = double.Parse(data.Rows[i][3].ToString());
-                a.TotalCost = double.Parse(data.Rows[i][4].ToString());
-                a.Totalcoststring = a.TotalCost.ToString() + " VND";
-                if (data.Rows[i][5].ToString() == "True")
-                {
-                    a.State = stateBill.finish;
-                }
-                else if (data.Rows[i][5].ToString() == "False")
-                {
-                    a.State = stateBill.spending;
-                }
-                a.LoyalFriend= int.Parse(data.Rows[i][6].ToString());
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
                 list.Add(a);
             }
             return list;
         }
-<<<<<<< HEAD
-=======
 
 
         public ObservableCollection<Bills> templateFunction(string nameFunction, string[] listNotationPara, ArrayList listParaValue)
@@ -155,6 +133,16 @@ namespace Restaurant.Controller
         }
 
 
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
+        public bool addNewBill( int deal, int totalcost, int idem, int idcus, int state, int discountpoint, int idOrder)
+        {
+            string[] vars = {  "@deal", "@totalcost", "@idem","@idcus","@state","@loyalFriend" ,"@idOrder"};
+            ArrayList array = new ArrayList(new Object[] { deal, totalcost, idem,idcus, state, discountpoint, idOrder });
+
+            List<SqlParameter> t = DAO.turntoListParam(array, vars);
+
+            return DAO.MyExecuteNonQuery("pro_addNewBill", CommandType.StoredProcedure, t);
+        }
+
+
     }
 }

@@ -39,26 +39,30 @@ namespace Restaurant.Controller
             {
                 tableXYItem = db.MyExecuteNonQuery_data("select * from fn_getStatisticBySpecificalFood(@start, @end)", CommandType.Text, listPara);
             }
-            Revenue myRevenueValue;
-            if (tableReveue.Rows.Count <=1)
+            Revenue myRevenueValue=null;
+            if(tableReveue != null)
             {
-                if (tableReveue.Rows.Count > 0)
-                    myRevenueValue = new Revenue(tableReveue.Rows[0]);
-                else
-                    myRevenueValue = new Revenue();
-            }
-            else
-            {
-                myRevenueValue = new Revenue(tableReveue.Rows[0]);
-                for(int i=1; i< tableReveue.Rows.Count; i++)
+                if (tableReveue.Rows.Count <= 1 )
                 {
-                    myRevenueValue.NumBill += Convert.ToInt32( tableReveue.Rows[i].ItemArray[4]);
-                    myRevenueValue.TotalRevenue += Convert.ToInt32( tableReveue.Rows[i].ItemArray[2]);
-                    myRevenueValue.NumCancel+= Convert.ToInt32( tableReveue.Rows[i].ItemArray[3]);
-                    myRevenueValue.NumBooking += Convert.ToInt32( tableReveue.Rows[i].ItemArray[5]);
+                    if (tableReveue.Rows.Count > 0)
+                        myRevenueValue = new Revenue(tableReveue.Rows[0]);
+                    else
+                        myRevenueValue = new Revenue();
                 }
+                else
+                {
+                    myRevenueValue = new Revenue(tableReveue.Rows[0]);
+                    for (int i = 1; i < tableReveue.Rows.Count; i++)
+                    {
+                        myRevenueValue.NumBill += Convert.ToInt32(tableReveue.Rows[i].ItemArray[4]);
+                        myRevenueValue.TotalRevenue += Convert.ToInt32(tableReveue.Rows[i].ItemArray[2]);
+                        myRevenueValue.NumCancel += Convert.ToInt32(tableReveue.Rows[i].ItemArray[3]);
+                        myRevenueValue.NumBooking += Convert.ToInt32(tableReveue.Rows[i].ItemArray[5]);
+                    }
+                }
+
             }
-         
+                    
             List<xyStatistic> myXYValue = new List<xyStatistic>();
             if(tableXYItem!=null)
             for (int i = 0; i < tableXYItem.Rows.Count; i++)

@@ -6,24 +6,41 @@
         xmlns:local="clr-namespace:Restaurant"
         xmlns:MyMaterialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-<<<<<<< HEAD
-        Title="Login" Height="450" Width="800" Loaded="login_load">
-=======
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
         Title="Login" Height="450" Width="800">
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="98*"/>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="21*"/>
+        </Grid.ColumnDefinitions>
+        <Button BorderThickness="0"
+                Grid.Column="2"
+                Margin="0,0,0,0"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Right" Height="53">
+            <MyMaterialDesign:PackIcon
+                Foreground="RosyBrown"
+                Kind="CloseBox"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                MouseDown="PackIcon_MouseDown"
+                Width="35" Height="35" RenderTransformOrigin="-0.712,0.863">
+
+            </MyMaterialDesign:PackIcon>
+        </Button>
         <Label Content="Đăng nhập tài khoản" 
                HorizontalAlignment="Left" 
-               Margin="353,34,0,0" 
+               Margin="405,52,0,0" 
                VerticalAlignment="Top" 
-               Height="61" 
-               Width="400" 
-               FontSize="40"/>
-<<<<<<< HEAD
+               Height="37" 
+               Width="299" 
+               FontSize="25" FontFamily="Montserrat ExtraBold" Foreground="#DD002A66" Grid.ColumnSpan="3"/>
         <Border Background="AntiqueWhite"
                 BorderBrush="#619196"
                 BorderThickness="7" 
-                CornerRadius="10 10 10 10" Margin="347,100,47.333,69.667">
+                CornerRadius="10 10 10 10" Margin="347,100,47,70" Grid.ColumnSpan="3">
             <Grid HorizontalAlignment="Left" 
                   Height="237" 
                   Margin="0.333,0.333,-0.333,0" 
@@ -46,8 +63,7 @@
                         Margin="8,43,11,38.667" 
                         Grid.Column="1">
                     <TextBox x:Name="txbName"
-                             MyMaterialDesign:HintAssist.Hint="User name" Margin="4.333,1.333,7.667,2.333
-                             ">
+                             MyMaterialDesign:HintAssist.Hint="User name" Margin="7,-3,5,-3">
                         <TextBox.Text>
                             <Binding Path="User name"
                                      UpdateSourceTrigger="PropertyChanged">
@@ -63,14 +79,18 @@
                         Grid.Row="1" Margin="10,10.333,10.667,72.333">
                     <PasswordBox x:Name="txbPass"
                                   MyMaterialDesign:HintAssist.Hint="Password" 
-                                  Margin="4.333,1.333,7.667,2.333" />
+                                  Margin="5,-3,7,-3" />
                 </Border>
                 <Button
                     Style="{StaticResource MaterialDesignRaisedAccentButton}"
                     ToolTip="Resource name: MaterialDesignRaisedAccentButton" 
                     Grid.Column="1" 
+                    Background="CadetBlue"
                     Margin="61,67.333,50.667,19.333" 
                     Grid.Row="1"
+                    FontFamily="Candara"
+                    BorderThickness="0"
+                    Foreground="White"
                     Click="Button_Click">
                     Đăng nhập
                 </Button>
@@ -80,125 +100,51 @@
                 VerticalAlignment="Top" 
                 Height="43" 
                 Width="155" 
-                FontSize="20" Grid.ColumnSpan="2" Grid.Row="1"/>
+                FontSize="16" Grid.ColumnSpan="2" Grid.Row="1" FontFamily="Montserrat SemiBold"/>
                 <Label Content="Tên đăng nhập:" 
                 HorizontalAlignment="Left" 
                 Margin="17,43,0,0" 
                 VerticalAlignment="Top" 
                 Height="43" 
                 Width="155" 
-                FontSize="20" Grid.ColumnSpan="2"/>
+                
+                FontSize="16" Grid.ColumnSpan="2" FontFamily="Montserrat SemiBold"/>
             </Grid>
         </Border>
 
-        <Image Source="D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\View\Images\food-store.png" 
-                       Width="252" Height="250" 
-                       VerticalAlignment="Center" 
-                       HorizontalAlignment="Center" 
-                       Margin="39,87,502.333,83.667" RenderTransformOrigin="-2.667,0.371"  ></Image>
-        <Image Height="70.6666666666667" VerticalAlignment="Top" Width="100"/>
-        <Image Source="D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\View\Images\daily-specials.png" 
-=======
-        <Grid HorizontalAlignment="Left" 
-                  Height="237" 
-                  Margin="353,120,0,0" 
-                  VerticalAlignment="Top" 
-                  Width="383" 
-                  Background="#FFEEA7A7" >
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="120*">
-                </ColumnDefinition>
-                <ColumnDefinition Width="163*"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-            </Grid.RowDefinitions>
-            <Border Background="White"
-                        Grid.Column="1"
-                        Grid.Row="0" Margin="10,43,10.667,39.667"
-                    >
-                <TextBox MyMaterialDesign:HintAssist.Hint="Floating Hint" 
-                             Background="Transparent"
-                             
-                    Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
-            </Border>
-            <Border Background="White"
-                        Grid.Column="1"
-                        Grid.Row="1" Margin="10,10.333,10.667,72.333">
-                <TextBox MyMaterialDesign:HintAssist.Hint="Floating Hint" 
-                             Background="Transparent"
-                             
-                    Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="0,1,0,-1" />
-            </Border>
-            <Button
-                    Style="{StaticResource MaterialDesignRaisedAccentButton}"
-                    ToolTip="Resource name: MaterialDesignRaisedAccentButton" Grid.Column="1" Margin="61,67.333,50.667,19.333" Grid.Row="1">
-                Đăng nhập
-            </Button>
-        </Grid>
-
-        <Label Content="Tên đăng nhập:" 
-            HorizontalAlignment="Left" 
-            Margin="373,160,0,0" 
-            VerticalAlignment="Top" 
-            Height="43" 
-            Width="155" 
-            FontSize="20"/>
-        <Label Content="Mật khẩu:" 
-            HorizontalAlignment="Left" 
-            Margin="373,245,0,0" 
-            VerticalAlignment="Top" 
-            Height="43" 
-            Width="155" 
-            FontSize="20"/>
-        <Image Source="View/Images/food-store.png" 
+        <Image Height="71" VerticalAlignment="Top" Width="100" Margin="346,0,142.021,0"/>
+        <Image Source="Images/food-store.png" 
                        Width="273" Height="250" 
                        VerticalAlignment="Center" 
                        HorizontalAlignment="Center" 
-                       Margin="-89,-47,609.333,217.667" RenderTransformOrigin="-2.667,0.371"  ></Image>
-        <Image Height="70.6666666666667" VerticalAlignment="Top" Width="100"/>
-        <Image Source="View/Images/daily-specials.png" 
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
-                       Width="149" Height="121" 
+                       Margin="10,85,305.021,84" RenderTransformOrigin="-2.667,0.371"  ></Image>
+        <Image Height="71" VerticalAlignment="Top" Width="100" Margin="346,0,142.021,0"/>
+        <Image Source="Images/daily-specials.png" 
+            Width="149" Height="121" 
                        VerticalAlignment="Center" 
                        HorizontalAlignment="Center" 
-                       Margin="0,261,644.333,38.667" RenderTransformOrigin="-2.667,0.371"  ></Image>
-        <Image Height="70.6666666666667" VerticalAlignment="Top" Width="100"/>
-<<<<<<< HEAD
-        <Image Source="D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\View\Images\pumpkin.png" 
-=======
-        <Image Source="View/Images/pumpkin.png" 
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
+                       Margin="-1,260,440.021,38" RenderTransformOrigin="-2.667,0.371"  ></Image>
+        <Image Height="71" VerticalAlignment="Top" Width="100" Margin="346,0,142.021,0"/>
+
+        <Image Source="Images/pumpkin.png" 
                        Width="63" Height="68" 
                        VerticalAlignment="Center" 
                        HorizontalAlignment="Center" 
-                       Margin="356,283,374.333,69.667" RenderTransformOrigin="-2.667,0.371"  ></Image>
-        <Image Height="70.6666666666667" VerticalAlignment="Top" Width="100"/>
-<<<<<<< HEAD
-        <Image Source="D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\View\Images\gift-basket.png" 
-=======
-        <Image Source="View/Images/gift-basket.png" 
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
+                       Margin="355,282,170.021,69" RenderTransformOrigin="-2.667,0.371"  ></Image>
+        <Image Height="71" VerticalAlignment="Top" Width="100" Margin="346,0,142.021,0"/>
+        <Image Source="Images/gift-basket.png" 
                        Width="63" Height="68" 
                        VerticalAlignment="Center" 
                        HorizontalAlignment="Center" 
-                       Margin="406,283,324.333,69.667" RenderTransformOrigin="-2.667,0.371"  ></Image>
-        <Image Height="70.6666666666667" VerticalAlignment="Top" Width="100"/>
-<<<<<<< HEAD
-        <Image Source="D:\Kì 1 năm 3\Hệ quản trị cơ sở dữ liệu\Restaurant_DBMS\Restaurant\View\Images\healthy-eating.png" 
-=======
-        <Image Source="View/Images/healthy-eating.png" 
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
+                       Margin="405,282,120.021,69" RenderTransformOrigin="-2.667,0.371"  ></Image>
+        <Image Height="71" VerticalAlignment="Top" Width="100" Margin="346,0,142.021,0"/>
+
+        <Image Source="Images/healthy-eating.png" 
                        Width="119" Height="122" 
                        VerticalAlignment="Center" 
                        HorizontalAlignment="Center" 
-                       Margin="196,260,478.333,38.667" RenderTransformOrigin="-2.667,0.371"  ></Image>
-        <Image Height="70.6666666666667" VerticalAlignment="Top" Width="100"/>
-        <Image Height="70.6666666666667" VerticalAlignment="Top" Width="100"/>
-<<<<<<< HEAD
-        <ComboBox x:Name="cmbServer" HorizontalAlignment="Left" Margin="39,34,0,0" VerticalAlignment="Top" Width="217"/>
-=======
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
+                       Margin="195,259,274.021,38" RenderTransformOrigin="-2.667,0.371"  ></Image>
+        <Image Height="71" VerticalAlignment="Top" Width="100" Margin="346,0,142.021,0"/>
+        <Image Height="71" VerticalAlignment="Top" Width="100" Margin="346,0,142.021,0"/>
     </Grid>
 </Window>

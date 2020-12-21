@@ -1,5 +1,4 @@
 ﻿using System;
-<<<<<<< HEAD
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -12,21 +11,16 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Data;
 using Restaurant.Model;
-=======
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
 namespace Restaurant.Controller
 {
     class orderController
     {
-<<<<<<< HEAD
         DAO dao = new DAO();
+        
         public bool addOrder(int idSeat, int idEmp)
         {
+           
             SqlParameter IdSeat = new SqlParameter("@idSeat", idSeat);
             SqlParameter IdEmp = new SqlParameter("@idEmp",idEmp );
             List<SqlParameter> t = new List<SqlParameter>();
@@ -34,17 +28,22 @@ namespace Restaurant.Controller
             t.Add(IdEmp);
             return dao.MyExecuteNonQuery("addOrder", CommandType.StoredProcedure, t);
         }
+        /// <summary>
+        /// Lấy order mới nhất
+        /// </summary>
+        /// <returns></returns>
         public Orders getLastOrder()
         {
             DataTable data;
             data = dao.ExecuteQueryDataSet("getLastOrder",CommandType.StoredProcedure);
-            Orders temp = new Orders();
-            temp.Id= int.Parse(data.Rows[0][0].ToString());
-            temp.IdSeat=int.Parse(data.Rows[0][1].ToString());
-            temp.IdEmp= int.Parse(data.Rows[0][2].ToString());
-            temp.TimeOrder=DateTime.Parse(data.Rows[0][4].ToString());
-            return temp;
+            return new Orders(data.Rows[0]);
         }
+
+        /// <summary>
+        /// Lấy order bằng id bàn
+        /// </summary>
+        /// <param name="idSeat"></param>
+        /// <returns></returns>
         public Orders GetOrders(int idSeat)
         {
             DataTable data;
@@ -54,16 +53,15 @@ namespace Restaurant.Controller
             data = dao.ExecuteQueryDataSet("GetOrders", CommandType.StoredProcedure,t);
             if(data.Rows.Count>0 && data!=null)
             {
-                Orders temp = new Orders();
-                temp.Id = int.Parse(data.Rows[0][0].ToString());
-                temp.IdSeat = int.Parse(data.Rows[0][1].ToString());
-                temp.IdEmp = int.Parse(data.Rows[0][2].ToString());
-                temp.IdCus = int.Parse(data.Rows[0][3].ToString());
-                temp.TimeOrder = DateTime.Parse(data.Rows[0][4].ToString());
+                Orders temp = new Orders(data.Rows[0]);              
                 return temp;
             }
             return null;
         }
+
+        /// <summary>
+        /// Nếu tồn tại một order trước đó chưa đặt món thì xóa order đó trước
+        /// </summary>
         public void check_Orderdetail()
         {
             dao.MyExecuteNonQuery("check_Orderdetail", CommandType.StoredProcedure);
@@ -81,7 +79,7 @@ namespace Restaurant.Controller
             t.Add(Phone);
             dao.MyExecuteNonQuery("updateCustomerOrder", CommandType.StoredProcedure, t);
         }
-=======
->>>>>>> f5d3beba0a6f59be34b34444f14010fb33ffb151
+
+
     }
 }
